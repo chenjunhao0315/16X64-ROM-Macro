@@ -1,0 +1,1487 @@
+************************************************************************
+* auCdl Netlist:
+* 
+* Library Name:  composer
+* Top Cell Name: final_ver1
+* View Name:     schematic
+* Netlisted on:  Jan 17 05:29:27 2022
+************************************************************************
+
+*.BIPOLAR
+*.RESI = 2000 
+*.RESVAL
+*.CAPVAL
+*.DIOPERI
+*.DIOAREA
+*.EQUATION
+*.SCALE METER
+*.MEGA
+.PARAM
+
+
+
+************************************************************************
+* Library Name: composer
+* Cell Name:    inverter
+* View Name:    schematic
+************************************************************************
+
+.SUBCKT inverter gnd in out vdd
+*.PININFO in:I out:O gnd:B vdd:B
+MM1 out in vdd vdd P_18 W=1.5u L=180.00n m=1
+MM0 out in gnd gnd N_18 W=500.0n L=180.00n m=1
+.ENDS
+
+************************************************************************
+* Library Name: composer
+* Cell Name:    latch
+* View Name:    schematic
+************************************************************************
+
+.SUBCKT latch CLK Q QB R S VDD VSS
+*.PININFO CLK:I R:I S:I Q:O QB:O VDD:B VSS:B
+MM5 QB Q VDD VDD P_18 W=1u L=180.00n m=1
+MM4 Q QB VDD VDD P_18 W=1u L=180.00n m=1
+MM3 S CLK Q VSS N_18 W=750.00n L=180.00n m=1
+MM2 QB Q VSS VSS N_18 W=500.0n L=180.00n m=1
+MM1 Q QB VSS VSS N_18 W=500.0n L=180.00n m=1
+MM0 R CLK QB VSS N_18 W=750.00n L=180.00n m=1
+.ENDS
+
+************************************************************************
+* Library Name: composer
+* Cell Name:    NAND4
+* View Name:    schematic
+************************************************************************
+
+.SUBCKT NAND4 A B C D OUT VDD VSS
+*.PININFO A:I B:I C:I D:I OUT:O VDD:B VSS:B
+MM7 net8 D VSS VSS N_18 W=470.00n L=180.00n m=1
+MM6 net12 C net8 VSS N_18 W=470.00n L=180.00n m=1
+MM5 net16 B net12 VSS N_18 W=470.00n L=180.00n m=1
+MM4 OUT A net16 VSS N_18 W=470.00n L=180.00n m=1
+MM3 OUT D VDD VDD P_18 W=470.00n L=180.00n m=1
+MM2 OUT C VDD VDD P_18 W=470.00n L=180.00n m=1
+MM1 OUT B VDD VDD P_18 W=470.00n L=180.00n m=1
+MM0 OUT A VDD VDD P_18 W=470.00n L=180.00n m=1
+.ENDS
+
+************************************************************************
+* Library Name: composer
+* Cell Name:    decoder_3to8
+* View Name:    schematic
+************************************************************************
+
+.SUBCKT decoder_3to8 ENB VDD VSS in0 in1 in2 out0 out1 out2 out3 out4 out5 
++ out6 out7
+*.PININFO ENB:I in0:I in1:I in2:I out0:O out1:O out2:O out3:O out4:O out5:O 
+*.PININFO out6:O out7:O VDD:B VSS:B
+XI12 in0 in1 net081 ENB out1 VDD VSS / NAND4
+XI15 net96 in1 in2 ENB out4 VDD VSS / NAND4
+XI16 net96 in1 net081 ENB out5 VDD VSS / NAND4
+XI17 net96 net92 in2 ENB out6 VDD VSS / NAND4
+XI18 net96 net92 net081 ENB out7 VDD VSS / NAND4
+XI13 in0 net92 in2 ENB out2 VDD VSS / NAND4
+XI14 in0 net92 net081 ENB out3 VDD VSS / NAND4
+XI11 in0 in1 in2 ENB out0 VDD VSS / NAND4
+XI10 VSS in2 net081 VDD / inverter
+XI9 VSS in1 net92 VDD / inverter
+XI8 VSS in0 net96 VDD / inverter
+.ENDS
+
+************************************************************************
+* Library Name: composer
+* Cell Name:    nor
+* View Name:    schematic
+************************************************************************
+
+.SUBCKT nor A B gnd out vdd
+*.PININFO A:I B:I out:O gnd:B vdd:B
+MM3 net13 A vdd vdd P_18 W=470.00n L=180.00n m=1
+MM2 out B net13 vdd P_18 W=470.00n L=180.00n m=1
+MM1 out B gnd gnd N_18 W=470.00n L=180.00n m=1
+MM0 out A gnd gnd N_18 W=470.00n L=180.00n m=1
+.ENDS
+
+************************************************************************
+* Library Name: composer
+* Cell Name:    decoder_6to64
+* View Name:    schematic
+************************************************************************
+
+.SUBCKT decoder_6to64 ENB VDD VSS in0 in1 in2 in3 in4 in5 out0 out1 out2 out3 
++ out4 out5 out6 out7 out8 out9 out10 out11 out12 out13 out14 out15 out16 
++ out17 out18 out19 out20 out21 out22 out23 out24 out25 out26 out27 out28 
++ out29 out30 out31 out32 out33 out34 out35 out36 out37 out38 out39 out40 
++ out41 out42 out43 out44 out45 out46 out47 out48 out49 out50 out51 out52 
++ out53 out54 out55 out56 out57 out58 out59 out60 out61 out62 out63
+*.PININFO ENB:I in0:I in1:I in2:I in3:I in4:I in5:I out0:O out1:O out2:O 
+*.PININFO out3:O out4:O out5:O out6:O out7:O out8:O out9:O out10:O out11:O 
+*.PININFO out12:O out13:O out14:O out15:O out16:O out17:O out18:O out19:O 
+*.PININFO out20:O out21:O out22:O out23:O out24:O out25:O out26:O out27:O 
+*.PININFO out28:O out29:O out30:O out31:O out32:O out33:O out34:O out35:O 
+*.PININFO out36:O out37:O out38:O out39:O out40:O out41:O out42:O out43:O 
+*.PININFO out44:O out45:O out46:O out47:O out48:O out49:O out50:O out51:O 
+*.PININFO out52:O out53:O out54:O out55:O out56:O out57:O out58:O out59:O 
+*.PININFO out60:O out61:O out62:O out63:O VDD:B VSS:B
+XI1 ENB VDD VSS in3 in4 in5 net252 net264 net263 net262 net261 net260 net259 
++ net258 / decoder_3to8
+XI0 ENB VDD VSS in0 in1 in2 net266 net278 net277 net276 net275 net274 net273 
++ net272 / decoder_3to8
+XI65 net252 net272 VSS out56 VDD / nor
+XI64 net264 net272 VSS out57 VDD / nor
+XI63 net263 net272 VSS out58 VDD / nor
+XI62 net262 net272 VSS out59 VDD / nor
+XI61 net261 net272 VSS out60 VDD / nor
+XI60 net260 net272 VSS out61 VDD / nor
+XI59 net259 net272 VSS out62 VDD / nor
+XI58 net258 net272 VSS out63 VDD / nor
+XI57 net258 net273 VSS out55 VDD / nor
+XI56 net259 net273 VSS out54 VDD / nor
+XI55 net260 net273 VSS out53 VDD / nor
+XI54 net261 net273 VSS out52 VDD / nor
+XI53 net262 net273 VSS out51 VDD / nor
+XI52 net263 net273 VSS out50 VDD / nor
+XI51 net264 net273 VSS out49 VDD / nor
+XI50 net252 net273 VSS out48 VDD / nor
+XI49 net252 net274 VSS out40 VDD / nor
+XI48 net264 net274 VSS out41 VDD / nor
+XI47 net263 net274 VSS out42 VDD / nor
+XI46 net262 net274 VSS out43 VDD / nor
+XI45 net261 net274 VSS out44 VDD / nor
+XI44 net260 net274 VSS out45 VDD / nor
+XI43 net259 net274 VSS out46 VDD / nor
+XI42 net258 net274 VSS out47 VDD / nor
+XI41 net258 net275 VSS out39 VDD / nor
+XI40 net259 net275 VSS out38 VDD / nor
+XI39 net260 net275 VSS out37 VDD / nor
+XI38 net261 net275 VSS out36 VDD / nor
+XI37 net262 net275 VSS out35 VDD / nor
+XI36 net263 net275 VSS out34 VDD / nor
+XI35 net264 net275 VSS out33 VDD / nor
+XI34 net252 net275 VSS out32 VDD / nor
+XI33 net252 net276 VSS out24 VDD / nor
+XI32 net264 net276 VSS out25 VDD / nor
+XI31 net263 net276 VSS out26 VDD / nor
+XI30 net262 net276 VSS out27 VDD / nor
+XI29 net261 net276 VSS out28 VDD / nor
+XI28 net260 net276 VSS out29 VDD / nor
+XI27 net259 net276 VSS out30 VDD / nor
+XI26 net258 net276 VSS out31 VDD / nor
+XI25 net258 net277 VSS out23 VDD / nor
+XI24 net259 net277 VSS out22 VDD / nor
+XI23 net260 net277 VSS out21 VDD / nor
+XI22 net261 net277 VSS out20 VDD / nor
+XI21 net262 net277 VSS out19 VDD / nor
+XI20 net263 net277 VSS out18 VDD / nor
+XI19 net264 net277 VSS out17 VDD / nor
+XI18 net252 net277 VSS out16 VDD / nor
+XI17 net252 net278 VSS out8 VDD / nor
+XI16 net264 net278 VSS out9 VDD / nor
+XI15 net263 net278 VSS out10 VDD / nor
+XI14 net262 net278 VSS out11 VDD / nor
+XI13 net261 net278 VSS out12 VDD / nor
+XI12 net260 net278 VSS out13 VDD / nor
+XI11 net259 net278 VSS out14 VDD / nor
+XI10 net258 net278 VSS out15 VDD / nor
+XI9 net258 net266 VSS out7 VDD / nor
+XI8 net259 net266 VSS out6 VDD / nor
+XI7 net260 net266 VSS out5 VDD / nor
+XI6 net261 net266 VSS out4 VDD / nor
+XI5 net262 net266 VSS out3 VDD / nor
+XI4 net263 net266 VSS out2 VDD / nor
+XI3 net264 net266 VSS out1 VDD / nor
+XI2 net252 net266 VSS out0 VDD / nor
+.ENDS
+
+************************************************************************
+* Library Name: composer
+* Cell Name:    NAND
+* View Name:    schematic
+************************************************************************
+
+.SUBCKT NAND A B gnd out vdd
+*.PININFO A:I B:I out:O gnd:B vdd:B
+MM3 net5 A gnd gnd N_18 W=470.00n L=180.00n m=1
+MM2 out B net5 gnd N_18 W=470.00n L=180.00n m=1
+MM1 out B vdd vdd P_18 W=1.5u L=180.00n m=1
+MM0 out A vdd vdd P_18 W=1.5u L=180.00n m=1
+.ENDS
+
+************************************************************************
+* Library Name: composer
+* Cell Name:    time_control
+* View Name:    schematic
+************************************************************************
+
+.SUBCKT time_control SA_EN WL_ENB clk latch_clk pre_b vdd vss
+*.PININFO clk:I SA_EN:O WL_ENB:O latch_clk:O pre_b:O vdd:B vss:B
+XI1 net086 net086 vss net9 vdd / NAND
+XI0 net37 pre_b vss WL_ENB vdd / NAND
+MM28 net0100 SA_EN vss vss N_18 W=470.00n L=180.00n m=1
+MM25 latch_clk net0100 vss vss N_18 W=470.00n L=180.00n m=1
+MM18 net37 net0139 vss vss N_18 W=470.00n L=800.0n m=1
+MM22 net082 pre_b vss vss N_18 W=470.00n L=180.00n m=1
+MM16 SA_EN net9 vss vss N_18 W=470.00n L=180.00n m=1
+MM21 net086 net082 vss vss N_18 W=470.00n L=300.0n m=1
+MM7 net0139 net41 vss vss N_18 W=470.00n L=800.0n m=1
+MM4 net41 clk vss vss N_18 W=470.00n L=800.0n m=1
+MM2 pre_b net49 vss vss N_18 W=470.00n L=180.00n m=1
+MM1 net49 clk vss vss N_18 W=470.00n L=180.00n m=1
+MM29 net0100 SA_EN vdd vdd P_18 W=1.5u L=180.00n m=1
+MM27 latch_clk net0100 vdd vdd P_18 W=1.5u L=180.00n m=1
+MM24 net082 pre_b vdd vdd P_18 W=1.5u L=180.00n m=1
+MM19 net37 net0139 vdd vdd P_18 W=1.5u L=800.0n m=1
+MM17 SA_EN net9 vdd vdd P_18 W=1.5u L=180.00n m=1
+MM23 net086 net082 vdd vdd P_18 W=1.5u L=300.0n m=1
+MM6 net0139 net41 vdd vdd P_18 W=1.5u L=800.0n m=1
+MM5 net41 clk vdd vdd P_18 W=1.5u L=800.0n m=1
+MM3 pre_b net49 vdd vdd P_18 W=1.5u L=180.00n m=1
+MM0 net49 clk vdd vdd P_18 W=1.5u L=180.00n m=1
+.ENDS
+
+************************************************************************
+* Library Name: composer
+* Cell Name:    DFF
+* View Name:    schematic
+************************************************************************
+
+.SUBCKT DFF CLK D OUT VDD VSS
+*.PININFO CLK:I D:I OUT:O VDD:B VSS:B
+MM10 OUT net15 VSS VSS N_18 W=470.00n L=180.00n m=1
+MM9 net5 net21 VSS VSS N_18 W=470.00n L=180.00n m=1
+MM8 net9 CLK VSS VSS N_18 W=470.00n L=180.00n m=1
+MM7 net13 D VSS VSS N_18 W=470.00n L=180.00n m=1
+MM6 net15 CLK net5 VSS N_18 W=470.00n L=180.00n m=1
+MM5 net21 net13 net9 VSS N_18 W=470.00n L=180.00n m=1
+MM11 net15 OUT VDD VDD P_18 W=400.0n L=530.00n m=1
+MM4 net13 CLK net28 VDD P_18 W=1.5u L=180.00n m=1
+MM3 OUT net15 VDD VDD P_18 W=1.5u L=180.00n m=1
+MM2 net15 net21 VDD VDD P_18 W=1.5u L=180.00n m=1
+MM1 net21 CLK VDD VDD P_18 W=1.5u L=180.00n m=1
+MM0 net28 D VDD VDD P_18 W=1.5u L=180.00n m=1
+.ENDS
+
+************************************************************************
+* Library Name: composer
+* Cell Name:    sense_amplifier
+* View Name:    schematic
+************************************************************************
+
+.SUBCKT sense_amplifier EN INN INP SO SON gnd vdd
+*.PININFO EN:I INN:I INP:I SO:O SON:O gnd:B vdd:B
+MM8 SON EN vdd vdd P_18 W=1u L=180.00n m=1
+MM7 SON SO vdd vdd P_18 W=3u L=180.00n m=1
+MM6 SO SON vdd vdd P_18 W=3u L=180.00n m=1
+MM5 SO EN vdd vdd P_18 W=1u L=180.00n m=1
+MM4 net43 EN gnd gnd N_18 W=1u L=180.00n m=2
+MM3 net28 INP net43 gnd N_18 W=1u L=180.00n m=1
+MM2 SON SO net28 gnd N_18 W=1u L=180.00n m=1
+MM1 SO SON net40 gnd N_18 W=1u L=180.00n m=1
+MM0 net40 INN net43 gnd N_18 W=1u L=180.00n m=1
+.ENDS
+
+************************************************************************
+* Library Name: composer
+* Cell Name:    mux_16to2
+* View Name:    schematic
+************************************************************************
+
+.SUBCKT mux_16to2 in0 in1 in2 in3 in4 in5 in6 in7 in8 in9 in10 in11 in12 in13 
++ in14 in15 index0 index1 index2 out0 out1 vdd vss
+*.PININFO in0:I in1:I in2:I in3:I in4:I in5:I in6:I in7:I in8:I in9:I in10:I 
+*.PININFO in11:I in12:I in13:I in14:I in15:I index0:I index1:I index2:I out0:O 
+*.PININFO out1:O vdd:B vss:B
+MM47 in8 index0 net29 vss N_18 W=500.0n L=180.00n m=1
+MM46 in9 net48 net29 vss N_18 W=500.0n L=180.00n m=1
+MM45 in11 net48 net33 vss N_18 W=500.0n L=180.00n m=1
+MM44 in10 index0 net33 vss N_18 W=500.0n L=180.00n m=1
+MM43 in12 index0 net45 vss N_18 W=500.0n L=180.00n m=1
+MM42 in13 net48 net45 vss N_18 W=500.0n L=180.00n m=1
+MM41 in15 net48 net49 vss N_18 W=500.0n L=180.00n m=1
+MM40 in14 index0 net49 vss N_18 W=500.0n L=180.00n m=1
+MM39 net33 net68 net57 vss N_18 W=500.0n L=180.00n m=1
+MM38 net29 index1 net57 vss N_18 W=500.0n L=180.00n m=1
+MM37 net45 index1 net69 vss N_18 W=500.0n L=180.00n m=1
+MM36 net49 net68 net69 vss N_18 W=500.0n L=180.00n m=1
+MM35 net57 index2 out1 vss N_18 W=500.0n L=180.00n m=1
+MM34 net69 net76 out1 vss N_18 W=500.0n L=180.00n m=1
+MM31 net89 net76 out0 vss N_18 W=500.0n L=180.00n m=1
+MM30 net101 index2 out0 vss N_18 W=500.0n L=180.00n m=1
+MM27 net109 net68 net89 vss N_18 W=500.0n L=180.00n m=1
+MM26 net113 index1 net89 vss N_18 W=500.0n L=180.00n m=1
+MM23 net141 index1 net101 vss N_18 W=500.0n L=180.00n m=1
+MM22 net125 net68 net101 vss N_18 W=500.0n L=180.00n m=1
+MM19 in6 index0 net109 vss N_18 W=500.0n L=180.00n m=1
+MM18 in7 net48 net109 vss N_18 W=500.0n L=180.00n m=1
+MM17 in5 net48 net113 vss N_18 W=500.0n L=180.00n m=1
+MM16 in4 index0 net113 vss N_18 W=500.0n L=180.00n m=1
+MM11 in2 index0 net125 vss N_18 W=500.0n L=180.00n m=1
+MM10 in3 net48 net125 vss N_18 W=500.0n L=180.00n m=1
+MM9 net76 index2 vss vss N_18 W=500.0n L=180.00n m=1
+MM6 net68 index1 vss vss N_18 W=500.0n L=180.00n m=1
+MM4 net48 index0 vss vss N_18 W=500.0n L=180.00n m=1
+MM2 in1 net48 net141 vss N_18 W=500.0n L=180.00n m=1
+MM1 in0 index0 net141 vss N_18 W=500.0n L=180.00n m=1
+MM61 net29 net48 in8 vdd P_18 W=500.0n L=180.00n m=1
+MM60 net29 index0 in9 vdd P_18 W=500.0n L=180.00n m=1
+MM59 net33 index0 in11 vdd P_18 W=500.0n L=180.00n m=1
+MM58 net33 net48 in10 vdd P_18 W=500.0n L=180.00n m=1
+MM57 net45 net48 in12 vdd P_18 W=500.0n L=180.00n m=1
+MM56 net45 index0 in13 vdd P_18 W=500.0n L=180.00n m=1
+MM55 net49 index0 in15 vdd P_18 W=500.0n L=180.00n m=1
+MM54 net49 net48 in14 vdd P_18 W=500.0n L=180.00n m=1
+MM53 net57 index1 net33 vdd P_18 W=500.0n L=180.00n m=1
+MM52 net57 net68 net29 vdd P_18 W=500.0n L=180.00n m=1
+MM51 net69 net68 net45 vdd P_18 W=500.0n L=180.00n m=1
+MM50 net69 index1 net49 vdd P_18 W=500.0n L=180.00n m=1
+MM49 out1 net76 net57 vdd P_18 W=500.0n L=180.00n m=1
+MM48 out1 index2 net69 vdd P_18 W=500.0n L=180.00n m=1
+MM33 out0 index2 net89 vdd P_18 W=500.0n L=180.00n m=1
+MM32 out0 net76 net101 vdd P_18 W=500.0n L=180.00n m=1
+MM29 net89 index1 net109 vdd P_18 W=500.0n L=180.00n m=1
+MM28 net89 net68 net113 vdd P_18 W=500.0n L=180.00n m=1
+MM25 net101 net68 net141 vdd P_18 W=500.0n L=180.00n m=1
+MM24 net101 index1 net125 vdd P_18 W=500.0n L=180.00n m=1
+MM21 net109 net48 in6 vdd P_18 W=500.0n L=180.00n m=1
+MM20 net109 index0 in7 vdd P_18 W=500.0n L=180.00n m=1
+MM15 net113 index0 in5 vdd P_18 W=500.0n L=180.00n m=1
+MM14 net113 net48 in4 vdd P_18 W=500.0n L=180.00n m=1
+MM13 net125 net48 in2 vdd P_18 W=500.0n L=180.00n m=1
+MM12 net125 index0 in3 vdd P_18 W=500.0n L=180.00n m=1
+MM8 net76 index2 vdd vdd P_18 W=1.5u L=180.00n m=1
+MM7 net68 index1 vdd vdd P_18 W=1.5u L=180.00n m=1
+MM5 net48 index0 vdd vdd P_18 W=1.5u L=180.00n m=1
+MM3 net141 index0 in1 vdd P_18 W=500.0n L=180.00n m=1
+MM0 net141 net48 in0 vdd P_18 W=500.0n L=180.00n m=1
+.ENDS
+
+************************************************************************
+* Library Name: composer
+* Cell Name:    precharge
+* View Name:    schematic
+************************************************************************
+
+.SUBCKT precharge VDD out0 out1 out2 out3 out4 out5 out6 out7 out8 out9 out10 
++ out11 out12 out13 out14 out15 pre_b
+*.PININFO pre_b:I VDD:B out0:B out1:B out2:B out3:B out4:B out5:B out6:B 
+*.PININFO out7:B out8:B out9:B out10:B out11:B out12:B out13:B out14:B out15:B
+MM15 out9 pre_b VDD VDD P_18 W=470.00n L=180.00n m=1
+MM14 out10 pre_b VDD VDD P_18 W=470.00n L=180.00n m=1
+MM13 out8 pre_b VDD VDD P_18 W=470.00n L=180.00n m=1
+MM12 out11 pre_b VDD VDD P_18 W=470.00n L=180.00n m=1
+MM11 out15 pre_b VDD VDD P_18 W=470.00n L=180.00n m=1
+MM10 out12 pre_b VDD VDD P_18 W=470.00n L=180.00n m=1
+MM9 out14 pre_b VDD VDD P_18 W=470.00n L=180.00n m=1
+MM8 out13 pre_b VDD VDD P_18 W=470.00n L=180.00n m=1
+MM7 out5 pre_b VDD VDD P_18 W=470.00n L=180.00n m=1
+MM6 out6 pre_b VDD VDD P_18 W=470.00n L=180.00n m=1
+MM5 out4 pre_b VDD VDD P_18 W=470.00n L=180.00n m=1
+MM4 out7 pre_b VDD VDD P_18 W=470.00n L=180.00n m=1
+MM3 out3 pre_b VDD VDD P_18 W=470.00n L=180.00n m=1
+MM2 out2 pre_b VDD VDD P_18 W=470.00n L=180.00n m=1
+MM1 out1 pre_b VDD VDD P_18 W=470.00n L=180.00n m=1
+MM0 out0 pre_b VDD VDD P_18 W=470.00n L=180.00n m=1
+.ENDS
+
+************************************************************************
+* Library Name: composer
+* Cell Name:    ROM
+* View Name:    schematic
+************************************************************************
+
+.SUBCKT ROM BL<0> BL<1> BL<2> BL<3> BL<4> BL<5> BL<6> BL<7> BL<8> BL<9> BL<10> 
++ BL<11> BL<12> BL<13> BL<14> BL<15> VSS WL<0> WL<1> WL<2> WL<3> WL<4> WL<5> 
++ WL<6> WL<7> WL<8> WL<9> WL<10> WL<11> WL<12> WL<13> WL<14> WL<15> WL<16> 
++ WL<17> WL<18> WL<19> WL<20> WL<21> WL<22> WL<23> WL<24> WL<25> WL<26> WL<27> 
++ WL<28> WL<29> WL<30> WL<31> WL<32> WL<33> WL<34> WL<35> WL<36> WL<37> WL<38> 
++ WL<39> WL<40> WL<41> WL<42> WL<43> WL<44> WL<45> WL<46> WL<47> WL<48> WL<49> 
++ WL<50> WL<51> WL<52> WL<53> WL<54> WL<55> WL<56> WL<57> WL<58> WL<59> WL<60> 
++ WL<61> WL<62> WL<63>
+*.PININFO WL<0>:I WL<1>:I WL<2>:I WL<3>:I WL<4>:I WL<5>:I WL<6>:I WL<7>:I 
+*.PININFO WL<8>:I WL<9>:I WL<10>:I WL<11>:I WL<12>:I WL<13>:I WL<14>:I 
+*.PININFO WL<15>:I WL<16>:I WL<17>:I WL<18>:I WL<19>:I WL<20>:I WL<21>:I 
+*.PININFO WL<22>:I WL<23>:I WL<24>:I WL<25>:I WL<26>:I WL<27>:I WL<28>:I 
+*.PININFO WL<29>:I WL<30>:I WL<31>:I WL<32>:I WL<33>:I WL<34>:I WL<35>:I 
+*.PININFO WL<36>:I WL<37>:I WL<38>:I WL<39>:I WL<40>:I WL<41>:I WL<42>:I 
+*.PININFO WL<43>:I WL<44>:I WL<45>:I WL<46>:I WL<47>:I WL<48>:I WL<49>:I 
+*.PININFO WL<50>:I WL<51>:I WL<52>:I WL<53>:I WL<54>:I WL<55>:I WL<56>:I 
+*.PININFO WL<57>:I WL<58>:I WL<59>:I WL<60>:I WL<61>:I WL<62>:I WL<63>:I 
+*.PININFO BL<0>:O BL<1>:O BL<2>:O BL<3>:O BL<4>:O BL<5>:O BL<6>:O BL<7>:O 
+*.PININFO BL<8>:O BL<9>:O BL<10>:O BL<11>:O BL<12>:O BL<13>:O BL<14>:O 
+*.PININFO BL<15>:O VSS:B
+MM1592 net01318 WL<63> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM1591 net01322 WL<63> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM1590 net01326 WL<63> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM1589 net01330 WL<63> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM1588 net01334 WL<63> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM1587 net01338 WL<63> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM1586 net01342 WL<63> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM1585 net01346 WL<63> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM1584 net01350 WL<61> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM1583 net01354 WL<61> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM1582 net01358 WL<61> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM1581 net01362 WL<61> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM1580 net01366 WL<61> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM1579 net01370 WL<61> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM1578 net01374 WL<61> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM1577 net01378 WL<61> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM1576 net01382 WL<59> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM1575 net01386 WL<59> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM1574 net01390 WL<59> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM1573 net01394 WL<59> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM1572 net01398 WL<59> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM1571 net01402 WL<59> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM1570 net01406 WL<59> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM1569 net01410 WL<59> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM1568 net01414 WL<57> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM1567 net01418 WL<57> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM1566 net01422 WL<57> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM1565 net01426 WL<57> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM1564 net01430 WL<57> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM1563 net01434 WL<57> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM1562 net01438 WL<57> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM1561 net01442 WL<57> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM1560 net01446 WL<55> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM1559 net01450 WL<55> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM1558 net01454 WL<55> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM1557 net01458 WL<55> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM1556 net01462 WL<55> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM1555 net01466 WL<55> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM1554 net01470 WL<55> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM1553 net01474 WL<55> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM1552 net01478 WL<53> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM1551 net01482 WL<53> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM1550 net01486 WL<53> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM1549 net01490 WL<53> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM1548 net01494 WL<53> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM1547 net01498 WL<53> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM1546 net01502 WL<53> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM1545 net01506 WL<53> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM1544 net01510 WL<51> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM1543 net01514 WL<51> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM1542 net01518 WL<51> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM1541 net01522 WL<51> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM1540 net01526 WL<51> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM1539 net01530 WL<51> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM1538 net01534 WL<51> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM1537 net01538 WL<51> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM1536 net01542 WL<49> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM1535 net01546 WL<49> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM1534 net01550 WL<49> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM1533 net01554 WL<49> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM1532 net01558 WL<49> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM1531 net01562 WL<49> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM1530 net01566 WL<49> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM1529 net01570 WL<49> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM1528 net01574 WL<47> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM1527 net01578 WL<47> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM1526 net01582 WL<47> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM1525 net01586 WL<47> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM1524 net01590 WL<47> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM1523 net01594 WL<47> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM1522 net01598 WL<47> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM1521 net01602 WL<47> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM1520 net01606 WL<45> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM1519 net01610 WL<45> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM1518 net01614 WL<45> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM1517 net01618 WL<45> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM1516 net01622 WL<45> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM1515 net01626 WL<45> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM1514 net01630 WL<45> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM1513 net01634 WL<45> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM1512 net01638 WL<43> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM1511 net01642 WL<43> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM1510 net01646 WL<43> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM1509 net01650 WL<43> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM1508 net01654 WL<43> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM1507 net01658 WL<43> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM1506 net01662 WL<43> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM1505 net01666 WL<43> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM1504 net01670 WL<41> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM1503 net01674 WL<41> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM1502 net01678 WL<41> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM1501 net01682 WL<41> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM1500 net01686 WL<41> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM1499 net01690 WL<41> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM1498 net01694 WL<41> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM1497 net01698 WL<41> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM1496 net01702 WL<39> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM1495 net01706 WL<39> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM1494 net01710 WL<39> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM1493 net01714 WL<39> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM1492 net01718 WL<39> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM1491 net01722 WL<39> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM1490 net01726 WL<39> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM1489 net01730 WL<39> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM1488 net01734 WL<37> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM1487 net01738 WL<37> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM1486 net01742 WL<37> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM1485 net01746 WL<37> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM1484 net01750 WL<37> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM1483 net01754 WL<37> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM1482 net01758 WL<37> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM1481 net01762 WL<37> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM1480 net01766 WL<35> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM1479 net01770 WL<35> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM1478 net01774 WL<35> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM1477 net01778 WL<35> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM1476 net01782 WL<35> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM1475 net01786 WL<35> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM1474 net01790 WL<35> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM1473 net01794 WL<35> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM1472 net01798 WL<33> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM1471 net01802 WL<33> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM1470 net01806 WL<33> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM1469 net01810 WL<33> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM1468 net01814 WL<33> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM1467 net01818 WL<33> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM1466 net01822 WL<33> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM1465 net01826 WL<33> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM1464 net01830 WL<31> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM1463 net01834 WL<31> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM1462 net01838 WL<31> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM1461 net01842 WL<31> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM1460 net01846 WL<31> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM1459 net01850 WL<31> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM1458 net01854 WL<31> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM1457 net01858 WL<31> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM1456 net01862 WL<29> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM1455 net01866 WL<29> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM1454 net01870 WL<29> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM1453 net01874 WL<29> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM1452 net01878 WL<29> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM1451 net01882 WL<29> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM1450 net01886 WL<29> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM1449 net01890 WL<29> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM1448 net01894 WL<27> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM1447 net01898 WL<27> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM1446 net01902 WL<27> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM1445 net01906 WL<27> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM1444 net01910 WL<27> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM1443 net01914 WL<27> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM1442 net01918 WL<27> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM1441 net01922 WL<27> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM1440 net01926 WL<25> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM1439 net01930 WL<25> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM1438 net01934 WL<25> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM1437 net01938 WL<25> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM1436 net01942 WL<25> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM1435 net01946 WL<25> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM1434 net01950 WL<25> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM1433 net01954 WL<25> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM1432 net01958 WL<23> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM1431 net01962 WL<23> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM1430 net01966 WL<23> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM1429 net01970 WL<23> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM1428 net01974 WL<23> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM1427 net01978 WL<23> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM1426 net01982 WL<23> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM1425 net01986 WL<23> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM1424 net01990 WL<21> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM1423 net01994 WL<21> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM1422 net01998 WL<21> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM1421 net02002 WL<21> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM1420 net02006 WL<21> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM1419 net02010 WL<21> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM1418 net02014 WL<21> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM1417 net02018 WL<21> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM1416 net02022 WL<19> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM1415 net02026 WL<19> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM1414 net02030 WL<19> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM1413 net02034 WL<19> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM1412 net02038 WL<19> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM1411 net02042 WL<19> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM1410 net02046 WL<19> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM1409 net02050 WL<19> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM1408 net02054 WL<17> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM1407 net02058 WL<17> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM1406 net02062 WL<17> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM1405 net02066 WL<17> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM1404 net02070 WL<17> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM1403 net02074 WL<17> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM1402 net02078 WL<17> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM1401 net02082 WL<17> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM1400 net02086 WL<15> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM1399 net02090 WL<15> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM1398 net02094 WL<15> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM1397 net02098 WL<15> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM1396 net02102 WL<15> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM1395 net02106 WL<15> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM1394 net02110 WL<15> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM1393 net02114 WL<15> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM1392 net02118 WL<13> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM1391 net02122 WL<13> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM1390 net02126 WL<13> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM1389 net02130 WL<13> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM1388 net02134 WL<13> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM1387 net02138 WL<13> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM1386 net02142 WL<13> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM1385 net02146 WL<13> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM1384 net02150 WL<11> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM1383 net02154 WL<11> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM1382 net02158 WL<11> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM1381 net02162 WL<11> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM1380 net02166 WL<11> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM1379 net02170 WL<11> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM1378 net02174 WL<11> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM1377 net02178 WL<11> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM1376 net02182 WL<9> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM1375 net02186 WL<9> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM1374 net02190 WL<9> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM1373 net02194 WL<9> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM1372 net02198 WL<9> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM1371 net02202 WL<9> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM1370 net02206 WL<9> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM1369 net02210 WL<9> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM1368 net02214 WL<7> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM1367 net02218 WL<7> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM1366 net02222 WL<7> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM1365 net02226 WL<7> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM1364 net02230 WL<7> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM1363 net02234 WL<7> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM1362 net02238 WL<7> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM1361 net02242 WL<7> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM1360 net02246 WL<5> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM1359 net02250 WL<5> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM1358 net02254 WL<5> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM1357 net02258 WL<5> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM1356 net02262 WL<5> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM1355 net02266 WL<5> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM1354 net02270 WL<5> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM1353 net02274 WL<5> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM1336 net02310 WL<62> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM1335 net02314 WL<62> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM1334 net02318 WL<62> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM1333 net02322 WL<62> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM1332 net02326 WL<62> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM608 BL<0> WL<9> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM609 BL<1> WL<8> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM610 BL<15> WL<8> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM611 BL<11> WL<8> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM612 BL<5> WL<8> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM613 BL<13> WL<8> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM614 BL<3> WL<8> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM615 BL<7> WL<8> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM616 BL<9> WL<8> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM617 BL<14> WL<9> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM618 BL<10> WL<9> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM619 BL<6> WL<9> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM620 BL<8> WL<9> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM621 BL<4> WL<9> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM622 BL<12> WL<9> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM623 BL<2> WL<9> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM630 BL<14> WL<11> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM632 BL<7> WL<10> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM624 BL<2> WL<11> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM626 BL<4> WL<11> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM628 BL<6> WL<11> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM629 BL<10> WL<11> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM631 BL<9> WL<10> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM633 BL<3> WL<10> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM625 BL<12> WL<11> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM627 BL<8> WL<11> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM634 BL<13> WL<10> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM635 BL<5> WL<10> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM636 BL<11> WL<10> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM637 BL<15> WL<10> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM638 BL<1> WL<10> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM639 BL<0> WL<11> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM640 BL<0> WL<13> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM641 BL<1> WL<12> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM642 BL<15> WL<12> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM643 BL<11> WL<12> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM644 BL<5> WL<12> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM645 BL<13> WL<12> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM646 BL<3> WL<12> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM647 BL<7> WL<12> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM648 BL<9> WL<12> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM649 BL<14> WL<13> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM650 BL<10> WL<13> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM651 BL<6> WL<13> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM652 BL<8> WL<13> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM653 BL<4> WL<13> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM654 BL<12> WL<13> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM655 BL<2> WL<13> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM672 BL<0> WL<17> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM673 BL<1> WL<16> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM674 BL<15> WL<16> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM656 BL<2> WL<15> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM657 BL<12> WL<15> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM658 BL<4> WL<15> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM659 BL<8> WL<15> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM660 BL<6> WL<15> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM661 BL<10> WL<15> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM662 BL<14> WL<15> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM663 BL<9> WL<14> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM664 BL<7> WL<14> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM665 BL<3> WL<14> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM666 BL<13> WL<14> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM667 BL<5> WL<14> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM668 BL<11> WL<14> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM669 BL<15> WL<14> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM670 BL<1> WL<14> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM671 BL<0> WL<15> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM675 BL<11> WL<16> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM676 BL<5> WL<16> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM1056 net02746 WL<0> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM677 BL<13> WL<16> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM678 BL<3> WL<16> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM679 BL<7> WL<16> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM680 BL<9> WL<16> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM681 BL<14> WL<17> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM682 BL<10> WL<17> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM683 BL<6> WL<17> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM684 BL<8> WL<17> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM685 BL<4> WL<17> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM686 BL<12> WL<17> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM687 BL<2> WL<17> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM688 BL<2> WL<19> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM689 BL<12> WL<19> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM690 BL<4> WL<19> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM691 BL<8> WL<19> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM692 BL<6> WL<19> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM693 BL<10> WL<19> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM694 BL<14> WL<19> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM695 BL<9> WL<18> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM696 BL<7> WL<18> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM697 BL<3> WL<18> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM698 BL<13> WL<18> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM699 BL<5> WL<18> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM700 BL<11> WL<18> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM701 BL<15> WL<18> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM702 BL<1> WL<18> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM703 BL<0> WL<19> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM704 BL<0> WL<21> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM705 BL<1> WL<20> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM706 BL<15> WL<20> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM707 BL<11> WL<20> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM708 BL<5> WL<20> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM709 BL<13> WL<20> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM710 BL<3> WL<20> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM711 BL<7> WL<20> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM712 BL<9> WL<20> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM713 BL<14> WL<21> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM714 BL<10> WL<21> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM715 BL<6> WL<21> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM716 BL<8> WL<21> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM717 BL<4> WL<21> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM718 BL<12> WL<21> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM719 BL<2> WL<21> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM720 BL<2> WL<23> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM721 BL<12> WL<23> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM722 BL<4> WL<23> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM723 BL<8> WL<23> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM724 BL<6> WL<23> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM725 BL<10> WL<23> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM726 BL<14> WL<23> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM727 BL<9> WL<22> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM728 BL<7> WL<22> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM729 BL<3> WL<22> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM730 BL<13> WL<22> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM731 BL<5> WL<22> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM732 BL<11> WL<22> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM733 BL<15> WL<22> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM734 BL<1> WL<22> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM735 BL<0> WL<23> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM736 BL<2> WL<25> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM737 BL<12> WL<25> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM738 BL<4> WL<25> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM739 BL<8> WL<25> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM1057 net03002 WL<0> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM740 BL<6> WL<25> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM741 BL<10> WL<25> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM742 BL<14> WL<25> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM743 BL<9> WL<24> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM744 BL<7> WL<24> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM745 BL<3> WL<24> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM746 BL<13> WL<24> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM747 BL<5> WL<24> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM748 BL<11> WL<24> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM749 BL<15> WL<24> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM750 BL<1> WL<24> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM751 BL<0> WL<25> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM768 BL<2> WL<29> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM752 BL<0> WL<27> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM753 BL<1> WL<26> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM754 BL<15> WL<26> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM755 BL<11> WL<26> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM756 BL<5> WL<26> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM757 BL<13> WL<26> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM758 BL<3> WL<26> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM759 BL<7> WL<26> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM760 BL<9> WL<26> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM761 BL<14> WL<27> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM762 BL<10> WL<27> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM763 BL<6> WL<27> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM764 BL<8> WL<27> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM765 BL<4> WL<27> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM766 BL<12> WL<27> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM767 BL<2> WL<27> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM769 BL<12> WL<29> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM770 BL<4> WL<29> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM771 BL<8> WL<29> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM772 BL<6> WL<29> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM773 BL<10> WL<29> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM774 BL<14> WL<29> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM775 BL<9> WL<28> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM776 BL<7> WL<28> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM777 BL<3> WL<28> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM778 BL<13> WL<28> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM779 BL<5> WL<28> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM780 BL<11> WL<28> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM781 BL<15> WL<28> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM782 BL<1> WL<28> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM783 BL<0> WL<29> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM784 BL<0> WL<31> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM785 BL<1> WL<30> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM786 BL<15> WL<30> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM787 BL<11> WL<30> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM788 BL<5> WL<30> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM789 BL<13> WL<30> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM790 BL<3> WL<30> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM791 BL<7> WL<30> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM792 BL<9> WL<30> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM793 BL<14> WL<31> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM794 BL<10> WL<31> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM795 BL<6> WL<31> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM796 BL<8> WL<31> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM797 BL<4> WL<31> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM798 BL<12> WL<31> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM799 BL<2> WL<31> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM800 BL<2> WL<33> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM801 BL<12> WL<33> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM802 BL<4> WL<33> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM803 BL<8> WL<33> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM804 BL<6> WL<33> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM805 BL<10> WL<33> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM806 BL<14> WL<33> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM807 BL<9> WL<32> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM808 BL<7> WL<32> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM809 BL<3> WL<32> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM810 BL<13> WL<32> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM811 BL<5> WL<32> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM812 BL<11> WL<32> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM813 BL<15> WL<32> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM814 BL<1> WL<32> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM815 BL<0> WL<33> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM832 BL<2> WL<37> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM816 BL<0> WL<35> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM817 BL<1> WL<34> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM818 BL<15> WL<34> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM819 BL<11> WL<34> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM820 BL<5> WL<34> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM821 BL<13> WL<34> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM822 BL<3> WL<34> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM823 BL<7> WL<34> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM824 BL<9> WL<34> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM825 BL<14> WL<35> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM826 BL<10> WL<35> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM827 BL<6> WL<35> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM828 BL<8> WL<35> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM829 BL<4> WL<35> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM830 BL<12> WL<35> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM831 BL<2> WL<35> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM833 BL<12> WL<37> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM834 BL<4> WL<37> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM835 BL<8> WL<37> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM836 BL<6> WL<37> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM837 BL<10> WL<37> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM838 BL<14> WL<37> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM839 BL<9> WL<36> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM840 BL<7> WL<36> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM841 BL<3> WL<36> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM842 BL<13> WL<36> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM843 BL<5> WL<36> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM844 BL<11> WL<36> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM845 BL<15> WL<36> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM846 BL<1> WL<36> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM847 BL<0> WL<37> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM1280 net03438 WL<48> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM1279 net03442 WL<48> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM1278 net03446 WL<48> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM1277 net03450 WL<48> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM1276 net03454 WL<48> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM1275 net03458 WL<48> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM1274 net03462 WL<48> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM1273 net03466 WL<48> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM848 BL<0> WL<39> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM849 BL<1> WL<38> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM850 BL<15> WL<38> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM851 BL<11> WL<38> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM852 BL<5> WL<38> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM853 BL<13> WL<38> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM854 BL<3> WL<38> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM855 BL<7> WL<38> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM856 BL<9> WL<38> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM857 BL<14> WL<39> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM858 BL<10> WL<39> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM859 BL<6> WL<39> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM860 BL<8> WL<39> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM861 BL<4> WL<39> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM862 BL<12> WL<39> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM863 BL<2> WL<39> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM864 BL<2> WL<41> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM865 BL<12> WL<41> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM866 BL<4> WL<41> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM867 BL<8> WL<41> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM868 BL<6> WL<41> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM869 BL<10> WL<41> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM870 BL<14> WL<41> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM871 BL<9> WL<40> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM872 BL<7> WL<40> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM873 BL<3> WL<40> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM874 BL<13> WL<40> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM875 BL<5> WL<40> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM876 BL<11> WL<40> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM877 BL<15> WL<40> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM878 BL<1> WL<40> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM879 BL<0> WL<41> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM880 BL<0> WL<43> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM881 BL<1> WL<42> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM882 BL<15> WL<42> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM883 BL<11> WL<42> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM884 BL<5> WL<42> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM885 BL<13> WL<42> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM886 BL<3> WL<42> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM887 BL<7> WL<42> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM888 BL<9> WL<42> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM889 BL<14> WL<43> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM890 BL<10> WL<43> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM891 BL<6> WL<43> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM892 BL<8> WL<43> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM893 BL<4> WL<43> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM894 BL<12> WL<43> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM895 BL<2> WL<43> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM896 BL<2> WL<45> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM897 BL<12> WL<45> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM898 BL<4> WL<45> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM899 BL<8> WL<45> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM900 BL<6> WL<45> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM901 BL<10> WL<45> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM902 BL<14> WL<45> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM903 BL<9> WL<44> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM904 BL<7> WL<44> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM905 BL<3> WL<44> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM906 BL<13> WL<44> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM907 BL<5> WL<44> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM908 BL<11> WL<44> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM909 BL<15> WL<44> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM910 BL<1> WL<44> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM911 BL<0> WL<45> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM912 BL<0> WL<47> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM913 BL<1> WL<46> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM914 BL<15> WL<46> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM915 BL<11> WL<46> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM916 BL<5> WL<46> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM917 BL<13> WL<46> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM918 BL<3> WL<46> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM919 BL<7> WL<46> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM920 BL<9> WL<46> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM921 BL<14> WL<47> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM922 BL<10> WL<47> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM923 BL<6> WL<47> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM924 BL<8> WL<47> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM925 BL<4> WL<47> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM926 BL<12> WL<47> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM927 BL<2> WL<47> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM928 BL<2> WL<49> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM929 BL<12> WL<49> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM930 BL<4> WL<49> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM931 BL<8> WL<49> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM932 BL<6> WL<49> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM933 BL<10> WL<49> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM934 BL<14> WL<49> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM935 BL<9> WL<48> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM936 BL<7> WL<48> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM937 BL<3> WL<48> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM938 BL<13> WL<48> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM939 BL<5> WL<48> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM940 BL<11> WL<48> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM941 BL<15> WL<48> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM942 BL<1> WL<48> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM943 BL<0> WL<49> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM944 BL<0> WL<51> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM945 BL<1> WL<50> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM946 BL<15> WL<50> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM947 BL<11> WL<50> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM948 BL<5> WL<50> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM949 BL<13> WL<50> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM950 BL<3> WL<50> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM951 BL<7> WL<50> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM952 BL<9> WL<50> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM953 BL<14> WL<51> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM954 BL<10> WL<51> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM955 BL<6> WL<51> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM956 BL<8> WL<51> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM957 BL<4> WL<51> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM958 BL<12> WL<51> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM959 BL<2> WL<51> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM960 BL<2> WL<53> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM961 BL<12> WL<53> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM962 BL<4> WL<53> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM963 BL<8> WL<53> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM964 BL<6> WL<53> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM965 BL<10> WL<53> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM966 BL<14> WL<53> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM967 BL<9> WL<52> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM968 BL<7> WL<52> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM969 BL<3> WL<52> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM970 BL<13> WL<52> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM971 BL<5> WL<52> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM972 BL<11> WL<52> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM973 BL<15> WL<52> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM974 BL<1> WL<52> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM975 BL<0> WL<53> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM976 BL<0> WL<55> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM977 BL<1> WL<54> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM978 BL<15> WL<54> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM979 BL<11> WL<54> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM980 BL<5> WL<54> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM981 BL<13> WL<54> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM982 BL<3> WL<54> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM983 BL<7> WL<54> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM984 BL<9> WL<54> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM985 BL<14> WL<55> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM986 BL<10> WL<55> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM987 BL<6> WL<55> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM988 BL<8> WL<55> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM989 BL<4> WL<55> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM990 BL<12> WL<55> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM991 BL<2> WL<55> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM992 BL<2> WL<57> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM993 BL<12> WL<57> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM994 BL<4> WL<57> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM995 BL<8> WL<57> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM996 BL<6> WL<57> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM997 BL<10> WL<57> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM998 BL<14> WL<57> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM999 BL<9> WL<56> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM1000 BL<7> WL<56> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM1001 BL<3> WL<56> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM1002 BL<13> WL<56> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM1003 BL<5> WL<56> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM1004 BL<11> WL<56> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM1005 BL<15> WL<56> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM1006 BL<1> WL<56> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM1007 BL<0> WL<57> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM1008 BL<0> WL<59> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM1009 BL<1> WL<58> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM1010 BL<15> WL<58> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM1011 BL<11> WL<58> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM1012 BL<5> WL<58> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM1013 BL<13> WL<58> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM1014 BL<3> WL<58> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM1015 BL<7> WL<58> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM1016 BL<9> WL<58> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM1017 BL<14> WL<59> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM1018 BL<10> WL<59> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM1019 BL<6> WL<59> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM1020 BL<8> WL<59> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM1021 BL<4> WL<59> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM1022 BL<12> WL<59> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM1023 BL<2> WL<59> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM1024 BL<2> WL<61> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM1025 BL<12> WL<61> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM1026 BL<4> WL<61> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM1027 BL<8> WL<61> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM1028 BL<6> WL<61> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM1029 BL<10> WL<61> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM1030 BL<14> WL<61> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM1031 BL<9> WL<60> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM1032 BL<7> WL<60> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM1033 BL<3> WL<60> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM1034 BL<13> WL<60> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM1035 BL<5> WL<60> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM1036 BL<11> WL<60> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM1037 BL<15> WL<60> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM1038 BL<1> WL<60> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM1039 BL<0> WL<61> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM1040 BL<0> WL<63> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM1041 BL<1> WL<62> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM1042 BL<15> WL<62> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM1043 BL<11> WL<62> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM1044 BL<5> WL<62> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM1312 net02406 WL<56> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM1311 net02410 WL<56> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM1310 net02414 WL<56> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM1309 net02418 WL<56> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM1308 net02422 WL<56> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM1307 net02426 WL<56> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM1306 net02430 WL<56> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM1305 net02434 WL<56> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM1304 net02438 WL<54> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM1303 net02442 WL<54> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM1302 net02446 WL<54> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM1301 net02450 WL<54> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM1300 net02454 WL<54> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM1299 net02458 WL<54> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM1298 net02462 WL<54> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM1297 net02466 WL<54> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM1296 net04258 WL<52> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM1295 net04262 WL<52> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM1294 net04266 WL<52> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM1293 net04270 WL<52> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM1292 net04274 WL<52> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM1291 net04278 WL<52> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM1290 net04282 WL<52> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM1289 net04286 WL<52> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM1288 net04290 WL<50> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM1287 net04294 WL<50> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM1286 net04298 WL<50> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM1285 net04302 WL<50> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM1284 net04306 WL<50> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM1283 net04310 WL<50> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM1282 net04314 WL<50> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM1281 net04318 WL<50> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM1058 net04322 WL<0> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM1045 BL<13> WL<62> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM1046 BL<3> WL<62> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM1047 BL<7> WL<62> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM1048 BL<9> WL<62> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM1049 BL<14> WL<63> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM1050 BL<10> WL<63> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM1051 BL<6> WL<63> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM1052 BL<8> WL<63> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM1053 BL<4> WL<63> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM1054 BL<12> WL<63> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM1055 BL<2> WL<63> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM1059 net04370 WL<0> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM1060 net04374 WL<0> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM578 BL<0> WL<5> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM1061 net04382 WL<0> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM1062 net04386 WL<0> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM1063 net04390 WL<0> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM1064 net04394 WL<1> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM579 BL<4> WL<5> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM580 BL<8> WL<5> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM544 BL<15> WL<2> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM545 BL<1> WL<2> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM592 BL<1> WL<6> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM593 BL<15> WL<6> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM581 BL<6> WL<5> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM594 BL<11> WL<6> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM595 BL<5> WL<6> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM1065 net04434 WL<1> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM524 BL<2> WL<1> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM525 BL<12> WL<1> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM596 BL<13> WL<6> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM597 BL<3> WL<6> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM598 BL<7> WL<6> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM599 BL<9> WL<6> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM600 BL<14> WL<7> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM601 BL<10> WL<7> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM529 BL<0> WL<1> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM602 BL<6> WL<7> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM603 BL<8> WL<7> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM604 BL<4> WL<7> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM605 BL<0> WL<7> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM606 BL<12> WL<7> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM526 BL<4> WL<1> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM607 BL<2> WL<7> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM522 BL<8> WL<1> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM582 BL<10> WL<5> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM1066 net04510 WL<1> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM1067 net04514 WL<1> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM1068 net04518 WL<1> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM1069 net04522 WL<1> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM583 BL<14> WL<5> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM584 BL<9> WL<4> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM1070 net04534 WL<1> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM1071 net04538 WL<1> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM523 BL<6> WL<1> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM1072 net04546 WL<2> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM1073 net04550 WL<2> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM1074 net04554 WL<2> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM1075 net04558 WL<2> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM527 BL<10> WL<1> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM576 BL<2> WL<5> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM1076 net04570 WL<2> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM585 BL<7> WL<4> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM1077 net04578 WL<2> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM1078 net04582 WL<2> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM1079 net04586 WL<2> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM1080 net04590 WL<4> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM1081 net04594 WL<4> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM1082 net04598 WL<4> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM1083 net04602 WL<4> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM1084 net04606 WL<4> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM1085 net04610 WL<4> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM1086 net04614 WL<4> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM1087 net04618 WL<4> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM1088 net04622 WL<6> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM1089 net04626 WL<6> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM1090 net04630 WL<6> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM1091 net04634 WL<6> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM1092 net04638 WL<6> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM1093 net04642 WL<6> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM586 BL<3> WL<4> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM1094 net04650 WL<6> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM1095 net04654 WL<6> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM587 BL<13> WL<4> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM588 BL<5> WL<4> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM1097 net04666 WL<8> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM589 BL<11> WL<4> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM540 BL<3> WL<2> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM541 BL<13> WL<2> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM590 BL<15> WL<4> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM591 BL<1> WL<4> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM536 BL<6> WL<3> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM1104 net04694 WL<8> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM534 BL<12> WL<3> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM532 BL<10> WL<3> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM1106 net04706 WL<8> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM1107 net04710 WL<8> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM1108 net04714 WL<8> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM538 BL<9> WL<2> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM1109 net04722 WL<8> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM539 BL<7> WL<2> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM1110 net04730 WL<8> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM1111 net04734 WL<8> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM1122 net04738 WL<10> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM1346 net02302 WL<3> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM1121 net04742 WL<10> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM1347 net02298 WL<3> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM1345 net02306 WL<3> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM1123 net04746 WL<10> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM1124 net04750 WL<10> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM1125 net04754 WL<10> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM1126 net04758 WL<10> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM1127 net04762 WL<10> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM1128 net04766 WL<10> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM528 BL<14> WL<1> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM531 BL<14> WL<3> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM533 BL<4> WL<3> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM537 BL<8> WL<3> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM535 BL<2> WL<3> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM1350 net02286 WL<3> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM1348 net02294 WL<3> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM1349 net02290 WL<3> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM1129 net04790 WL<12> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM1130 net04794 WL<12> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM1131 net04798 WL<12> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM1132 net04802 WL<12> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM1133 net04806 WL<12> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM1134 net04810 WL<12> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM1135 net04814 WL<12> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM1136 net04818 WL<12> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM1351 net02282 WL<3> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM1352 net02278 WL<3> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM1137 net04822 WL<14> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM1138 net04826 WL<14> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM1139 net04830 WL<14> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM1140 net04834 WL<14> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM1141 net04838 WL<14> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM1142 net04842 WL<14> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM1143 net04846 WL<14> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM1144 net04850 WL<14> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM1145 net04854 WL<16> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM1146 net04858 WL<16> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM1147 net04862 WL<16> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM1148 net04866 WL<16> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM1149 net04870 WL<16> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM1150 net04874 WL<16> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM1151 net04878 WL<16> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM1152 net04882 WL<16> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM1153 net04886 WL<18> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM1154 net04890 WL<18> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM1155 net04894 WL<18> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM1156 net04898 WL<18> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM1157 net04902 WL<18> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM1158 net04906 WL<18> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM1159 net04910 WL<18> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM1160 net04914 WL<18> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM542 BL<5> WL<2> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM543 BL<11> WL<2> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM1161 net04926 WL<20> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM1162 net04930 WL<20> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM1163 net04934 WL<20> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM1164 net04938 WL<20> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM1165 net04942 WL<20> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM1166 net04946 WL<20> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM1167 net04950 WL<20> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM1168 net04954 WL<20> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM1169 net04958 WL<22> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM1170 net04962 WL<22> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM1171 net04966 WL<22> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM1172 net04970 WL<22> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM1173 net04974 WL<22> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM1174 net04978 WL<22> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM1175 net04982 WL<22> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM1176 net04986 WL<22> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM1177 net04990 WL<24> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM1178 net04994 WL<24> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM1179 net04998 WL<24> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM1180 net05002 WL<24> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM1181 net05006 WL<24> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM1182 net05010 WL<24> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM1183 net05014 WL<24> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM1184 net05018 WL<24> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM1185 net05022 WL<26> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM1186 net05026 WL<26> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM1187 net05030 WL<26> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM1188 net05034 WL<26> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM1189 net05038 WL<26> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM1190 net05042 WL<26> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM1191 net05046 WL<26> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM1192 net05050 WL<26> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM1193 net05054 WL<28> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM1194 net05058 WL<28> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM1195 net05062 WL<28> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM1196 net05066 WL<28> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM1197 net05070 WL<28> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM1198 net05074 WL<28> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM1199 net05078 WL<28> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM1200 net05082 WL<28> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM1201 net05086 WL<30> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM1202 net05090 WL<30> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM1203 net05094 WL<30> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM1204 net05098 WL<30> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM1205 net05102 WL<30> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM1206 net05106 WL<30> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM1207 net05110 WL<30> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM1208 net05114 WL<30> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM1320 net02374 WL<58> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM1319 net02378 WL<58> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM1318 net02382 WL<58> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM1317 net02386 WL<58> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM1316 net02390 WL<58> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM1315 net02394 WL<58> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM1314 net02398 WL<58> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM1313 net02402 WL<58> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM530 BL<0> WL<3> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM1209 net05122 WL<32> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM1210 net05126 WL<32> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM1211 net05130 WL<32> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM1212 net05134 WL<32> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM1213 net05138 WL<32> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM1214 net05142 WL<32> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM1215 net05146 WL<32> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM1216 net05150 WL<32> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM1328 net02342 WL<60> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM1327 net02346 WL<60> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM1326 net02350 WL<60> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM1325 net02354 WL<60> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM1324 net02358 WL<60> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM1323 net02362 WL<60> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM1322 net02366 WL<60> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM1321 net02370 WL<60> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM1217 net05154 WL<34> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM1218 net05158 WL<34> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM1219 net05162 WL<34> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM1220 net05166 WL<34> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM1221 net05170 WL<34> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM1222 net05174 WL<34> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM1223 net05178 WL<34> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM1224 net05182 WL<34> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM518 BL<9> WL<0> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM516 BL<7> WL<0> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM1225 net05194 WL<36> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM1226 net05198 WL<36> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM1227 net05202 WL<36> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM1228 net05206 WL<36> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM1229 net05210 WL<36> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM1230 net05214 WL<36> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM1231 net05218 WL<36> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM1232 net05222 WL<36> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM1233 net05226 WL<38> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM1234 net05230 WL<38> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM1235 net05234 WL<38> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM1236 net05238 WL<38> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM1237 net05242 WL<38> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM1238 net05246 WL<38> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM1239 net05250 WL<38> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM1240 net05254 WL<38> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM1241 net05258 WL<40> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM1242 net05262 WL<40> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM1243 net05266 WL<40> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM1244 net05270 WL<40> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM1245 net05274 WL<40> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM1246 net05278 WL<40> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM1247 net05282 WL<40> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM1248 net05286 WL<40> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM1249 net05290 WL<42> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM1250 net05294 WL<42> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM1251 net05298 WL<42> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM1252 net05302 WL<42> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM1253 net05306 WL<42> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM1254 net05310 WL<42> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM1255 net05314 WL<42> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM1256 net05318 WL<42> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM577 BL<12> WL<5> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM515 BL<3> WL<0> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM1329 net02338 WL<62> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM521 BL<13> WL<0> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM1257 net05334 WL<44> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM1258 net05338 WL<44> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM1259 net05342 WL<44> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM1260 net05346 WL<44> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM1261 net05350 WL<44> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM1262 net05354 WL<44> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM1263 net05358 WL<44> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM1264 net05362 WL<44> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM517 BL<5> WL<0> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM519 BL<11> WL<0> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM520 BL<15> WL<0> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM1330 net02334 WL<62> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM1265 net05378 WL<46> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM1266 net05382 WL<46> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM1267 net05386 WL<46> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM1268 net05390 WL<46> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM1269 net05394 WL<46> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM1270 net05398 WL<46> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM1271 net05402 WL<46> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM1272 net05406 WL<46> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM1331 net02330 WL<62> VSS VSS N_18 W=470.00n L=180.00n m=1
+MM0 BL<1> WL<0> VSS VSS N_18 W=470.00n L=180.00n m=1
+.ENDS
+
+************************************************************************
+* Library Name: composer
+* Cell Name:    final_ver1
+* View Name:    schematic
+************************************************************************
+
+.SUBCKT ROM_MACRO A<0> A<1> A<2> A<3> A<4> A<5> A<6> A<7> A<8> CLK DOUT<0> 
++ DOUT<1> VDD VREF VSS
+*.PININFO A<0>:I A<1>:I A<2>:I A<3>:I A<4>:I A<5>:I A<6>:I A<7>:I A<8>:I CLK:I 
+*.PININFO VREF:I DOUT<0>:O DOUT<1>:O VDD:B VSS:B
+XI48 VSS net141 net0207 VDD / inverter
+XI49 VSS net0207 net0208 VDD / inverter
+XI51 VSS net134 net0214 VDD / inverter
+XI50 VSS net0214 net0215 VDD / inverter
+XI46 net0265 DOUT<1> net0176 net0207 net0208 VDD VSS / latch
+XI47 net0265 DOUT<0> net0183 net0214 net0215 VDD VSS / latch
+XI45 net79 VDD VSS net100 net105 net95 net110 net90 net115 net8 net72 net71 
++ net70 net69 net68 net67 net66 net65 net64 net63 net62 net61 net60 net59 
++ net58 net57 net56 net55 net54 net53 net52 net51 net50 net49 net48 net47 
++ net46 net45 net44 net43 net42 net41 net40 net39 net38 net37 net36 net35 
++ net34 net33 net32 net31 net30 net29 net28 net27 net26 net25 net24 net23 
++ net22 net21 net20 net19 net18 net17 net16 net15 net14 net13 net12 net11 
++ net10 / decoder_6to64
+XI19 net82 net79 CLK net0265 net81 VDD VSS / time_control
+XI18 CLK A<6> net85 VDD VSS / DFF
+XI17 CLK A<4> net90 VDD VSS / DFF
+XI16 CLK A<2> net95 VDD VSS / DFF
+XI15 CLK A<0> net100 VDD VSS / DFF
+XI14 CLK A<1> net105 VDD VSS / DFF
+XI13 CLK A<3> net110 VDD VSS / DFF
+XI12 CLK A<5> net115 VDD VSS / DFF
+XI11 CLK A<8> net120 VDD VSS / DFF
+XI10 CLK A<7> net125 VDD VSS / DFF
+XI9 net82 VREF net165 net134 net0181 VSS VDD / sense_amplifier
+XI8 net82 VREF net139 net141 net0174 VSS VDD / sense_amplifier
+XI7 net147 net148 net149 net151 net152 net153 net154 net155 net156 net157 
++ net150 net158 net159 net160 net161 net162 net120 net125 net85 net139 net165 
++ VDD VSS / mux_16to2
+XI6 VDD net147 net148 net149 net151 net152 net153 net154 net155 net156 net157 
++ net150 net158 net159 net160 net161 net162 net81 / precharge
+XI5 net147 net148 net149 net151 net152 net153 net154 net155 net156 net157 
++ net150 net158 net159 net160 net161 net162 VSS net8 net72 net71 net70 net69 
++ net68 net67 net66 net65 net64 net63 net62 net61 net60 net59 net58 net57 
++ net56 net55 net54 net53 net52 net51 net50 net49 net48 net47 net46 net45 
++ net44 net43 net42 net41 net40 net39 net38 net37 net36 net35 net34 net33 
++ net32 net31 net30 net29 net28 net27 net26 net25 net24 net23 net22 net21 
++ net20 net19 net18 net17 net16 net15 net14 net13 net12 net11 net10 / ROM
+.ENDS
+

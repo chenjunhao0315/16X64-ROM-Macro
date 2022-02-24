@@ -1,0 +1,5785 @@
+                  ##################################################
+                  ##                                              ##
+                  ##                 Calibre xRC                  ##
+                  ##                                              ##
+                  ##          Export Lumped Parameters            ##
+                  ##                                              ##
+                  ##################################################
+ 
+ 
+ 
+LAYOUT NAME:              ROM_MACRO
+RULE FILE NAME:           rules
+CREATION TIME:            Mon Jan 17 04:53:37 2022
+ 
+UNITS:                    Resistance  = ohm
+                          Capacitance = farad
+                          Time        = ns
+ 
+ 
+---------------------------------------------------------------------------------
+CELL NAME:                ROM_MACRO
+ 
+Netid      R(UpperBound)      Cvalue      %Coupled    RC(UpperBound)   Netname
+---------+---------------+-------------+-------------+--------------+------------
+1                     0.0   1.64039e-14             0            0.0  NET100
+            - Coupled nets
+            - Intrinsic Capacitance
+               1.64039e-14
+            - Coupled capacitance
+
+
+2                     0.0   2.34304e-14             0            0.0  NET105
+            - Coupled nets
+            - Intrinsic Capacitance
+               2.34304e-14
+            - Coupled capacitance
+
+
+3                     0.0    1.0162e-14             0            0.0  NET85
+            - Coupled nets
+            - Intrinsic Capacitance
+               1.0162e-14
+            - Coupled capacitance
+
+
+4                     0.0   2.08323e-14             0            0.0  NET95
+            - Coupled nets
+            - Intrinsic Capacitance
+               2.08323e-14
+            - Coupled capacitance
+
+
+5                     0.0   1.19651e-14             0            0.0  NET125
+            - Coupled nets
+            - Intrinsic Capacitance
+               1.19651e-14
+            - Coupled capacitance
+
+
+6                     0.0   1.57154e-14             0            0.0  NET120
+            - Coupled nets
+            - Intrinsic Capacitance
+               1.57154e-14
+            - Coupled capacitance
+
+
+7                     0.0   2.07258e-14             0            0.0  NET115
+            - Coupled nets
+            - Intrinsic Capacitance
+               2.07258e-14
+            - Coupled capacitance
+
+
+8                     0.0   2.32264e-14             0            0.0  NET90
+            - Coupled nets
+            - Intrinsic Capacitance
+               2.32264e-14
+            - Coupled capacitance
+
+
+9                     0.0   1.73446e-14             0            0.0  NET110
+            - Coupled nets
+            - Intrinsic Capacitance
+               1.73446e-14
+            - Coupled capacitance
+
+
+10                    0.0   3.11955e-15             0            0.0  NET0207
+            - Coupled nets
+            - Intrinsic Capacitance
+               3.11955e-15
+            - Coupled capacitance
+
+
+11                    0.0   4.27574e-14             0            0.0  XI45/NET258
+            - Coupled nets
+            - Intrinsic Capacitance
+               4.27574e-14
+            - Coupled capacitance
+
+
+12                    0.0    2.7096e-15             0            0.0  NET0215
+            - Coupled nets
+            - Intrinsic Capacitance
+               2.7096e-15
+            - Coupled capacitance
+
+
+13                    0.0    4.1641e-14             0            0.0  XI45/NET259
+            - Coupled nets
+            - Intrinsic Capacitance
+               4.1641e-14
+            - Coupled capacitance
+
+
+14                    0.0   7.39416e-15             0            0.0  NET82
+            - Coupled nets
+            - Intrinsic Capacitance
+               7.39416e-15
+            - Coupled capacitance
+
+
+15                    0.0   3.39518e-14             0            0.0  NET79
+            - Coupled nets
+            - Intrinsic Capacitance
+               3.39518e-14
+            - Coupled capacitance
+
+
+16                    0.0    3.6173e-15             0            0.0  NET0214
+            - Coupled nets
+            - Intrinsic Capacitance
+               3.6173e-15
+            - Coupled capacitance
+
+
+17                    0.0   4.16175e-14             0            0.0  XI45/NET260
+            - Coupled nets
+            - Intrinsic Capacitance
+               4.16175e-14
+            - Coupled capacitance
+
+
+18                    0.0   4.19998e-14             0            0.0  XI45/NET261
+            - Coupled nets
+            - Intrinsic Capacitance
+               4.19998e-14
+            - Coupled capacitance
+
+
+19                    0.0   4.24644e-14             0            0.0  XI45/NET262
+            - Coupled nets
+            - Intrinsic Capacitance
+               4.24644e-14
+            - Coupled capacitance
+
+
+20                    0.0   4.30736e-14             0            0.0  XI45/NET263
+            - Coupled nets
+            - Intrinsic Capacitance
+               4.30736e-14
+            - Coupled capacitance
+
+
+21                    0.0     4.375e-14             0            0.0  XI45/NET264
+            - Coupled nets
+            - Intrinsic Capacitance
+               4.375e-14
+            - Coupled capacitance
+
+
+22                    0.0    4.2024e-14             0            0.0  XI45/NET252
+            - Coupled nets
+            - Intrinsic Capacitance
+               4.2024e-14
+            - Coupled capacitance
+
+
+23                    0.0   2.96389e-13             0            0.0  VSS
+            - Coupled nets
+            - Intrinsic Capacitance
+               2.96389e-13
+            - Coupled capacitance
+
+
+24                    0.0   9.07921e-15             0            0.0  XI7/NET48
+            - Coupled nets
+            - Intrinsic Capacitance
+               9.07921e-15
+            - Coupled capacitance
+
+
+25                    0.0   5.35072e-15             0            0.0  XI7/NET68
+            - Coupled nets
+            - Intrinsic Capacitance
+               5.35072e-15
+            - Coupled capacitance
+
+
+26                    0.0   1.85051e-14             0            0.0  NET147
+            - Coupled nets
+            - Intrinsic Capacitance
+               1.85051e-14
+            - Coupled capacitance
+
+
+27                    0.0   2.70648e-15             0            0.0  XI7/NET76
+            - Coupled nets
+            - Intrinsic Capacitance
+               2.70648e-15
+            - Coupled capacitance
+
+
+28                    0.0   2.23058e-14             0            0.0  NET148
+            - Coupled nets
+            - Intrinsic Capacitance
+               2.23058e-14
+            - Coupled capacitance
+
+
+29                    0.0   2.23102e-14             0            0.0  NET149
+            - Coupled nets
+            - Intrinsic Capacitance
+               2.23102e-14
+            - Coupled capacitance
+
+
+30                    0.0   2.23161e-14             0            0.0  NET151
+            - Coupled nets
+            - Intrinsic Capacitance
+               2.23161e-14
+            - Coupled capacitance
+
+
+31                    0.0   2.23102e-14             0            0.0  NET152
+            - Coupled nets
+            - Intrinsic Capacitance
+               2.23102e-14
+            - Coupled capacitance
+
+
+32                    0.0   2.23161e-14             0            0.0  NET153
+            - Coupled nets
+            - Intrinsic Capacitance
+               2.23161e-14
+            - Coupled capacitance
+
+
+33                    0.0   2.23102e-14             0            0.0  NET154
+            - Coupled nets
+            - Intrinsic Capacitance
+               2.23102e-14
+            - Coupled capacitance
+
+
+34                    0.0   2.23161e-14             0            0.0  NET155
+            - Coupled nets
+            - Intrinsic Capacitance
+               2.23161e-14
+            - Coupled capacitance
+
+
+35                    0.0   2.23102e-14             0            0.0  NET156
+            - Coupled nets
+            - Intrinsic Capacitance
+               2.23102e-14
+            - Coupled capacitance
+
+
+36                    0.0   2.23161e-14             0            0.0  NET157
+            - Coupled nets
+            - Intrinsic Capacitance
+               2.23161e-14
+            - Coupled capacitance
+
+
+37                    0.0   2.23102e-14             0            0.0  NET150
+            - Coupled nets
+            - Intrinsic Capacitance
+               2.23102e-14
+            - Coupled capacitance
+
+
+38                    0.0   2.23161e-14             0            0.0  NET158
+            - Coupled nets
+            - Intrinsic Capacitance
+               2.23161e-14
+            - Coupled capacitance
+
+
+39                    0.0   2.23102e-14             0            0.0  NET159
+            - Coupled nets
+            - Intrinsic Capacitance
+               2.23102e-14
+            - Coupled capacitance
+
+
+40                    0.0   2.23161e-14             0            0.0  NET160
+            - Coupled nets
+            - Intrinsic Capacitance
+               2.23161e-14
+            - Coupled capacitance
+
+
+41                    0.0   2.22985e-14             0            0.0  NET161
+            - Coupled nets
+            - Intrinsic Capacitance
+               2.22985e-14
+            - Coupled capacitance
+
+
+42                    0.0   1.53773e-14             0            0.0  NET162
+            - Coupled nets
+            - Intrinsic Capacitance
+               1.53773e-14
+            - Coupled capacitance
+
+
+43                    0.0   1.36073e-14             0            0.0  XI45/XI0/NET081
+            - Coupled nets
+            - Intrinsic Capacitance
+               1.36073e-14
+            - Coupled capacitance
+
+
+44                    0.0   1.40164e-14             0            0.0  XI45/XI0/NET92
+            - Coupled nets
+            - Intrinsic Capacitance
+               1.40164e-14
+            - Coupled capacitance
+
+
+45                    0.0   1.28819e-14             0            0.0  XI45/XI0/NET96
+            - Coupled nets
+            - Intrinsic Capacitance
+               1.28819e-14
+            - Coupled capacitance
+
+
+46                    0.0   1.32141e-14             0            0.0  XI45/XI1/NET081
+            - Coupled nets
+            - Intrinsic Capacitance
+               1.32141e-14
+            - Coupled capacitance
+
+
+47                    0.0   1.36151e-14             0            0.0  XI45/XI1/NET92
+            - Coupled nets
+            - Intrinsic Capacitance
+               1.36151e-14
+            - Coupled capacitance
+
+
+48                    0.0   1.24524e-14             0            0.0  XI45/XI1/NET96
+            - Coupled nets
+            - Intrinsic Capacitance
+               1.24524e-14
+            - Coupled capacitance
+
+
+49                    0.0   1.34494e-15             0            0.0  XI10/NET21
+            - Coupled nets
+            - Intrinsic Capacitance
+               1.34494e-15
+            - Coupled capacitance
+
+
+50                    0.0   1.31017e-15             0            0.0  XI18/NET21
+            - Coupled nets
+            - Intrinsic Capacitance
+               1.31017e-15
+            - Coupled capacitance
+
+
+51                    0.0   1.30233e-15             0            0.0  XI16/NET21
+            - Coupled nets
+            - Intrinsic Capacitance
+               1.30233e-15
+            - Coupled capacitance
+
+
+52                    0.0    1.3337e-15             0            0.0  XI14/NET21
+            - Coupled nets
+            - Intrinsic Capacitance
+               1.3337e-15
+            - Coupled capacitance
+
+
+53                    0.0   1.34276e-15             0            0.0  XI15/NET21
+            - Coupled nets
+            - Intrinsic Capacitance
+               1.34276e-15
+            - Coupled capacitance
+
+
+54                    0.0   2.11681e-14             0            0.0  CLK
+            - Coupled nets
+            - Intrinsic Capacitance
+               2.11681e-14
+            - Coupled capacitance
+
+
+55                    0.0   8.73443e-14             0            0.0  VDD
+            - Coupled nets
+            - Intrinsic Capacitance
+               8.73443e-14
+            - Coupled capacitance
+
+
+56                    0.0    1.3296e-15             0            0.0  XI11/NET21
+            - Coupled nets
+            - Intrinsic Capacitance
+               1.3296e-15
+            - Coupled capacitance
+
+
+57                    0.0   1.28806e-15             0            0.0  XI12/NET21
+            - Coupled nets
+            - Intrinsic Capacitance
+               1.28806e-15
+            - Coupled capacitance
+
+
+58                    0.0    1.3289e-15             0            0.0  XI17/NET21
+            - Coupled nets
+            - Intrinsic Capacitance
+               1.3289e-15
+            - Coupled capacitance
+
+
+59                    0.0   1.34297e-15             0            0.0  XI13/NET21
+            - Coupled nets
+            - Intrinsic Capacitance
+               1.34297e-15
+            - Coupled capacitance
+
+
+60                    0.0   3.68674e-14             0            0.0  XI45/NET272
+            - Coupled nets
+            - Intrinsic Capacitance
+               3.68674e-14
+            - Coupled capacitance
+
+
+61                    0.0   3.45451e-14             0            0.0  XI45/NET273
+            - Coupled nets
+            - Intrinsic Capacitance
+               3.45451e-14
+            - Coupled capacitance
+
+
+62                    0.0   3.22394e-14             0            0.0  XI45/NET274
+            - Coupled nets
+            - Intrinsic Capacitance
+               3.22394e-14
+            - Coupled capacitance
+
+
+63                    0.0   3.20196e-14             0            0.0  XI45/NET275
+            - Coupled nets
+            - Intrinsic Capacitance
+               3.20196e-14
+            - Coupled capacitance
+
+
+64                    0.0   3.22575e-14             0            0.0  XI45/NET276
+            - Coupled nets
+            - Intrinsic Capacitance
+               3.22575e-14
+            - Coupled capacitance
+
+
+65                    0.0   3.27112e-14             0            0.0  XI45/NET277
+            - Coupled nets
+            - Intrinsic Capacitance
+               3.27112e-14
+            - Coupled capacitance
+
+
+66                    0.0    3.3494e-14             0            0.0  XI45/NET278
+            - Coupled nets
+            - Intrinsic Capacitance
+               3.3494e-14
+            - Coupled capacitance
+
+
+67                    0.0   3.30011e-14             0            0.0  XI45/NET266
+            - Coupled nets
+            - Intrinsic Capacitance
+               3.30011e-14
+            - Coupled capacitance
+
+
+68                    0.0   9.23167e-15             0            0.0  NET81
+            - Coupled nets
+            - Intrinsic Capacitance
+               9.23167e-15
+            - Coupled capacitance
+
+
+69                    0.0   1.42095e-15             0            0.0  XI19/NET9
+            - Coupled nets
+            - Intrinsic Capacitance
+               1.42095e-15
+            - Coupled capacitance
+
+
+70                    0.0    5.0531e-15             0            0.0  NET0265
+            - Coupled nets
+            - Intrinsic Capacitance
+               5.0531e-15
+            - Coupled capacitance
+
+
+71                    0.0    1.7713e-15             0            0.0  XI19/NET086
+            - Coupled nets
+            - Intrinsic Capacitance
+               1.7713e-15
+            - Coupled capacitance
+
+
+72                    0.0   4.12775e-15             0            0.0  NET141
+            - Coupled nets
+            - Intrinsic Capacitance
+               4.12775e-15
+            - Coupled capacitance
+
+
+73                    0.0   5.52961e-16             0            0.0  XI8/NET43
+            - Coupled nets
+            - Intrinsic Capacitance
+               5.52961e-16
+            - Coupled capacitance
+
+
+74                    0.0   2.45727e-15             0            0.0  NET139
+            - Coupled nets
+            - Intrinsic Capacitance
+               2.45727e-15
+            - Coupled capacitance
+
+
+75                    0.0   6.42522e-15             0            0.0  NET10
+            - Coupled nets
+            - Intrinsic Capacitance
+               6.42522e-15
+            - Coupled capacitance
+
+
+76                    0.0   6.45896e-15             0            0.0  NET11
+            - Coupled nets
+            - Intrinsic Capacitance
+               6.45896e-15
+            - Coupled capacitance
+
+
+77                    0.0   6.45893e-15             0            0.0  NET12
+            - Coupled nets
+            - Intrinsic Capacitance
+               6.45893e-15
+            - Coupled capacitance
+
+
+78                    0.0   6.45893e-15             0            0.0  NET13
+            - Coupled nets
+            - Intrinsic Capacitance
+               6.45893e-15
+            - Coupled capacitance
+
+
+79                    0.0   6.45893e-15             0            0.0  NET14
+            - Coupled nets
+            - Intrinsic Capacitance
+               6.45893e-15
+            - Coupled capacitance
+
+
+80                    0.0   6.45893e-15             0            0.0  NET15
+            - Coupled nets
+            - Intrinsic Capacitance
+               6.45893e-15
+            - Coupled capacitance
+
+
+81                    0.0   6.45893e-15             0            0.0  NET16
+            - Coupled nets
+            - Intrinsic Capacitance
+               6.45893e-15
+            - Coupled capacitance
+
+
+82                    0.0   6.45893e-15             0            0.0  NET17
+            - Coupled nets
+            - Intrinsic Capacitance
+               6.45893e-15
+            - Coupled capacitance
+
+
+83                    0.0   6.45893e-15             0            0.0  NET18
+            - Coupled nets
+            - Intrinsic Capacitance
+               6.45893e-15
+            - Coupled capacitance
+
+
+84                    0.0   6.45893e-15             0            0.0  NET19
+            - Coupled nets
+            - Intrinsic Capacitance
+               6.45893e-15
+            - Coupled capacitance
+
+
+85                    0.0   6.45893e-15             0            0.0  NET20
+            - Coupled nets
+            - Intrinsic Capacitance
+               6.45893e-15
+            - Coupled capacitance
+
+
+86                    0.0   6.45893e-15             0            0.0  NET21
+            - Coupled nets
+            - Intrinsic Capacitance
+               6.45893e-15
+            - Coupled capacitance
+
+
+87                    0.0   6.45893e-15             0            0.0  NET22
+            - Coupled nets
+            - Intrinsic Capacitance
+               6.45893e-15
+            - Coupled capacitance
+
+
+88                    0.0   6.45893e-15             0            0.0  NET23
+            - Coupled nets
+            - Intrinsic Capacitance
+               6.45893e-15
+            - Coupled capacitance
+
+
+89                    0.0   6.45893e-15             0            0.0  NET24
+            - Coupled nets
+            - Intrinsic Capacitance
+               6.45893e-15
+            - Coupled capacitance
+
+
+90                    0.0   7.00899e-15             0            0.0  NET25
+            - Coupled nets
+            - Intrinsic Capacitance
+               7.00899e-15
+            - Coupled capacitance
+
+
+91                    0.0   6.34161e-15             0            0.0  NET26
+            - Coupled nets
+            - Intrinsic Capacitance
+               6.34161e-15
+            - Coupled capacitance
+
+
+92                    0.0   6.45894e-15             0            0.0  NET27
+            - Coupled nets
+            - Intrinsic Capacitance
+               6.45894e-15
+            - Coupled capacitance
+
+
+93                    0.0   6.45893e-15             0            0.0  NET28
+            - Coupled nets
+            - Intrinsic Capacitance
+               6.45893e-15
+            - Coupled capacitance
+
+
+94                    0.0   6.45893e-15             0            0.0  NET29
+            - Coupled nets
+            - Intrinsic Capacitance
+               6.45893e-15
+            - Coupled capacitance
+
+
+95                    0.0   6.45893e-15             0            0.0  NET30
+            - Coupled nets
+            - Intrinsic Capacitance
+               6.45893e-15
+            - Coupled capacitance
+
+
+96                    0.0   6.45893e-15             0            0.0  NET31
+            - Coupled nets
+            - Intrinsic Capacitance
+               6.45893e-15
+            - Coupled capacitance
+
+
+97                    0.0   6.45893e-15             0            0.0  NET32
+            - Coupled nets
+            - Intrinsic Capacitance
+               6.45893e-15
+            - Coupled capacitance
+
+
+98                    0.0   6.45893e-15             0            0.0  NET33
+            - Coupled nets
+            - Intrinsic Capacitance
+               6.45893e-15
+            - Coupled capacitance
+
+
+99                    0.0   6.45893e-15             0            0.0  NET34
+            - Coupled nets
+            - Intrinsic Capacitance
+               6.45893e-15
+            - Coupled capacitance
+
+
+100                   0.0   6.45893e-15             0            0.0  NET35
+            - Coupled nets
+            - Intrinsic Capacitance
+               6.45893e-15
+            - Coupled capacitance
+
+
+101                   0.0   6.45893e-15             0            0.0  NET36
+            - Coupled nets
+            - Intrinsic Capacitance
+               6.45893e-15
+            - Coupled capacitance
+
+
+102                   0.0   6.45893e-15             0            0.0  NET37
+            - Coupled nets
+            - Intrinsic Capacitance
+               6.45893e-15
+            - Coupled capacitance
+
+
+103                   0.0   6.45893e-15             0            0.0  NET38
+            - Coupled nets
+            - Intrinsic Capacitance
+               6.45893e-15
+            - Coupled capacitance
+
+
+104                   0.0   6.45893e-15             0            0.0  NET39
+            - Coupled nets
+            - Intrinsic Capacitance
+               6.45893e-15
+            - Coupled capacitance
+
+
+105                   0.0   6.45888e-15             0            0.0  NET40
+            - Coupled nets
+            - Intrinsic Capacitance
+               6.45888e-15
+            - Coupled capacitance
+
+
+106                   0.0   7.00892e-15             0            0.0  NET41
+            - Coupled nets
+            - Intrinsic Capacitance
+               7.00892e-15
+            - Coupled capacitance
+
+
+107                   0.0   6.34161e-15             0            0.0  NET42
+            - Coupled nets
+            - Intrinsic Capacitance
+               6.34161e-15
+            - Coupled capacitance
+
+
+108                   0.0   6.45894e-15             0            0.0  NET43
+            - Coupled nets
+            - Intrinsic Capacitance
+               6.45894e-15
+            - Coupled capacitance
+
+
+109                   0.0   6.45893e-15             0            0.0  NET44
+            - Coupled nets
+            - Intrinsic Capacitance
+               6.45893e-15
+            - Coupled capacitance
+
+
+110                   0.0   6.45893e-15             0            0.0  NET45
+            - Coupled nets
+            - Intrinsic Capacitance
+               6.45893e-15
+            - Coupled capacitance
+
+
+111                   0.0   6.45893e-15             0            0.0  NET46
+            - Coupled nets
+            - Intrinsic Capacitance
+               6.45893e-15
+            - Coupled capacitance
+
+
+112                   0.0   6.45893e-15             0            0.0  NET47
+            - Coupled nets
+            - Intrinsic Capacitance
+               6.45893e-15
+            - Coupled capacitance
+
+
+113                   0.0   6.45893e-15             0            0.0  NET48
+            - Coupled nets
+            - Intrinsic Capacitance
+               6.45893e-15
+            - Coupled capacitance
+
+
+114                   0.0   6.45893e-15             0            0.0  NET49
+            - Coupled nets
+            - Intrinsic Capacitance
+               6.45893e-15
+            - Coupled capacitance
+
+
+115                   0.0   6.45893e-15             0            0.0  NET50
+            - Coupled nets
+            - Intrinsic Capacitance
+               6.45893e-15
+            - Coupled capacitance
+
+
+116                   0.0   6.45893e-15             0            0.0  NET51
+            - Coupled nets
+            - Intrinsic Capacitance
+               6.45893e-15
+            - Coupled capacitance
+
+
+117                   0.0   6.45893e-15             0            0.0  NET52
+            - Coupled nets
+            - Intrinsic Capacitance
+               6.45893e-15
+            - Coupled capacitance
+
+
+118                   0.0   6.45901e-15             0            0.0  NET53
+            - Coupled nets
+            - Intrinsic Capacitance
+               6.45901e-15
+            - Coupled capacitance
+
+
+119                   0.0   6.45901e-15             0            0.0  NET54
+            - Coupled nets
+            - Intrinsic Capacitance
+               6.45901e-15
+            - Coupled capacitance
+
+
+120                   0.0   6.45901e-15             0            0.0  NET55
+            - Coupled nets
+            - Intrinsic Capacitance
+               6.45901e-15
+            - Coupled capacitance
+
+
+121                   0.0   6.45902e-15             0            0.0  NET56
+            - Coupled nets
+            - Intrinsic Capacitance
+               6.45902e-15
+            - Coupled capacitance
+
+
+122                   0.0   7.00907e-15             0            0.0  NET57
+            - Coupled nets
+            - Intrinsic Capacitance
+               7.00907e-15
+            - Coupled capacitance
+
+
+123                   0.0   6.34169e-15             0            0.0  NET58
+            - Coupled nets
+            - Intrinsic Capacitance
+               6.34169e-15
+            - Coupled capacitance
+
+
+124                   0.0   6.45902e-15             0            0.0  NET59
+            - Coupled nets
+            - Intrinsic Capacitance
+               6.45902e-15
+            - Coupled capacitance
+
+
+125                   0.0   6.45901e-15             0            0.0  NET60
+            - Coupled nets
+            - Intrinsic Capacitance
+               6.45901e-15
+            - Coupled capacitance
+
+
+126                   0.0   6.45901e-15             0            0.0  NET61
+            - Coupled nets
+            - Intrinsic Capacitance
+               6.45901e-15
+            - Coupled capacitance
+
+
+127                   0.0   6.45901e-15             0            0.0  NET62
+            - Coupled nets
+            - Intrinsic Capacitance
+               6.45901e-15
+            - Coupled capacitance
+
+
+128                   0.0   6.45901e-15             0            0.0  NET63
+            - Coupled nets
+            - Intrinsic Capacitance
+               6.45901e-15
+            - Coupled capacitance
+
+
+129                   0.0   6.45901e-15             0            0.0  NET64
+            - Coupled nets
+            - Intrinsic Capacitance
+               6.45901e-15
+            - Coupled capacitance
+
+
+130                   0.0   6.45901e-15             0            0.0  NET65
+            - Coupled nets
+            - Intrinsic Capacitance
+               6.45901e-15
+            - Coupled capacitance
+
+
+131                   0.0   6.45901e-15             0            0.0  NET66
+            - Coupled nets
+            - Intrinsic Capacitance
+               6.45901e-15
+            - Coupled capacitance
+
+
+132                   0.0   6.45901e-15             0            0.0  NET67
+            - Coupled nets
+            - Intrinsic Capacitance
+               6.45901e-15
+            - Coupled capacitance
+
+
+133                   0.0   6.45901e-15             0            0.0  NET68
+            - Coupled nets
+            - Intrinsic Capacitance
+               6.45901e-15
+            - Coupled capacitance
+
+
+134                   0.0   6.45901e-15             0            0.0  NET69
+            - Coupled nets
+            - Intrinsic Capacitance
+               6.45901e-15
+            - Coupled capacitance
+
+
+135                   0.0   6.45901e-15             0            0.0  NET70
+            - Coupled nets
+            - Intrinsic Capacitance
+               6.45901e-15
+            - Coupled capacitance
+
+
+136                   0.0   6.45901e-15             0            0.0  NET71
+            - Coupled nets
+            - Intrinsic Capacitance
+               6.45901e-15
+            - Coupled capacitance
+
+
+137                   0.0   6.45902e-15             0            0.0  NET72
+            - Coupled nets
+            - Intrinsic Capacitance
+               6.45902e-15
+            - Coupled capacitance
+
+
+138                   0.0   6.93433e-15             0            0.0  NET8
+            - Coupled nets
+            - Intrinsic Capacitance
+               6.93433e-15
+            - Coupled capacitance
+
+
+139                   0.0   2.97233e-15             0            0.0  NET0174
+            - Coupled nets
+            - Intrinsic Capacitance
+               2.97233e-15
+            - Coupled capacitance
+
+
+140                   0.0   3.42101e-15             0            0.0  NET134
+            - Coupled nets
+            - Intrinsic Capacitance
+               3.42101e-15
+            - Coupled capacitance
+
+
+141                   0.0   5.49046e-16             0            0.0  XI9/NET43
+            - Coupled nets
+            - Intrinsic Capacitance
+               5.49046e-16
+            - Coupled capacitance
+
+
+142                   0.0   1.57557e-15             0            0.0  NET165
+            - Coupled nets
+            - Intrinsic Capacitance
+               1.57557e-15
+            - Coupled capacitance
+
+
+143                   0.0   2.46287e-15             0            0.0  VREF
+            - Coupled nets
+            - Intrinsic Capacitance
+               2.46287e-15
+            - Coupled capacitance
+
+
+144                   0.0    2.5975e-15             0            0.0  NET0181
+            - Coupled nets
+            - Intrinsic Capacitance
+               2.5975e-15
+            - Coupled capacitance
+
+
+145                   0.0   5.74819e-16             0            0.0  A<7>
+            - Coupled nets
+            - Intrinsic Capacitance
+               5.74819e-16
+            - Coupled capacitance
+
+
+146                   0.0    6.3135e-16             0            0.0  A<6>
+            - Coupled nets
+            - Intrinsic Capacitance
+               6.3135e-16
+            - Coupled capacitance
+
+
+147                   0.0   6.22435e-16             0            0.0  A<2>
+            - Coupled nets
+            - Intrinsic Capacitance
+               6.22435e-16
+            - Coupled capacitance
+
+
+148                   0.0   6.38353e-16             0            0.0  A<1>
+            - Coupled nets
+            - Intrinsic Capacitance
+               6.38353e-16
+            - Coupled capacitance
+
+
+149                   0.0   6.45208e-16             0            0.0  A<0>
+            - Coupled nets
+            - Intrinsic Capacitance
+               6.45208e-16
+            - Coupled capacitance
+
+
+150                   0.0   1.15559e-15             0            0.0  DOUT<1>
+            - Coupled nets
+            - Intrinsic Capacitance
+               1.15559e-15
+            - Coupled capacitance
+
+
+151                   0.0   1.34589e-15             0            0.0  XI10/NET15
+            - Coupled nets
+            - Intrinsic Capacitance
+               1.34589e-15
+            - Coupled capacitance
+
+
+152                   0.0   1.33112e-15             0            0.0  XI18/NET15
+            - Coupled nets
+            - Intrinsic Capacitance
+               1.33112e-15
+            - Coupled capacitance
+
+
+153                   0.0   1.33856e-15             0            0.0  XI16/NET15
+            - Coupled nets
+            - Intrinsic Capacitance
+               1.33856e-15
+            - Coupled capacitance
+
+
+154                   0.0   1.35787e-15             0            0.0  XI14/NET15
+            - Coupled nets
+            - Intrinsic Capacitance
+               1.35787e-15
+            - Coupled capacitance
+
+
+155                   0.0   1.34693e-15             0            0.0  XI15/NET15
+            - Coupled nets
+            - Intrinsic Capacitance
+               1.34693e-15
+            - Coupled capacitance
+
+
+156                   0.0   1.14549e-15             0            0.0  NET0176
+            - Coupled nets
+            - Intrinsic Capacitance
+               1.14549e-15
+            - Coupled capacitance
+
+
+157                   0.0   1.02516e-15             0            0.0  XI10/NET13
+            - Coupled nets
+            - Intrinsic Capacitance
+               1.02516e-15
+            - Coupled capacitance
+
+
+158                   0.0   1.02982e-15             0            0.0  XI18/NET13
+            - Coupled nets
+            - Intrinsic Capacitance
+               1.02982e-15
+            - Coupled capacitance
+
+
+159                   0.0   1.01997e-15             0            0.0  XI16/NET13
+            - Coupled nets
+            - Intrinsic Capacitance
+               1.01997e-15
+            - Coupled capacitance
+
+
+160                   0.0   1.04133e-15             0            0.0  XI14/NET13
+            - Coupled nets
+            - Intrinsic Capacitance
+               1.04133e-15
+            - Coupled capacitance
+
+
+161                   0.0   1.04731e-15             0            0.0  XI15/NET13
+            - Coupled nets
+            - Intrinsic Capacitance
+               1.04731e-15
+            - Coupled capacitance
+
+
+162                   0.0   1.15877e-15             0            0.0  NET0183
+            - Coupled nets
+            - Intrinsic Capacitance
+               1.15877e-15
+            - Coupled capacitance
+
+
+163                   0.0   6.42044e-16             0            0.0  A<8>
+            - Coupled nets
+            - Intrinsic Capacitance
+               6.42044e-16
+            - Coupled capacitance
+
+
+164                   0.0   6.22577e-16             0            0.0  A<5>
+            - Coupled nets
+            - Intrinsic Capacitance
+               6.22577e-16
+            - Coupled capacitance
+
+
+165                   0.0   6.29768e-16             0            0.0  A<4>
+            - Coupled nets
+            - Intrinsic Capacitance
+               6.29768e-16
+            - Coupled capacitance
+
+
+166                   0.0   6.38813e-16             0            0.0  A<3>
+            - Coupled nets
+            - Intrinsic Capacitance
+               6.38813e-16
+            - Coupled capacitance
+
+
+167                   0.0   1.34937e-15             0            0.0  XI19/NET41
+            - Coupled nets
+            - Intrinsic Capacitance
+               1.34937e-15
+            - Coupled capacitance
+
+
+168                   0.0   1.20074e-15             0            0.0  XI19/NET49
+            - Coupled nets
+            - Intrinsic Capacitance
+               1.20074e-15
+            - Coupled capacitance
+
+
+169                   0.0   1.34081e-15             0            0.0  XI11/NET15
+            - Coupled nets
+            - Intrinsic Capacitance
+               1.34081e-15
+            - Coupled capacitance
+
+
+170                   0.0   1.31493e-15             0            0.0  XI12/NET15
+            - Coupled nets
+            - Intrinsic Capacitance
+               1.31493e-15
+            - Coupled capacitance
+
+
+171                   0.0   1.34096e-15             0            0.0  XI17/NET15
+            - Coupled nets
+            - Intrinsic Capacitance
+               1.34096e-15
+            - Coupled capacitance
+
+
+172                   0.0    1.3313e-15             0            0.0  XI13/NET15
+            - Coupled nets
+            - Intrinsic Capacitance
+               1.3313e-15
+            - Coupled capacitance
+
+
+173                   0.0   1.15813e-15             0            0.0  DOUT<0>
+            - Coupled nets
+            - Intrinsic Capacitance
+               1.15813e-15
+            - Coupled capacitance
+
+
+174                   0.0   1.03104e-15             0            0.0  XI11/NET13
+            - Coupled nets
+            - Intrinsic Capacitance
+               1.03104e-15
+            - Coupled capacitance
+
+
+175                   0.0    1.0483e-15             0            0.0  XI12/NET13
+            - Coupled nets
+            - Intrinsic Capacitance
+               1.0483e-15
+            - Coupled capacitance
+
+
+176                   0.0   1.02925e-15             0            0.0  XI17/NET13
+            - Coupled nets
+            - Intrinsic Capacitance
+               1.02925e-15
+            - Coupled capacitance
+
+
+177                   0.0   1.04021e-15             0            0.0  XI13/NET13
+            - Coupled nets
+            - Intrinsic Capacitance
+               1.04021e-15
+            - Coupled capacitance
+
+
+178                   0.0   1.73245e-15             0            0.0  XI19/NET0139
+            - Coupled nets
+            - Intrinsic Capacitance
+               1.73245e-15
+            - Coupled capacitance
+
+
+179                   0.0   1.00723e-15             0            0.0  XI19/NET37
+            - Coupled nets
+            - Intrinsic Capacitance
+               1.00723e-15
+            - Coupled capacitance
+
+
+180                   0.0   1.24815e-15             0            0.0  XI19/NET082
+            - Coupled nets
+            - Intrinsic Capacitance
+               1.24815e-15
+            - Coupled capacitance
+
+
+181                   0.0   2.29527e-15             0            0.0  NET0208
+            - Coupled nets
+            - Intrinsic Capacitance
+               2.29527e-15
+            - Coupled capacitance
+
+
+182                   0.0   1.06412e-15             0            0.0  XI19/NET0100
+            - Coupled nets
+            - Intrinsic Capacitance
+               1.06412e-15
+            - Coupled capacitance
+
+
+183                   0.0   1.48602e-16             0            0.0  XI5/NET02326
+            - Coupled nets
+            - Intrinsic Capacitance
+               1.48602e-16
+            - Coupled capacitance
+
+
+184                   0.0   1.48602e-16             0            0.0  XI5/NET02370
+            - Coupled nets
+            - Intrinsic Capacitance
+               1.48602e-16
+            - Coupled capacitance
+
+
+185                   0.0   1.48602e-16             0            0.0  XI5/NET02402
+            - Coupled nets
+            - Intrinsic Capacitance
+               1.48602e-16
+            - Coupled capacitance
+
+
+186                   0.0   1.48602e-16             0            0.0  XI5/NET02434
+            - Coupled nets
+            - Intrinsic Capacitance
+               1.48602e-16
+            - Coupled capacitance
+
+
+187                   0.0   1.48602e-16             0            0.0  XI5/NET02466
+            - Coupled nets
+            - Intrinsic Capacitance
+               1.48602e-16
+            - Coupled capacitance
+
+
+188                   0.0   1.48602e-16             0            0.0  XI5/NET04286
+            - Coupled nets
+            - Intrinsic Capacitance
+               1.48602e-16
+            - Coupled capacitance
+
+
+189                   0.0   1.48602e-16             0            0.0  XI5/NET04318
+            - Coupled nets
+            - Intrinsic Capacitance
+               1.48602e-16
+            - Coupled capacitance
+
+
+190                   0.0   1.48602e-16             0            0.0  XI5/NET03466
+            - Coupled nets
+            - Intrinsic Capacitance
+               1.48602e-16
+            - Coupled capacitance
+
+
+191                   0.0   1.48602e-16             0            0.0  XI5/NET05406
+            - Coupled nets
+            - Intrinsic Capacitance
+               1.48602e-16
+            - Coupled capacitance
+
+
+192                   0.0   1.48602e-16             0            0.0  XI5/NET05362
+            - Coupled nets
+            - Intrinsic Capacitance
+               1.48602e-16
+            - Coupled capacitance
+
+
+193                   0.0   1.48602e-16             0            0.0  XI5/NET05318
+            - Coupled nets
+            - Intrinsic Capacitance
+               1.48602e-16
+            - Coupled capacitance
+
+
+194                   0.0   1.48602e-16             0            0.0  XI5/NET05286
+            - Coupled nets
+            - Intrinsic Capacitance
+               1.48602e-16
+            - Coupled capacitance
+
+
+195                   0.0   1.48602e-16             0            0.0  XI5/NET05254
+            - Coupled nets
+            - Intrinsic Capacitance
+               1.48602e-16
+            - Coupled capacitance
+
+
+196                   0.0   1.48602e-16             0            0.0  XI5/NET05222
+            - Coupled nets
+            - Intrinsic Capacitance
+               1.48602e-16
+            - Coupled capacitance
+
+
+197                   0.0   1.48602e-16             0            0.0  XI5/NET05182
+            - Coupled nets
+            - Intrinsic Capacitance
+               1.48602e-16
+            - Coupled capacitance
+
+
+198                   0.0   1.48602e-16             0            0.0  XI5/NET05150
+            - Coupled nets
+            - Intrinsic Capacitance
+               1.48602e-16
+            - Coupled capacitance
+
+
+199                   0.0   1.48602e-16             0            0.0  XI5/NET05114
+            - Coupled nets
+            - Intrinsic Capacitance
+               1.48602e-16
+            - Coupled capacitance
+
+
+200                   0.0   1.48602e-16             0            0.0  XI5/NET05082
+            - Coupled nets
+            - Intrinsic Capacitance
+               1.48602e-16
+            - Coupled capacitance
+
+
+201                   0.0   1.48602e-16             0            0.0  XI5/NET05050
+            - Coupled nets
+            - Intrinsic Capacitance
+               1.48602e-16
+            - Coupled capacitance
+
+
+202                   0.0   1.48602e-16             0            0.0  XI5/NET05018
+            - Coupled nets
+            - Intrinsic Capacitance
+               1.48602e-16
+            - Coupled capacitance
+
+
+203                   0.0   1.48602e-16             0            0.0  XI5/NET04986
+            - Coupled nets
+            - Intrinsic Capacitance
+               1.48602e-16
+            - Coupled capacitance
+
+
+204                   0.0   1.48602e-16             0            0.0  XI5/NET04954
+            - Coupled nets
+            - Intrinsic Capacitance
+               1.48602e-16
+            - Coupled capacitance
+
+
+205                   0.0   1.48602e-16             0            0.0  XI5/NET04914
+            - Coupled nets
+            - Intrinsic Capacitance
+               1.48602e-16
+            - Coupled capacitance
+
+
+206                   0.0   1.48602e-16             0            0.0  XI5/NET04882
+            - Coupled nets
+            - Intrinsic Capacitance
+               1.48602e-16
+            - Coupled capacitance
+
+
+207                   0.0   1.48602e-16             0            0.0  XI5/NET04850
+            - Coupled nets
+            - Intrinsic Capacitance
+               1.48602e-16
+            - Coupled capacitance
+
+
+208                   0.0   1.48602e-16             0            0.0  XI5/NET04818
+            - Coupled nets
+            - Intrinsic Capacitance
+               1.48602e-16
+            - Coupled capacitance
+
+
+209                   0.0   1.48602e-16             0            0.0  XI5/NET04766
+            - Coupled nets
+            - Intrinsic Capacitance
+               1.48602e-16
+            - Coupled capacitance
+
+
+210                   0.0   1.48602e-16             0            0.0  XI5/NET04734
+            - Coupled nets
+            - Intrinsic Capacitance
+               1.48602e-16
+            - Coupled capacitance
+
+
+211                   0.0   1.48602e-16             0            0.0  XI5/NET04654
+            - Coupled nets
+            - Intrinsic Capacitance
+               1.48602e-16
+            - Coupled capacitance
+
+
+212                   0.0   1.48602e-16             0            0.0  XI5/NET04618
+            - Coupled nets
+            - Intrinsic Capacitance
+               1.48602e-16
+            - Coupled capacitance
+
+
+213                   0.0   1.48602e-16             0            0.0  XI5/NET04586
+            - Coupled nets
+            - Intrinsic Capacitance
+               1.48602e-16
+            - Coupled capacitance
+
+
+214                   0.0   1.48602e-16             0            0.0  XI5/NET04390
+            - Coupled nets
+            - Intrinsic Capacitance
+               1.48602e-16
+            - Coupled capacitance
+
+
+215                   0.0   1.33656e-15             0            0.0  XI7/NET141
+            - Coupled nets
+            - Intrinsic Capacitance
+               1.33656e-15
+            - Coupled capacitance
+
+
+216                   0.0   1.80551e-16             0            0.0  XI5/NET01346
+            - Coupled nets
+            - Intrinsic Capacitance
+               1.80551e-16
+            - Coupled capacitance
+
+
+217                   0.0   1.76433e-16             0            0.0  XI5/NET01378
+            - Coupled nets
+            - Intrinsic Capacitance
+               1.76433e-16
+            - Coupled capacitance
+
+
+218                   0.0   1.76433e-16             0            0.0  XI5/NET01410
+            - Coupled nets
+            - Intrinsic Capacitance
+               1.76433e-16
+            - Coupled capacitance
+
+
+219                   0.0   1.76433e-16             0            0.0  XI5/NET01442
+            - Coupled nets
+            - Intrinsic Capacitance
+               1.76433e-16
+            - Coupled capacitance
+
+
+220                   0.0   1.76433e-16             0            0.0  XI5/NET01474
+            - Coupled nets
+            - Intrinsic Capacitance
+               1.76433e-16
+            - Coupled capacitance
+
+
+221                   0.0   1.76433e-16             0            0.0  XI5/NET01506
+            - Coupled nets
+            - Intrinsic Capacitance
+               1.76433e-16
+            - Coupled capacitance
+
+
+222                   0.0   1.76433e-16             0            0.0  XI5/NET01538
+            - Coupled nets
+            - Intrinsic Capacitance
+               1.76433e-16
+            - Coupled capacitance
+
+
+223                   0.0   1.76433e-16             0            0.0  XI5/NET01570
+            - Coupled nets
+            - Intrinsic Capacitance
+               1.76433e-16
+            - Coupled capacitance
+
+
+224                   0.0    1.8066e-16             0            0.0  XI5/NET01602
+            - Coupled nets
+            - Intrinsic Capacitance
+               1.8066e-16
+            - Coupled capacitance
+
+
+225                   0.0   1.76433e-16             0            0.0  XI5/NET01634
+            - Coupled nets
+            - Intrinsic Capacitance
+               1.76433e-16
+            - Coupled capacitance
+
+
+226                   0.0   1.76433e-16             0            0.0  XI5/NET01666
+            - Coupled nets
+            - Intrinsic Capacitance
+               1.76433e-16
+            - Coupled capacitance
+
+
+227                   0.0   1.76433e-16             0            0.0  XI5/NET01698
+            - Coupled nets
+            - Intrinsic Capacitance
+               1.76433e-16
+            - Coupled capacitance
+
+
+228                   0.0   1.76433e-16             0            0.0  XI5/NET01730
+            - Coupled nets
+            - Intrinsic Capacitance
+               1.76433e-16
+            - Coupled capacitance
+
+
+229                   0.0   1.76433e-16             0            0.0  XI5/NET01762
+            - Coupled nets
+            - Intrinsic Capacitance
+               1.76433e-16
+            - Coupled capacitance
+
+
+230                   0.0   1.76433e-16             0            0.0  XI5/NET01794
+            - Coupled nets
+            - Intrinsic Capacitance
+               1.76433e-16
+            - Coupled capacitance
+
+
+231                   0.0   1.76433e-16             0            0.0  XI5/NET01826
+            - Coupled nets
+            - Intrinsic Capacitance
+               1.76433e-16
+            - Coupled capacitance
+
+
+232                   0.0    1.8066e-16             0            0.0  XI5/NET01858
+            - Coupled nets
+            - Intrinsic Capacitance
+               1.8066e-16
+            - Coupled capacitance
+
+
+233                   0.0   1.76433e-16             0            0.0  XI5/NET01890
+            - Coupled nets
+            - Intrinsic Capacitance
+               1.76433e-16
+            - Coupled capacitance
+
+
+234                   0.0   1.76433e-16             0            0.0  XI5/NET01922
+            - Coupled nets
+            - Intrinsic Capacitance
+               1.76433e-16
+            - Coupled capacitance
+
+
+235                   0.0   1.76433e-16             0            0.0  XI5/NET01954
+            - Coupled nets
+            - Intrinsic Capacitance
+               1.76433e-16
+            - Coupled capacitance
+
+
+236                   0.0   1.76433e-16             0            0.0  XI5/NET01986
+            - Coupled nets
+            - Intrinsic Capacitance
+               1.76433e-16
+            - Coupled capacitance
+
+
+237                   0.0   1.76433e-16             0            0.0  XI5/NET02018
+            - Coupled nets
+            - Intrinsic Capacitance
+               1.76433e-16
+            - Coupled capacitance
+
+
+238                   0.0   1.76433e-16             0            0.0  XI5/NET02050
+            - Coupled nets
+            - Intrinsic Capacitance
+               1.76433e-16
+            - Coupled capacitance
+
+
+239                   0.0   1.76433e-16             0            0.0  XI5/NET02082
+            - Coupled nets
+            - Intrinsic Capacitance
+               1.76433e-16
+            - Coupled capacitance
+
+
+240                   0.0    1.8066e-16             0            0.0  XI5/NET02114
+            - Coupled nets
+            - Intrinsic Capacitance
+               1.8066e-16
+            - Coupled capacitance
+
+
+241                   0.0   1.76433e-16             0            0.0  XI5/NET02146
+            - Coupled nets
+            - Intrinsic Capacitance
+               1.76433e-16
+            - Coupled capacitance
+
+
+242                   0.0   1.76433e-16             0            0.0  XI5/NET02178
+            - Coupled nets
+            - Intrinsic Capacitance
+               1.76433e-16
+            - Coupled capacitance
+
+
+243                   0.0   1.76433e-16             0            0.0  XI5/NET02210
+            - Coupled nets
+            - Intrinsic Capacitance
+               1.76433e-16
+            - Coupled capacitance
+
+
+244                   0.0   1.76433e-16             0            0.0  XI5/NET02242
+            - Coupled nets
+            - Intrinsic Capacitance
+               1.76433e-16
+            - Coupled capacitance
+
+
+245                   0.0   1.76433e-16             0            0.0  XI5/NET02274
+            - Coupled nets
+            - Intrinsic Capacitance
+               1.76433e-16
+            - Coupled capacitance
+
+
+246                   0.0   1.76433e-16             0            0.0  XI5/NET02278
+            - Coupled nets
+            - Intrinsic Capacitance
+               1.76433e-16
+            - Coupled capacitance
+
+
+247                   0.0   1.76433e-16             0            0.0  XI5/NET04538
+            - Coupled nets
+            - Intrinsic Capacitance
+               1.76433e-16
+            - Coupled capacitance
+
+
+248                   0.0   1.76433e-16             0            0.0  XI5/NET02310
+            - Coupled nets
+            - Intrinsic Capacitance
+               1.76433e-16
+            - Coupled capacitance
+
+
+249                   0.0   1.76433e-16             0            0.0  XI5/NET02366
+            - Coupled nets
+            - Intrinsic Capacitance
+               1.76433e-16
+            - Coupled capacitance
+
+
+250                   0.0   1.76433e-16             0            0.0  XI5/NET02398
+            - Coupled nets
+            - Intrinsic Capacitance
+               1.76433e-16
+            - Coupled capacitance
+
+
+251                   0.0   1.76433e-16             0            0.0  XI5/NET02430
+            - Coupled nets
+            - Intrinsic Capacitance
+               1.76433e-16
+            - Coupled capacitance
+
+
+252                   0.0   1.76433e-16             0            0.0  XI5/NET02462
+            - Coupled nets
+            - Intrinsic Capacitance
+               1.76433e-16
+            - Coupled capacitance
+
+
+253                   0.0   1.76433e-16             0            0.0  XI5/NET04282
+            - Coupled nets
+            - Intrinsic Capacitance
+               1.76433e-16
+            - Coupled capacitance
+
+
+254                   0.0   1.76433e-16             0            0.0  XI5/NET04314
+            - Coupled nets
+            - Intrinsic Capacitance
+               1.76433e-16
+            - Coupled capacitance
+
+
+255                   0.0   1.76433e-16             0            0.0  XI5/NET03462
+            - Coupled nets
+            - Intrinsic Capacitance
+               1.76433e-16
+            - Coupled capacitance
+
+
+256                   0.0   1.76433e-16             0            0.0  XI5/NET05402
+            - Coupled nets
+            - Intrinsic Capacitance
+               1.76433e-16
+            - Coupled capacitance
+
+
+257                   0.0   1.76433e-16             0            0.0  XI5/NET05358
+            - Coupled nets
+            - Intrinsic Capacitance
+               1.76433e-16
+            - Coupled capacitance
+
+
+258                   0.0   1.76433e-16             0            0.0  XI5/NET05314
+            - Coupled nets
+            - Intrinsic Capacitance
+               1.76433e-16
+            - Coupled capacitance
+
+
+259                   0.0   1.76433e-16             0            0.0  XI5/NET05282
+            - Coupled nets
+            - Intrinsic Capacitance
+               1.76433e-16
+            - Coupled capacitance
+
+
+260                   0.0   1.76433e-16             0            0.0  XI5/NET05250
+            - Coupled nets
+            - Intrinsic Capacitance
+               1.76433e-16
+            - Coupled capacitance
+
+
+261                   0.0   1.76433e-16             0            0.0  XI5/NET05218
+            - Coupled nets
+            - Intrinsic Capacitance
+               1.76433e-16
+            - Coupled capacitance
+
+
+262                   0.0   1.76433e-16             0            0.0  XI5/NET05178
+            - Coupled nets
+            - Intrinsic Capacitance
+               1.76433e-16
+            - Coupled capacitance
+
+
+263                   0.0   1.76433e-16             0            0.0  XI5/NET05146
+            - Coupled nets
+            - Intrinsic Capacitance
+               1.76433e-16
+            - Coupled capacitance
+
+
+264                   0.0   1.76433e-16             0            0.0  XI5/NET05110
+            - Coupled nets
+            - Intrinsic Capacitance
+               1.76433e-16
+            - Coupled capacitance
+
+
+265                   0.0   1.76433e-16             0            0.0  XI5/NET05078
+            - Coupled nets
+            - Intrinsic Capacitance
+               1.76433e-16
+            - Coupled capacitance
+
+
+266                   0.0   1.76433e-16             0            0.0  XI5/NET05046
+            - Coupled nets
+            - Intrinsic Capacitance
+               1.76433e-16
+            - Coupled capacitance
+
+
+267                   0.0   1.76433e-16             0            0.0  XI5/NET05014
+            - Coupled nets
+            - Intrinsic Capacitance
+               1.76433e-16
+            - Coupled capacitance
+
+
+268                   0.0   1.76433e-16             0            0.0  XI5/NET04982
+            - Coupled nets
+            - Intrinsic Capacitance
+               1.76433e-16
+            - Coupled capacitance
+
+
+269                   0.0   1.76433e-16             0            0.0  XI5/NET04950
+            - Coupled nets
+            - Intrinsic Capacitance
+               1.76433e-16
+            - Coupled capacitance
+
+
+270                   0.0   1.76433e-16             0            0.0  XI5/NET04910
+            - Coupled nets
+            - Intrinsic Capacitance
+               1.76433e-16
+            - Coupled capacitance
+
+
+271                   0.0   1.76433e-16             0            0.0  XI5/NET04878
+            - Coupled nets
+            - Intrinsic Capacitance
+               1.76433e-16
+            - Coupled capacitance
+
+
+272                   0.0   1.76433e-16             0            0.0  XI5/NET04846
+            - Coupled nets
+            - Intrinsic Capacitance
+               1.76433e-16
+            - Coupled capacitance
+
+
+273                   0.0   1.76433e-16             0            0.0  XI5/NET04814
+            - Coupled nets
+            - Intrinsic Capacitance
+               1.76433e-16
+            - Coupled capacitance
+
+
+274                   0.0   1.76433e-16             0            0.0  XI5/NET04762
+            - Coupled nets
+            - Intrinsic Capacitance
+               1.76433e-16
+            - Coupled capacitance
+
+
+275                   0.0   1.76433e-16             0            0.0  XI5/NET04730
+            - Coupled nets
+            - Intrinsic Capacitance
+               1.76433e-16
+            - Coupled capacitance
+
+
+276                   0.0   1.76433e-16             0            0.0  XI5/NET04650
+            - Coupled nets
+            - Intrinsic Capacitance
+               1.76433e-16
+            - Coupled capacitance
+
+
+277                   0.0   1.76433e-16             0            0.0  XI5/NET04614
+            - Coupled nets
+            - Intrinsic Capacitance
+               1.76433e-16
+            - Coupled capacitance
+
+
+278                   0.0   1.76433e-16             0            0.0  XI5/NET04582
+            - Coupled nets
+            - Intrinsic Capacitance
+               1.76433e-16
+            - Coupled capacitance
+
+
+279                   0.0   1.76433e-16             0            0.0  XI5/NET04386
+            - Coupled nets
+            - Intrinsic Capacitance
+               1.76433e-16
+            - Coupled capacitance
+
+
+280                   0.0   1.36448e-15             0            0.0  XI7/NET125
+            - Coupled nets
+            - Intrinsic Capacitance
+               1.36448e-15
+            - Coupled capacitance
+
+
+281                   0.0   1.20105e-15             0            0.0  XI7/NET101
+            - Coupled nets
+            - Intrinsic Capacitance
+               1.20105e-15
+            - Coupled capacitance
+
+
+282                   0.0   1.80551e-16             0            0.0  XI5/NET01342
+            - Coupled nets
+            - Intrinsic Capacitance
+               1.80551e-16
+            - Coupled capacitance
+
+
+283                   0.0   1.76433e-16             0            0.0  XI5/NET01374
+            - Coupled nets
+            - Intrinsic Capacitance
+               1.76433e-16
+            - Coupled capacitance
+
+
+284                   0.0   1.76433e-16             0            0.0  XI5/NET01406
+            - Coupled nets
+            - Intrinsic Capacitance
+               1.76433e-16
+            - Coupled capacitance
+
+
+285                   0.0   1.76433e-16             0            0.0  XI5/NET01438
+            - Coupled nets
+            - Intrinsic Capacitance
+               1.76433e-16
+            - Coupled capacitance
+
+
+286                   0.0   1.76433e-16             0            0.0  XI5/NET01470
+            - Coupled nets
+            - Intrinsic Capacitance
+               1.76433e-16
+            - Coupled capacitance
+
+
+287                   0.0   1.76433e-16             0            0.0  XI5/NET01502
+            - Coupled nets
+            - Intrinsic Capacitance
+               1.76433e-16
+            - Coupled capacitance
+
+
+288                   0.0   1.76433e-16             0            0.0  XI5/NET01534
+            - Coupled nets
+            - Intrinsic Capacitance
+               1.76433e-16
+            - Coupled capacitance
+
+
+289                   0.0   1.76433e-16             0            0.0  XI5/NET01566
+            - Coupled nets
+            - Intrinsic Capacitance
+               1.76433e-16
+            - Coupled capacitance
+
+
+290                   0.0    1.8066e-16             0            0.0  XI5/NET01598
+            - Coupled nets
+            - Intrinsic Capacitance
+               1.8066e-16
+            - Coupled capacitance
+
+
+291                   0.0   1.76433e-16             0            0.0  XI5/NET01630
+            - Coupled nets
+            - Intrinsic Capacitance
+               1.76433e-16
+            - Coupled capacitance
+
+
+292                   0.0   1.76433e-16             0            0.0  XI5/NET01662
+            - Coupled nets
+            - Intrinsic Capacitance
+               1.76433e-16
+            - Coupled capacitance
+
+
+293                   0.0   1.76433e-16             0            0.0  XI5/NET01694
+            - Coupled nets
+            - Intrinsic Capacitance
+               1.76433e-16
+            - Coupled capacitance
+
+
+294                   0.0   1.76433e-16             0            0.0  XI5/NET01726
+            - Coupled nets
+            - Intrinsic Capacitance
+               1.76433e-16
+            - Coupled capacitance
+
+
+295                   0.0   1.76433e-16             0            0.0  XI5/NET01758
+            - Coupled nets
+            - Intrinsic Capacitance
+               1.76433e-16
+            - Coupled capacitance
+
+
+296                   0.0   1.76433e-16             0            0.0  XI5/NET01790
+            - Coupled nets
+            - Intrinsic Capacitance
+               1.76433e-16
+            - Coupled capacitance
+
+
+297                   0.0   1.76433e-16             0            0.0  XI5/NET01822
+            - Coupled nets
+            - Intrinsic Capacitance
+               1.76433e-16
+            - Coupled capacitance
+
+
+298                   0.0    1.8066e-16             0            0.0  XI5/NET01854
+            - Coupled nets
+            - Intrinsic Capacitance
+               1.8066e-16
+            - Coupled capacitance
+
+
+299                   0.0   1.76433e-16             0            0.0  XI5/NET01886
+            - Coupled nets
+            - Intrinsic Capacitance
+               1.76433e-16
+            - Coupled capacitance
+
+
+300                   0.0   1.76433e-16             0            0.0  XI5/NET01918
+            - Coupled nets
+            - Intrinsic Capacitance
+               1.76433e-16
+            - Coupled capacitance
+
+
+301                   0.0   1.76433e-16             0            0.0  XI5/NET01950
+            - Coupled nets
+            - Intrinsic Capacitance
+               1.76433e-16
+            - Coupled capacitance
+
+
+302                   0.0   1.76433e-16             0            0.0  XI5/NET01982
+            - Coupled nets
+            - Intrinsic Capacitance
+               1.76433e-16
+            - Coupled capacitance
+
+
+303                   0.0   1.76433e-16             0            0.0  XI5/NET02014
+            - Coupled nets
+            - Intrinsic Capacitance
+               1.76433e-16
+            - Coupled capacitance
+
+
+304                   0.0   1.76433e-16             0            0.0  XI5/NET02046
+            - Coupled nets
+            - Intrinsic Capacitance
+               1.76433e-16
+            - Coupled capacitance
+
+
+305                   0.0   1.76433e-16             0            0.0  XI5/NET02078
+            - Coupled nets
+            - Intrinsic Capacitance
+               1.76433e-16
+            - Coupled capacitance
+
+
+306                   0.0    1.8066e-16             0            0.0  XI5/NET02110
+            - Coupled nets
+            - Intrinsic Capacitance
+               1.8066e-16
+            - Coupled capacitance
+
+
+307                   0.0   1.76433e-16             0            0.0  XI5/NET02142
+            - Coupled nets
+            - Intrinsic Capacitance
+               1.76433e-16
+            - Coupled capacitance
+
+
+308                   0.0   1.76433e-16             0            0.0  XI5/NET02174
+            - Coupled nets
+            - Intrinsic Capacitance
+               1.76433e-16
+            - Coupled capacitance
+
+
+309                   0.0   1.76433e-16             0            0.0  XI5/NET02206
+            - Coupled nets
+            - Intrinsic Capacitance
+               1.76433e-16
+            - Coupled capacitance
+
+
+310                   0.0   1.76433e-16             0            0.0  XI5/NET02238
+            - Coupled nets
+            - Intrinsic Capacitance
+               1.76433e-16
+            - Coupled capacitance
+
+
+311                   0.0   1.76433e-16             0            0.0  XI5/NET02270
+            - Coupled nets
+            - Intrinsic Capacitance
+               1.76433e-16
+            - Coupled capacitance
+
+
+312                   0.0   1.76433e-16             0            0.0  XI5/NET02282
+            - Coupled nets
+            - Intrinsic Capacitance
+               1.76433e-16
+            - Coupled capacitance
+
+
+313                   0.0   1.76433e-16             0            0.0  XI5/NET04534
+            - Coupled nets
+            - Intrinsic Capacitance
+               1.76433e-16
+            - Coupled capacitance
+
+
+314                   0.0   1.76433e-16             0            0.0  XI5/NET02338
+            - Coupled nets
+            - Intrinsic Capacitance
+               1.76433e-16
+            - Coupled capacitance
+
+
+315                   0.0   1.76433e-16             0            0.0  XI5/NET02362
+            - Coupled nets
+            - Intrinsic Capacitance
+               1.76433e-16
+            - Coupled capacitance
+
+
+316                   0.0   1.76433e-16             0            0.0  XI5/NET02394
+            - Coupled nets
+            - Intrinsic Capacitance
+               1.76433e-16
+            - Coupled capacitance
+
+
+317                   0.0   1.76433e-16             0            0.0  XI5/NET02426
+            - Coupled nets
+            - Intrinsic Capacitance
+               1.76433e-16
+            - Coupled capacitance
+
+
+318                   0.0   1.76433e-16             0            0.0  XI5/NET02458
+            - Coupled nets
+            - Intrinsic Capacitance
+               1.76433e-16
+            - Coupled capacitance
+
+
+319                   0.0   1.76433e-16             0            0.0  XI5/NET04278
+            - Coupled nets
+            - Intrinsic Capacitance
+               1.76433e-16
+            - Coupled capacitance
+
+
+320                   0.0   1.76433e-16             0            0.0  XI5/NET04310
+            - Coupled nets
+            - Intrinsic Capacitance
+               1.76433e-16
+            - Coupled capacitance
+
+
+321                   0.0   1.76433e-16             0            0.0  XI5/NET03458
+            - Coupled nets
+            - Intrinsic Capacitance
+               1.76433e-16
+            - Coupled capacitance
+
+
+322                   0.0   1.76433e-16             0            0.0  XI5/NET05398
+            - Coupled nets
+            - Intrinsic Capacitance
+               1.76433e-16
+            - Coupled capacitance
+
+
+323                   0.0   1.76433e-16             0            0.0  XI5/NET05354
+            - Coupled nets
+            - Intrinsic Capacitance
+               1.76433e-16
+            - Coupled capacitance
+
+
+324                   0.0   1.76433e-16             0            0.0  XI5/NET05310
+            - Coupled nets
+            - Intrinsic Capacitance
+               1.76433e-16
+            - Coupled capacitance
+
+
+325                   0.0   1.76433e-16             0            0.0  XI5/NET05278
+            - Coupled nets
+            - Intrinsic Capacitance
+               1.76433e-16
+            - Coupled capacitance
+
+
+326                   0.0   1.76433e-16             0            0.0  XI5/NET05246
+            - Coupled nets
+            - Intrinsic Capacitance
+               1.76433e-16
+            - Coupled capacitance
+
+
+327                   0.0   1.76433e-16             0            0.0  XI5/NET05214
+            - Coupled nets
+            - Intrinsic Capacitance
+               1.76433e-16
+            - Coupled capacitance
+
+
+328                   0.0   1.76433e-16             0            0.0  XI5/NET05174
+            - Coupled nets
+            - Intrinsic Capacitance
+               1.76433e-16
+            - Coupled capacitance
+
+
+329                   0.0   1.76433e-16             0            0.0  XI5/NET05142
+            - Coupled nets
+            - Intrinsic Capacitance
+               1.76433e-16
+            - Coupled capacitance
+
+
+330                   0.0   1.76433e-16             0            0.0  XI5/NET05106
+            - Coupled nets
+            - Intrinsic Capacitance
+               1.76433e-16
+            - Coupled capacitance
+
+
+331                   0.0   1.76433e-16             0            0.0  XI5/NET05074
+            - Coupled nets
+            - Intrinsic Capacitance
+               1.76433e-16
+            - Coupled capacitance
+
+
+332                   0.0   1.76433e-16             0            0.0  XI5/NET05042
+            - Coupled nets
+            - Intrinsic Capacitance
+               1.76433e-16
+            - Coupled capacitance
+
+
+333                   0.0   1.76433e-16             0            0.0  XI5/NET05010
+            - Coupled nets
+            - Intrinsic Capacitance
+               1.76433e-16
+            - Coupled capacitance
+
+
+334                   0.0   1.76433e-16             0            0.0  XI5/NET04978
+            - Coupled nets
+            - Intrinsic Capacitance
+               1.76433e-16
+            - Coupled capacitance
+
+
+335                   0.0   1.76433e-16             0            0.0  XI5/NET04946
+            - Coupled nets
+            - Intrinsic Capacitance
+               1.76433e-16
+            - Coupled capacitance
+
+
+336                   0.0   1.76433e-16             0            0.0  XI5/NET04906
+            - Coupled nets
+            - Intrinsic Capacitance
+               1.76433e-16
+            - Coupled capacitance
+
+
+337                   0.0   1.76433e-16             0            0.0  XI5/NET04874
+            - Coupled nets
+            - Intrinsic Capacitance
+               1.76433e-16
+            - Coupled capacitance
+
+
+338                   0.0   1.76433e-16             0            0.0  XI5/NET04842
+            - Coupled nets
+            - Intrinsic Capacitance
+               1.76433e-16
+            - Coupled capacitance
+
+
+339                   0.0   1.76433e-16             0            0.0  XI5/NET04810
+            - Coupled nets
+            - Intrinsic Capacitance
+               1.76433e-16
+            - Coupled capacitance
+
+
+340                   0.0   1.76433e-16             0            0.0  XI5/NET04758
+            - Coupled nets
+            - Intrinsic Capacitance
+               1.76433e-16
+            - Coupled capacitance
+
+
+341                   0.0   1.76433e-16             0            0.0  XI5/NET04722
+            - Coupled nets
+            - Intrinsic Capacitance
+               1.76433e-16
+            - Coupled capacitance
+
+
+342                   0.0   1.76433e-16             0            0.0  XI5/NET04642
+            - Coupled nets
+            - Intrinsic Capacitance
+               1.76433e-16
+            - Coupled capacitance
+
+
+343                   0.0   1.76433e-16             0            0.0  XI5/NET04610
+            - Coupled nets
+            - Intrinsic Capacitance
+               1.76433e-16
+            - Coupled capacitance
+
+
+344                   0.0   1.76433e-16             0            0.0  XI5/NET04578
+            - Coupled nets
+            - Intrinsic Capacitance
+               1.76433e-16
+            - Coupled capacitance
+
+
+345                   0.0   1.76433e-16             0            0.0  XI5/NET04382
+            - Coupled nets
+            - Intrinsic Capacitance
+               1.76433e-16
+            - Coupled capacitance
+
+
+346                   0.0   1.31314e-15             0            0.0  XI7/NET113
+            - Coupled nets
+            - Intrinsic Capacitance
+               1.31314e-15
+            - Coupled capacitance
+
+
+347                   0.0   1.80551e-16             0            0.0  XI5/NET01338
+            - Coupled nets
+            - Intrinsic Capacitance
+               1.80551e-16
+            - Coupled capacitance
+
+
+348                   0.0   1.76433e-16             0            0.0  XI5/NET01370
+            - Coupled nets
+            - Intrinsic Capacitance
+               1.76433e-16
+            - Coupled capacitance
+
+
+349                   0.0   1.76433e-16             0            0.0  XI5/NET01402
+            - Coupled nets
+            - Intrinsic Capacitance
+               1.76433e-16
+            - Coupled capacitance
+
+
+350                   0.0   1.76433e-16             0            0.0  XI5/NET01434
+            - Coupled nets
+            - Intrinsic Capacitance
+               1.76433e-16
+            - Coupled capacitance
+
+
+351                   0.0   1.76433e-16             0            0.0  XI5/NET01466
+            - Coupled nets
+            - Intrinsic Capacitance
+               1.76433e-16
+            - Coupled capacitance
+
+
+352                   0.0   1.76433e-16             0            0.0  XI5/NET01498
+            - Coupled nets
+            - Intrinsic Capacitance
+               1.76433e-16
+            - Coupled capacitance
+
+
+353                   0.0   1.76433e-16             0            0.0  XI5/NET01530
+            - Coupled nets
+            - Intrinsic Capacitance
+               1.76433e-16
+            - Coupled capacitance
+
+
+354                   0.0   1.76433e-16             0            0.0  XI5/NET01562
+            - Coupled nets
+            - Intrinsic Capacitance
+               1.76433e-16
+            - Coupled capacitance
+
+
+355                   0.0    1.8066e-16             0            0.0  XI5/NET01594
+            - Coupled nets
+            - Intrinsic Capacitance
+               1.8066e-16
+            - Coupled capacitance
+
+
+356                   0.0   1.76433e-16             0            0.0  XI5/NET01626
+            - Coupled nets
+            - Intrinsic Capacitance
+               1.76433e-16
+            - Coupled capacitance
+
+
+357                   0.0   1.76433e-16             0            0.0  XI5/NET01658
+            - Coupled nets
+            - Intrinsic Capacitance
+               1.76433e-16
+            - Coupled capacitance
+
+
+358                   0.0   1.76433e-16             0            0.0  XI5/NET01690
+            - Coupled nets
+            - Intrinsic Capacitance
+               1.76433e-16
+            - Coupled capacitance
+
+
+359                   0.0   1.76433e-16             0            0.0  XI5/NET01722
+            - Coupled nets
+            - Intrinsic Capacitance
+               1.76433e-16
+            - Coupled capacitance
+
+
+360                   0.0   1.76433e-16             0            0.0  XI5/NET01754
+            - Coupled nets
+            - Intrinsic Capacitance
+               1.76433e-16
+            - Coupled capacitance
+
+
+361                   0.0   1.76433e-16             0            0.0  XI5/NET01786
+            - Coupled nets
+            - Intrinsic Capacitance
+               1.76433e-16
+            - Coupled capacitance
+
+
+362                   0.0   1.76433e-16             0            0.0  XI5/NET01818
+            - Coupled nets
+            - Intrinsic Capacitance
+               1.76433e-16
+            - Coupled capacitance
+
+
+363                   0.0    1.8066e-16             0            0.0  XI5/NET01850
+            - Coupled nets
+            - Intrinsic Capacitance
+               1.8066e-16
+            - Coupled capacitance
+
+
+364                   0.0   1.76433e-16             0            0.0  XI5/NET01882
+            - Coupled nets
+            - Intrinsic Capacitance
+               1.76433e-16
+            - Coupled capacitance
+
+
+365                   0.0   1.76433e-16             0            0.0  XI5/NET01914
+            - Coupled nets
+            - Intrinsic Capacitance
+               1.76433e-16
+            - Coupled capacitance
+
+
+366                   0.0   1.76433e-16             0            0.0  XI5/NET01946
+            - Coupled nets
+            - Intrinsic Capacitance
+               1.76433e-16
+            - Coupled capacitance
+
+
+367                   0.0   1.76433e-16             0            0.0  XI5/NET01978
+            - Coupled nets
+            - Intrinsic Capacitance
+               1.76433e-16
+            - Coupled capacitance
+
+
+368                   0.0   1.76433e-16             0            0.0  XI5/NET02010
+            - Coupled nets
+            - Intrinsic Capacitance
+               1.76433e-16
+            - Coupled capacitance
+
+
+369                   0.0   1.76433e-16             0            0.0  XI5/NET02042
+            - Coupled nets
+            - Intrinsic Capacitance
+               1.76433e-16
+            - Coupled capacitance
+
+
+370                   0.0   1.76433e-16             0            0.0  XI5/NET02074
+            - Coupled nets
+            - Intrinsic Capacitance
+               1.76433e-16
+            - Coupled capacitance
+
+
+371                   0.0    1.8066e-16             0            0.0  XI5/NET02106
+            - Coupled nets
+            - Intrinsic Capacitance
+               1.8066e-16
+            - Coupled capacitance
+
+
+372                   0.0   1.76433e-16             0            0.0  XI5/NET02138
+            - Coupled nets
+            - Intrinsic Capacitance
+               1.76433e-16
+            - Coupled capacitance
+
+
+373                   0.0   1.76433e-16             0            0.0  XI5/NET02170
+            - Coupled nets
+            - Intrinsic Capacitance
+               1.76433e-16
+            - Coupled capacitance
+
+
+374                   0.0   1.76433e-16             0            0.0  XI5/NET02202
+            - Coupled nets
+            - Intrinsic Capacitance
+               1.76433e-16
+            - Coupled capacitance
+
+
+375                   0.0   1.76433e-16             0            0.0  XI5/NET02234
+            - Coupled nets
+            - Intrinsic Capacitance
+               1.76433e-16
+            - Coupled capacitance
+
+
+376                   0.0   1.76433e-16             0            0.0  XI5/NET02266
+            - Coupled nets
+            - Intrinsic Capacitance
+               1.76433e-16
+            - Coupled capacitance
+
+
+377                   0.0   1.76433e-16             0            0.0  XI5/NET02290
+            - Coupled nets
+            - Intrinsic Capacitance
+               1.76433e-16
+            - Coupled capacitance
+
+
+378                   0.0   1.76433e-16             0            0.0  XI5/NET04522
+            - Coupled nets
+            - Intrinsic Capacitance
+               1.76433e-16
+            - Coupled capacitance
+
+
+379                   0.0   1.13798e-15             0            0.0  XI7/NET89
+            - Coupled nets
+            - Intrinsic Capacitance
+               1.13798e-15
+            - Coupled capacitance
+
+
+380                   0.0   1.76433e-16             0            0.0  XI5/NET02322
+            - Coupled nets
+            - Intrinsic Capacitance
+               1.76433e-16
+            - Coupled capacitance
+
+
+381                   0.0   1.76433e-16             0            0.0  XI5/NET02358
+            - Coupled nets
+            - Intrinsic Capacitance
+               1.76433e-16
+            - Coupled capacitance
+
+
+382                   0.0   1.76433e-16             0            0.0  XI5/NET02390
+            - Coupled nets
+            - Intrinsic Capacitance
+               1.76433e-16
+            - Coupled capacitance
+
+
+383                   0.0   1.76433e-16             0            0.0  XI5/NET02422
+            - Coupled nets
+            - Intrinsic Capacitance
+               1.76433e-16
+            - Coupled capacitance
+
+
+384                   0.0   1.76433e-16             0            0.0  XI5/NET02454
+            - Coupled nets
+            - Intrinsic Capacitance
+               1.76433e-16
+            - Coupled capacitance
+
+
+385                   0.0   1.76433e-16             0            0.0  XI5/NET04274
+            - Coupled nets
+            - Intrinsic Capacitance
+               1.76433e-16
+            - Coupled capacitance
+
+
+386                   0.0   1.76433e-16             0            0.0  XI5/NET04306
+            - Coupled nets
+            - Intrinsic Capacitance
+               1.76433e-16
+            - Coupled capacitance
+
+
+387                   0.0   1.76433e-16             0            0.0  XI5/NET03454
+            - Coupled nets
+            - Intrinsic Capacitance
+               1.76433e-16
+            - Coupled capacitance
+
+
+388                   0.0   1.76433e-16             0            0.0  XI5/NET05394
+            - Coupled nets
+            - Intrinsic Capacitance
+               1.76433e-16
+            - Coupled capacitance
+
+
+389                   0.0   1.76433e-16             0            0.0  XI5/NET05350
+            - Coupled nets
+            - Intrinsic Capacitance
+               1.76433e-16
+            - Coupled capacitance
+
+
+390                   0.0   1.76433e-16             0            0.0  XI5/NET05306
+            - Coupled nets
+            - Intrinsic Capacitance
+               1.76433e-16
+            - Coupled capacitance
+
+
+391                   0.0   1.76433e-16             0            0.0  XI5/NET05274
+            - Coupled nets
+            - Intrinsic Capacitance
+               1.76433e-16
+            - Coupled capacitance
+
+
+392                   0.0   1.76433e-16             0            0.0  XI5/NET05242
+            - Coupled nets
+            - Intrinsic Capacitance
+               1.76433e-16
+            - Coupled capacitance
+
+
+393                   0.0   1.76433e-16             0            0.0  XI5/NET05210
+            - Coupled nets
+            - Intrinsic Capacitance
+               1.76433e-16
+            - Coupled capacitance
+
+
+394                   0.0   1.76433e-16             0            0.0  XI5/NET05170
+            - Coupled nets
+            - Intrinsic Capacitance
+               1.76433e-16
+            - Coupled capacitance
+
+
+395                   0.0   1.76433e-16             0            0.0  XI5/NET05138
+            - Coupled nets
+            - Intrinsic Capacitance
+               1.76433e-16
+            - Coupled capacitance
+
+
+396                   0.0   1.76433e-16             0            0.0  XI5/NET05102
+            - Coupled nets
+            - Intrinsic Capacitance
+               1.76433e-16
+            - Coupled capacitance
+
+
+397                   0.0   1.76433e-16             0            0.0  XI5/NET05070
+            - Coupled nets
+            - Intrinsic Capacitance
+               1.76433e-16
+            - Coupled capacitance
+
+
+398                   0.0   1.76433e-16             0            0.0  XI5/NET05038
+            - Coupled nets
+            - Intrinsic Capacitance
+               1.76433e-16
+            - Coupled capacitance
+
+
+399                   0.0   1.76433e-16             0            0.0  XI5/NET05006
+            - Coupled nets
+            - Intrinsic Capacitance
+               1.76433e-16
+            - Coupled capacitance
+
+
+400                   0.0   1.76433e-16             0            0.0  XI5/NET04974
+            - Coupled nets
+            - Intrinsic Capacitance
+               1.76433e-16
+            - Coupled capacitance
+
+
+401                   0.0   1.76433e-16             0            0.0  XI5/NET04942
+            - Coupled nets
+            - Intrinsic Capacitance
+               1.76433e-16
+            - Coupled capacitance
+
+
+402                   0.0   1.76433e-16             0            0.0  XI5/NET04902
+            - Coupled nets
+            - Intrinsic Capacitance
+               1.76433e-16
+            - Coupled capacitance
+
+
+403                   0.0   1.76433e-16             0            0.0  XI5/NET04870
+            - Coupled nets
+            - Intrinsic Capacitance
+               1.76433e-16
+            - Coupled capacitance
+
+
+404                   0.0   1.76433e-16             0            0.0  XI5/NET04838
+            - Coupled nets
+            - Intrinsic Capacitance
+               1.76433e-16
+            - Coupled capacitance
+
+
+405                   0.0   1.76433e-16             0            0.0  XI5/NET04806
+            - Coupled nets
+            - Intrinsic Capacitance
+               1.76433e-16
+            - Coupled capacitance
+
+
+406                   0.0   1.76433e-16             0            0.0  XI5/NET04754
+            - Coupled nets
+            - Intrinsic Capacitance
+               1.76433e-16
+            - Coupled capacitance
+
+
+407                   0.0   1.76433e-16             0            0.0  XI5/NET04714
+            - Coupled nets
+            - Intrinsic Capacitance
+               1.76433e-16
+            - Coupled capacitance
+
+
+408                   0.0   1.76433e-16             0            0.0  XI5/NET04638
+            - Coupled nets
+            - Intrinsic Capacitance
+               1.76433e-16
+            - Coupled capacitance
+
+
+409                   0.0   1.76433e-16             0            0.0  XI5/NET04606
+            - Coupled nets
+            - Intrinsic Capacitance
+               1.76433e-16
+            - Coupled capacitance
+
+
+410                   0.0   1.76433e-16             0            0.0  XI5/NET04570
+            - Coupled nets
+            - Intrinsic Capacitance
+               1.76433e-16
+            - Coupled capacitance
+
+
+411                   0.0   1.76433e-16             0            0.0  XI5/NET04374
+            - Coupled nets
+            - Intrinsic Capacitance
+               1.76433e-16
+            - Coupled capacitance
+
+
+412                   0.0     1.355e-15             0            0.0  XI7/NET109
+            - Coupled nets
+            - Intrinsic Capacitance
+               1.355e-15
+            - Coupled capacitance
+
+
+413                   0.0   1.80551e-16             0            0.0  XI5/NET01334
+            - Coupled nets
+            - Intrinsic Capacitance
+               1.80551e-16
+            - Coupled capacitance
+
+
+414                   0.0   1.76433e-16             0            0.0  XI5/NET01366
+            - Coupled nets
+            - Intrinsic Capacitance
+               1.76433e-16
+            - Coupled capacitance
+
+
+415                   0.0   1.76433e-16             0            0.0  XI5/NET01398
+            - Coupled nets
+            - Intrinsic Capacitance
+               1.76433e-16
+            - Coupled capacitance
+
+
+416                   0.0   1.76433e-16             0            0.0  XI5/NET01430
+            - Coupled nets
+            - Intrinsic Capacitance
+               1.76433e-16
+            - Coupled capacitance
+
+
+417                   0.0   1.76433e-16             0            0.0  XI5/NET01462
+            - Coupled nets
+            - Intrinsic Capacitance
+               1.76433e-16
+            - Coupled capacitance
+
+
+418                   0.0   1.76433e-16             0            0.0  XI5/NET01494
+            - Coupled nets
+            - Intrinsic Capacitance
+               1.76433e-16
+            - Coupled capacitance
+
+
+419                   0.0   1.76433e-16             0            0.0  XI5/NET01526
+            - Coupled nets
+            - Intrinsic Capacitance
+               1.76433e-16
+            - Coupled capacitance
+
+
+420                   0.0   1.76433e-16             0            0.0  XI5/NET01558
+            - Coupled nets
+            - Intrinsic Capacitance
+               1.76433e-16
+            - Coupled capacitance
+
+
+421                   0.0    1.8066e-16             0            0.0  XI5/NET01590
+            - Coupled nets
+            - Intrinsic Capacitance
+               1.8066e-16
+            - Coupled capacitance
+
+
+422                   0.0   1.76433e-16             0            0.0  XI5/NET01622
+            - Coupled nets
+            - Intrinsic Capacitance
+               1.76433e-16
+            - Coupled capacitance
+
+
+423                   0.0   1.76433e-16             0            0.0  XI5/NET01654
+            - Coupled nets
+            - Intrinsic Capacitance
+               1.76433e-16
+            - Coupled capacitance
+
+
+424                   0.0   1.76433e-16             0            0.0  XI5/NET01686
+            - Coupled nets
+            - Intrinsic Capacitance
+               1.76433e-16
+            - Coupled capacitance
+
+
+425                   0.0   1.76433e-16             0            0.0  XI5/NET01718
+            - Coupled nets
+            - Intrinsic Capacitance
+               1.76433e-16
+            - Coupled capacitance
+
+
+426                   0.0   1.76433e-16             0            0.0  XI5/NET01750
+            - Coupled nets
+            - Intrinsic Capacitance
+               1.76433e-16
+            - Coupled capacitance
+
+
+427                   0.0   1.76433e-16             0            0.0  XI5/NET01782
+            - Coupled nets
+            - Intrinsic Capacitance
+               1.76433e-16
+            - Coupled capacitance
+
+
+428                   0.0   1.76433e-16             0            0.0  XI5/NET01814
+            - Coupled nets
+            - Intrinsic Capacitance
+               1.76433e-16
+            - Coupled capacitance
+
+
+429                   0.0    1.8066e-16             0            0.0  XI5/NET01846
+            - Coupled nets
+            - Intrinsic Capacitance
+               1.8066e-16
+            - Coupled capacitance
+
+
+430                   0.0   1.76433e-16             0            0.0  XI5/NET01878
+            - Coupled nets
+            - Intrinsic Capacitance
+               1.76433e-16
+            - Coupled capacitance
+
+
+431                   0.0   1.76433e-16             0            0.0  XI5/NET01910
+            - Coupled nets
+            - Intrinsic Capacitance
+               1.76433e-16
+            - Coupled capacitance
+
+
+432                   0.0   1.76433e-16             0            0.0  XI5/NET01942
+            - Coupled nets
+            - Intrinsic Capacitance
+               1.76433e-16
+            - Coupled capacitance
+
+
+433                   0.0   1.76433e-16             0            0.0  XI5/NET01974
+            - Coupled nets
+            - Intrinsic Capacitance
+               1.76433e-16
+            - Coupled capacitance
+
+
+434                   0.0   1.76433e-16             0            0.0  XI5/NET02006
+            - Coupled nets
+            - Intrinsic Capacitance
+               1.76433e-16
+            - Coupled capacitance
+
+
+435                   0.0   1.76433e-16             0            0.0  XI5/NET02038
+            - Coupled nets
+            - Intrinsic Capacitance
+               1.76433e-16
+            - Coupled capacitance
+
+
+436                   0.0   1.76433e-16             0            0.0  XI5/NET02070
+            - Coupled nets
+            - Intrinsic Capacitance
+               1.76433e-16
+            - Coupled capacitance
+
+
+437                   0.0    1.8066e-16             0            0.0  XI5/NET02102
+            - Coupled nets
+            - Intrinsic Capacitance
+               1.8066e-16
+            - Coupled capacitance
+
+
+438                   0.0   1.76433e-16             0            0.0  XI5/NET02134
+            - Coupled nets
+            - Intrinsic Capacitance
+               1.76433e-16
+            - Coupled capacitance
+
+
+439                   0.0   1.76433e-16             0            0.0  XI5/NET02166
+            - Coupled nets
+            - Intrinsic Capacitance
+               1.76433e-16
+            - Coupled capacitance
+
+
+440                   0.0   1.76433e-16             0            0.0  XI5/NET02198
+            - Coupled nets
+            - Intrinsic Capacitance
+               1.76433e-16
+            - Coupled capacitance
+
+
+441                   0.0   1.76433e-16             0            0.0  XI5/NET02230
+            - Coupled nets
+            - Intrinsic Capacitance
+               1.76433e-16
+            - Coupled capacitance
+
+
+442                   0.0   1.76433e-16             0            0.0  XI5/NET02262
+            - Coupled nets
+            - Intrinsic Capacitance
+               1.76433e-16
+            - Coupled capacitance
+
+
+443                   0.0   1.76433e-16             0            0.0  XI5/NET02294
+            - Coupled nets
+            - Intrinsic Capacitance
+               1.76433e-16
+            - Coupled capacitance
+
+
+444                   0.0   1.76433e-16             0            0.0  XI5/NET04518
+            - Coupled nets
+            - Intrinsic Capacitance
+               1.76433e-16
+            - Coupled capacitance
+
+
+445                   0.0   1.76433e-16             0            0.0  XI5/NET02330
+            - Coupled nets
+            - Intrinsic Capacitance
+               1.76433e-16
+            - Coupled capacitance
+
+
+446                   0.0   1.76433e-16             0            0.0  XI5/NET02354
+            - Coupled nets
+            - Intrinsic Capacitance
+               1.76433e-16
+            - Coupled capacitance
+
+
+447                   0.0   1.76433e-16             0            0.0  XI5/NET02386
+            - Coupled nets
+            - Intrinsic Capacitance
+               1.76433e-16
+            - Coupled capacitance
+
+
+448                   0.0   1.76433e-16             0            0.0  XI5/NET02418
+            - Coupled nets
+            - Intrinsic Capacitance
+               1.76433e-16
+            - Coupled capacitance
+
+
+449                   0.0   1.76433e-16             0            0.0  XI5/NET02450
+            - Coupled nets
+            - Intrinsic Capacitance
+               1.76433e-16
+            - Coupled capacitance
+
+
+450                   0.0   1.76433e-16             0            0.0  XI5/NET04270
+            - Coupled nets
+            - Intrinsic Capacitance
+               1.76433e-16
+            - Coupled capacitance
+
+
+451                   0.0   1.76433e-16             0            0.0  XI5/NET04302
+            - Coupled nets
+            - Intrinsic Capacitance
+               1.76433e-16
+            - Coupled capacitance
+
+
+452                   0.0   1.76433e-16             0            0.0  XI5/NET03450
+            - Coupled nets
+            - Intrinsic Capacitance
+               1.76433e-16
+            - Coupled capacitance
+
+
+453                   0.0   1.76433e-16             0            0.0  XI5/NET05390
+            - Coupled nets
+            - Intrinsic Capacitance
+               1.76433e-16
+            - Coupled capacitance
+
+
+454                   0.0   1.76433e-16             0            0.0  XI5/NET05346
+            - Coupled nets
+            - Intrinsic Capacitance
+               1.76433e-16
+            - Coupled capacitance
+
+
+455                   0.0   1.76433e-16             0            0.0  XI5/NET05302
+            - Coupled nets
+            - Intrinsic Capacitance
+               1.76433e-16
+            - Coupled capacitance
+
+
+456                   0.0   1.76433e-16             0            0.0  XI5/NET05270
+            - Coupled nets
+            - Intrinsic Capacitance
+               1.76433e-16
+            - Coupled capacitance
+
+
+457                   0.0   1.76433e-16             0            0.0  XI5/NET05238
+            - Coupled nets
+            - Intrinsic Capacitance
+               1.76433e-16
+            - Coupled capacitance
+
+
+458                   0.0   1.76433e-16             0            0.0  XI5/NET05206
+            - Coupled nets
+            - Intrinsic Capacitance
+               1.76433e-16
+            - Coupled capacitance
+
+
+459                   0.0   1.76433e-16             0            0.0  XI5/NET05166
+            - Coupled nets
+            - Intrinsic Capacitance
+               1.76433e-16
+            - Coupled capacitance
+
+
+460                   0.0   1.76433e-16             0            0.0  XI5/NET05134
+            - Coupled nets
+            - Intrinsic Capacitance
+               1.76433e-16
+            - Coupled capacitance
+
+
+461                   0.0   1.76433e-16             0            0.0  XI5/NET05098
+            - Coupled nets
+            - Intrinsic Capacitance
+               1.76433e-16
+            - Coupled capacitance
+
+
+462                   0.0   1.76433e-16             0            0.0  XI5/NET05066
+            - Coupled nets
+            - Intrinsic Capacitance
+               1.76433e-16
+            - Coupled capacitance
+
+
+463                   0.0   1.76433e-16             0            0.0  XI5/NET05034
+            - Coupled nets
+            - Intrinsic Capacitance
+               1.76433e-16
+            - Coupled capacitance
+
+
+464                   0.0   1.76433e-16             0            0.0  XI5/NET05002
+            - Coupled nets
+            - Intrinsic Capacitance
+               1.76433e-16
+            - Coupled capacitance
+
+
+465                   0.0   1.76433e-16             0            0.0  XI5/NET04970
+            - Coupled nets
+            - Intrinsic Capacitance
+               1.76433e-16
+            - Coupled capacitance
+
+
+466                   0.0   1.76433e-16             0            0.0  XI5/NET04938
+            - Coupled nets
+            - Intrinsic Capacitance
+               1.76433e-16
+            - Coupled capacitance
+
+
+467                   0.0   1.76433e-16             0            0.0  XI5/NET04898
+            - Coupled nets
+            - Intrinsic Capacitance
+               1.76433e-16
+            - Coupled capacitance
+
+
+468                   0.0   1.76433e-16             0            0.0  XI5/NET04866
+            - Coupled nets
+            - Intrinsic Capacitance
+               1.76433e-16
+            - Coupled capacitance
+
+
+469                   0.0   1.76433e-16             0            0.0  XI5/NET04834
+            - Coupled nets
+            - Intrinsic Capacitance
+               1.76433e-16
+            - Coupled capacitance
+
+
+470                   0.0   1.76433e-16             0            0.0  XI5/NET04802
+            - Coupled nets
+            - Intrinsic Capacitance
+               1.76433e-16
+            - Coupled capacitance
+
+
+471                   0.0   1.76433e-16             0            0.0  XI5/NET04750
+            - Coupled nets
+            - Intrinsic Capacitance
+               1.76433e-16
+            - Coupled capacitance
+
+
+472                   0.0   1.76433e-16             0            0.0  XI5/NET04710
+            - Coupled nets
+            - Intrinsic Capacitance
+               1.76433e-16
+            - Coupled capacitance
+
+
+473                   0.0   1.76433e-16             0            0.0  XI5/NET04634
+            - Coupled nets
+            - Intrinsic Capacitance
+               1.76433e-16
+            - Coupled capacitance
+
+
+474                   0.0   1.76433e-16             0            0.0  XI5/NET04602
+            - Coupled nets
+            - Intrinsic Capacitance
+               1.76433e-16
+            - Coupled capacitance
+
+
+475                   0.0   1.76433e-16             0            0.0  XI5/NET04558
+            - Coupled nets
+            - Intrinsic Capacitance
+               1.76433e-16
+            - Coupled capacitance
+
+
+476                   0.0   1.76433e-16             0            0.0  XI5/NET04370
+            - Coupled nets
+            - Intrinsic Capacitance
+               1.76433e-16
+            - Coupled capacitance
+
+
+477                   0.0   1.31134e-15             0            0.0  XI7/NET29
+            - Coupled nets
+            - Intrinsic Capacitance
+               1.31134e-15
+            - Coupled capacitance
+
+
+478                   0.0   1.80551e-16             0            0.0  XI5/NET01330
+            - Coupled nets
+            - Intrinsic Capacitance
+               1.80551e-16
+            - Coupled capacitance
+
+
+479                   0.0   1.76433e-16             0            0.0  XI5/NET01362
+            - Coupled nets
+            - Intrinsic Capacitance
+               1.76433e-16
+            - Coupled capacitance
+
+
+480                   0.0   1.76433e-16             0            0.0  XI5/NET01394
+            - Coupled nets
+            - Intrinsic Capacitance
+               1.76433e-16
+            - Coupled capacitance
+
+
+481                   0.0   1.76433e-16             0            0.0  XI5/NET01426
+            - Coupled nets
+            - Intrinsic Capacitance
+               1.76433e-16
+            - Coupled capacitance
+
+
+482                   0.0   1.76433e-16             0            0.0  XI5/NET01458
+            - Coupled nets
+            - Intrinsic Capacitance
+               1.76433e-16
+            - Coupled capacitance
+
+
+483                   0.0   1.76433e-16             0            0.0  XI5/NET01490
+            - Coupled nets
+            - Intrinsic Capacitance
+               1.76433e-16
+            - Coupled capacitance
+
+
+484                   0.0   1.76433e-16             0            0.0  XI5/NET01522
+            - Coupled nets
+            - Intrinsic Capacitance
+               1.76433e-16
+            - Coupled capacitance
+
+
+485                   0.0   1.76433e-16             0            0.0  XI5/NET01554
+            - Coupled nets
+            - Intrinsic Capacitance
+               1.76433e-16
+            - Coupled capacitance
+
+
+486                   0.0    1.8066e-16             0            0.0  XI5/NET01586
+            - Coupled nets
+            - Intrinsic Capacitance
+               1.8066e-16
+            - Coupled capacitance
+
+
+487                   0.0   1.76433e-16             0            0.0  XI5/NET01618
+            - Coupled nets
+            - Intrinsic Capacitance
+               1.76433e-16
+            - Coupled capacitance
+
+
+488                   0.0   1.76433e-16             0            0.0  XI5/NET01650
+            - Coupled nets
+            - Intrinsic Capacitance
+               1.76433e-16
+            - Coupled capacitance
+
+
+489                   0.0   1.76433e-16             0            0.0  XI5/NET01682
+            - Coupled nets
+            - Intrinsic Capacitance
+               1.76433e-16
+            - Coupled capacitance
+
+
+490                   0.0   1.76433e-16             0            0.0  XI5/NET01714
+            - Coupled nets
+            - Intrinsic Capacitance
+               1.76433e-16
+            - Coupled capacitance
+
+
+491                   0.0   1.76433e-16             0            0.0  XI5/NET01746
+            - Coupled nets
+            - Intrinsic Capacitance
+               1.76433e-16
+            - Coupled capacitance
+
+
+492                   0.0   1.76433e-16             0            0.0  XI5/NET01778
+            - Coupled nets
+            - Intrinsic Capacitance
+               1.76433e-16
+            - Coupled capacitance
+
+
+493                   0.0   1.76433e-16             0            0.0  XI5/NET01810
+            - Coupled nets
+            - Intrinsic Capacitance
+               1.76433e-16
+            - Coupled capacitance
+
+
+494                   0.0    1.8066e-16             0            0.0  XI5/NET01842
+            - Coupled nets
+            - Intrinsic Capacitance
+               1.8066e-16
+            - Coupled capacitance
+
+
+495                   0.0   1.76433e-16             0            0.0  XI5/NET01874
+            - Coupled nets
+            - Intrinsic Capacitance
+               1.76433e-16
+            - Coupled capacitance
+
+
+496                   0.0   1.76433e-16             0            0.0  XI5/NET01906
+            - Coupled nets
+            - Intrinsic Capacitance
+               1.76433e-16
+            - Coupled capacitance
+
+
+497                   0.0   1.76433e-16             0            0.0  XI5/NET01938
+            - Coupled nets
+            - Intrinsic Capacitance
+               1.76433e-16
+            - Coupled capacitance
+
+
+498                   0.0   1.76433e-16             0            0.0  XI5/NET01970
+            - Coupled nets
+            - Intrinsic Capacitance
+               1.76433e-16
+            - Coupled capacitance
+
+
+499                   0.0   1.76433e-16             0            0.0  XI5/NET02002
+            - Coupled nets
+            - Intrinsic Capacitance
+               1.76433e-16
+            - Coupled capacitance
+
+
+500                   0.0   1.76433e-16             0            0.0  XI5/NET02034
+            - Coupled nets
+            - Intrinsic Capacitance
+               1.76433e-16
+            - Coupled capacitance
+
+
+501                   0.0   1.76433e-16             0            0.0  XI5/NET02066
+            - Coupled nets
+            - Intrinsic Capacitance
+               1.76433e-16
+            - Coupled capacitance
+
+
+502                   0.0    1.8066e-16             0            0.0  XI5/NET02098
+            - Coupled nets
+            - Intrinsic Capacitance
+               1.8066e-16
+            - Coupled capacitance
+
+
+503                   0.0   1.76433e-16             0            0.0  XI5/NET02130
+            - Coupled nets
+            - Intrinsic Capacitance
+               1.76433e-16
+            - Coupled capacitance
+
+
+504                   0.0   1.76433e-16             0            0.0  XI5/NET02162
+            - Coupled nets
+            - Intrinsic Capacitance
+               1.76433e-16
+            - Coupled capacitance
+
+
+505                   0.0   1.76433e-16             0            0.0  XI5/NET02194
+            - Coupled nets
+            - Intrinsic Capacitance
+               1.76433e-16
+            - Coupled capacitance
+
+
+506                   0.0   1.76433e-16             0            0.0  XI5/NET02226
+            - Coupled nets
+            - Intrinsic Capacitance
+               1.76433e-16
+            - Coupled capacitance
+
+
+507                   0.0   1.76433e-16             0            0.0  XI5/NET02258
+            - Coupled nets
+            - Intrinsic Capacitance
+               1.76433e-16
+            - Coupled capacitance
+
+
+508                   0.0   1.76433e-16             0            0.0  XI5/NET02286
+            - Coupled nets
+            - Intrinsic Capacitance
+               1.76433e-16
+            - Coupled capacitance
+
+
+509                   0.0   1.76433e-16             0            0.0  XI5/NET04514
+            - Coupled nets
+            - Intrinsic Capacitance
+               1.76433e-16
+            - Coupled capacitance
+
+
+510                   0.0   1.76433e-16             0            0.0  XI5/NET02314
+            - Coupled nets
+            - Intrinsic Capacitance
+               1.76433e-16
+            - Coupled capacitance
+
+
+511                   0.0   1.76433e-16             0            0.0  XI5/NET02350
+            - Coupled nets
+            - Intrinsic Capacitance
+               1.76433e-16
+            - Coupled capacitance
+
+
+512                   0.0   1.76433e-16             0            0.0  XI5/NET02382
+            - Coupled nets
+            - Intrinsic Capacitance
+               1.76433e-16
+            - Coupled capacitance
+
+
+513                   0.0   1.76433e-16             0            0.0  XI5/NET02414
+            - Coupled nets
+            - Intrinsic Capacitance
+               1.76433e-16
+            - Coupled capacitance
+
+
+514                   0.0   1.76433e-16             0            0.0  XI5/NET02446
+            - Coupled nets
+            - Intrinsic Capacitance
+               1.76433e-16
+            - Coupled capacitance
+
+
+515                   0.0   1.76433e-16             0            0.0  XI5/NET04266
+            - Coupled nets
+            - Intrinsic Capacitance
+               1.76433e-16
+            - Coupled capacitance
+
+
+516                   0.0   1.76433e-16             0            0.0  XI5/NET04298
+            - Coupled nets
+            - Intrinsic Capacitance
+               1.76433e-16
+            - Coupled capacitance
+
+
+517                   0.0   1.76433e-16             0            0.0  XI5/NET03446
+            - Coupled nets
+            - Intrinsic Capacitance
+               1.76433e-16
+            - Coupled capacitance
+
+
+518                   0.0   1.76433e-16             0            0.0  XI5/NET05386
+            - Coupled nets
+            - Intrinsic Capacitance
+               1.76433e-16
+            - Coupled capacitance
+
+
+519                   0.0   1.76433e-16             0            0.0  XI5/NET05342
+            - Coupled nets
+            - Intrinsic Capacitance
+               1.76433e-16
+            - Coupled capacitance
+
+
+520                   0.0   1.76433e-16             0            0.0  XI5/NET05298
+            - Coupled nets
+            - Intrinsic Capacitance
+               1.76433e-16
+            - Coupled capacitance
+
+
+521                   0.0   1.76433e-16             0            0.0  XI5/NET05266
+            - Coupled nets
+            - Intrinsic Capacitance
+               1.76433e-16
+            - Coupled capacitance
+
+
+522                   0.0   1.76433e-16             0            0.0  XI5/NET05234
+            - Coupled nets
+            - Intrinsic Capacitance
+               1.76433e-16
+            - Coupled capacitance
+
+
+523                   0.0   1.76433e-16             0            0.0  XI5/NET05202
+            - Coupled nets
+            - Intrinsic Capacitance
+               1.76433e-16
+            - Coupled capacitance
+
+
+524                   0.0   1.76433e-16             0            0.0  XI5/NET05162
+            - Coupled nets
+            - Intrinsic Capacitance
+               1.76433e-16
+            - Coupled capacitance
+
+
+525                   0.0   1.76433e-16             0            0.0  XI5/NET05130
+            - Coupled nets
+            - Intrinsic Capacitance
+               1.76433e-16
+            - Coupled capacitance
+
+
+526                   0.0   1.76433e-16             0            0.0  XI5/NET05094
+            - Coupled nets
+            - Intrinsic Capacitance
+               1.76433e-16
+            - Coupled capacitance
+
+
+527                   0.0   1.76433e-16             0            0.0  XI5/NET05062
+            - Coupled nets
+            - Intrinsic Capacitance
+               1.76433e-16
+            - Coupled capacitance
+
+
+528                   0.0   1.76433e-16             0            0.0  XI5/NET05030
+            - Coupled nets
+            - Intrinsic Capacitance
+               1.76433e-16
+            - Coupled capacitance
+
+
+529                   0.0   1.76433e-16             0            0.0  XI5/NET04998
+            - Coupled nets
+            - Intrinsic Capacitance
+               1.76433e-16
+            - Coupled capacitance
+
+
+530                   0.0   1.76433e-16             0            0.0  XI5/NET04966
+            - Coupled nets
+            - Intrinsic Capacitance
+               1.76433e-16
+            - Coupled capacitance
+
+
+531                   0.0   1.76433e-16             0            0.0  XI5/NET04934
+            - Coupled nets
+            - Intrinsic Capacitance
+               1.76433e-16
+            - Coupled capacitance
+
+
+532                   0.0   1.76433e-16             0            0.0  XI5/NET04894
+            - Coupled nets
+            - Intrinsic Capacitance
+               1.76433e-16
+            - Coupled capacitance
+
+
+533                   0.0   1.76433e-16             0            0.0  XI5/NET04862
+            - Coupled nets
+            - Intrinsic Capacitance
+               1.76433e-16
+            - Coupled capacitance
+
+
+534                   0.0   1.76433e-16             0            0.0  XI5/NET04830
+            - Coupled nets
+            - Intrinsic Capacitance
+               1.76433e-16
+            - Coupled capacitance
+
+
+535                   0.0   1.76433e-16             0            0.0  XI5/NET04798
+            - Coupled nets
+            - Intrinsic Capacitance
+               1.76433e-16
+            - Coupled capacitance
+
+
+536                   0.0   1.76433e-16             0            0.0  XI5/NET04746
+            - Coupled nets
+            - Intrinsic Capacitance
+               1.76433e-16
+            - Coupled capacitance
+
+
+537                   0.0   1.76433e-16             0            0.0  XI5/NET04706
+            - Coupled nets
+            - Intrinsic Capacitance
+               1.76433e-16
+            - Coupled capacitance
+
+
+538                   0.0   1.76433e-16             0            0.0  XI5/NET04630
+            - Coupled nets
+            - Intrinsic Capacitance
+               1.76433e-16
+            - Coupled capacitance
+
+
+539                   0.0   1.76433e-16             0            0.0  XI5/NET04598
+            - Coupled nets
+            - Intrinsic Capacitance
+               1.76433e-16
+            - Coupled capacitance
+
+
+540                   0.0   1.76433e-16             0            0.0  XI5/NET04554
+            - Coupled nets
+            - Intrinsic Capacitance
+               1.76433e-16
+            - Coupled capacitance
+
+
+541                   0.0   1.76433e-16             0            0.0  XI5/NET04322
+            - Coupled nets
+            - Intrinsic Capacitance
+               1.76433e-16
+            - Coupled capacitance
+
+
+542                   0.0   1.36448e-15             0            0.0  XI7/NET33
+            - Coupled nets
+            - Intrinsic Capacitance
+               1.36448e-15
+            - Coupled capacitance
+
+
+543                   0.0     1.168e-15             0            0.0  XI7/NET57
+            - Coupled nets
+            - Intrinsic Capacitance
+               1.168e-15
+            - Coupled capacitance
+
+
+544                   0.0   1.80551e-16             0            0.0  XI5/NET01326
+            - Coupled nets
+            - Intrinsic Capacitance
+               1.80551e-16
+            - Coupled capacitance
+
+
+545                   0.0   1.76433e-16             0            0.0  XI5/NET01358
+            - Coupled nets
+            - Intrinsic Capacitance
+               1.76433e-16
+            - Coupled capacitance
+
+
+546                   0.0   1.76433e-16             0            0.0  XI5/NET01390
+            - Coupled nets
+            - Intrinsic Capacitance
+               1.76433e-16
+            - Coupled capacitance
+
+
+547                   0.0   1.76433e-16             0            0.0  XI5/NET01422
+            - Coupled nets
+            - Intrinsic Capacitance
+               1.76433e-16
+            - Coupled capacitance
+
+
+548                   0.0   1.76433e-16             0            0.0  XI5/NET01454
+            - Coupled nets
+            - Intrinsic Capacitance
+               1.76433e-16
+            - Coupled capacitance
+
+
+549                   0.0   1.76433e-16             0            0.0  XI5/NET01486
+            - Coupled nets
+            - Intrinsic Capacitance
+               1.76433e-16
+            - Coupled capacitance
+
+
+550                   0.0   1.76433e-16             0            0.0  XI5/NET01518
+            - Coupled nets
+            - Intrinsic Capacitance
+               1.76433e-16
+            - Coupled capacitance
+
+
+551                   0.0   1.76433e-16             0            0.0  XI5/NET01550
+            - Coupled nets
+            - Intrinsic Capacitance
+               1.76433e-16
+            - Coupled capacitance
+
+
+552                   0.0    1.8066e-16             0            0.0  XI5/NET01582
+            - Coupled nets
+            - Intrinsic Capacitance
+               1.8066e-16
+            - Coupled capacitance
+
+
+553                   0.0   1.76433e-16             0            0.0  XI5/NET01614
+            - Coupled nets
+            - Intrinsic Capacitance
+               1.76433e-16
+            - Coupled capacitance
+
+
+554                   0.0   1.76433e-16             0            0.0  XI5/NET01646
+            - Coupled nets
+            - Intrinsic Capacitance
+               1.76433e-16
+            - Coupled capacitance
+
+
+555                   0.0   1.76433e-16             0            0.0  XI5/NET01678
+            - Coupled nets
+            - Intrinsic Capacitance
+               1.76433e-16
+            - Coupled capacitance
+
+
+556                   0.0   1.76433e-16             0            0.0  XI5/NET01710
+            - Coupled nets
+            - Intrinsic Capacitance
+               1.76433e-16
+            - Coupled capacitance
+
+
+557                   0.0   1.76433e-16             0            0.0  XI5/NET01742
+            - Coupled nets
+            - Intrinsic Capacitance
+               1.76433e-16
+            - Coupled capacitance
+
+
+558                   0.0   1.76433e-16             0            0.0  XI5/NET01774
+            - Coupled nets
+            - Intrinsic Capacitance
+               1.76433e-16
+            - Coupled capacitance
+
+
+559                   0.0   1.76433e-16             0            0.0  XI5/NET01806
+            - Coupled nets
+            - Intrinsic Capacitance
+               1.76433e-16
+            - Coupled capacitance
+
+
+560                   0.0    1.8066e-16             0            0.0  XI5/NET01838
+            - Coupled nets
+            - Intrinsic Capacitance
+               1.8066e-16
+            - Coupled capacitance
+
+
+561                   0.0   1.76433e-16             0            0.0  XI5/NET01870
+            - Coupled nets
+            - Intrinsic Capacitance
+               1.76433e-16
+            - Coupled capacitance
+
+
+562                   0.0   1.76433e-16             0            0.0  XI5/NET01902
+            - Coupled nets
+            - Intrinsic Capacitance
+               1.76433e-16
+            - Coupled capacitance
+
+
+563                   0.0   1.76433e-16             0            0.0  XI5/NET01934
+            - Coupled nets
+            - Intrinsic Capacitance
+               1.76433e-16
+            - Coupled capacitance
+
+
+564                   0.0   1.76433e-16             0            0.0  XI5/NET01966
+            - Coupled nets
+            - Intrinsic Capacitance
+               1.76433e-16
+            - Coupled capacitance
+
+
+565                   0.0   1.76433e-16             0            0.0  XI5/NET01998
+            - Coupled nets
+            - Intrinsic Capacitance
+               1.76433e-16
+            - Coupled capacitance
+
+
+566                   0.0   1.76433e-16             0            0.0  XI5/NET02030
+            - Coupled nets
+            - Intrinsic Capacitance
+               1.76433e-16
+            - Coupled capacitance
+
+
+567                   0.0   1.76433e-16             0            0.0  XI5/NET02062
+            - Coupled nets
+            - Intrinsic Capacitance
+               1.76433e-16
+            - Coupled capacitance
+
+
+568                   0.0    1.8066e-16             0            0.0  XI5/NET02094
+            - Coupled nets
+            - Intrinsic Capacitance
+               1.8066e-16
+            - Coupled capacitance
+
+
+569                   0.0   1.76433e-16             0            0.0  XI5/NET02126
+            - Coupled nets
+            - Intrinsic Capacitance
+               1.76433e-16
+            - Coupled capacitance
+
+
+570                   0.0   1.76433e-16             0            0.0  XI5/NET02158
+            - Coupled nets
+            - Intrinsic Capacitance
+               1.76433e-16
+            - Coupled capacitance
+
+
+571                   0.0   1.76433e-16             0            0.0  XI5/NET02190
+            - Coupled nets
+            - Intrinsic Capacitance
+               1.76433e-16
+            - Coupled capacitance
+
+
+572                   0.0   1.76433e-16             0            0.0  XI5/NET02222
+            - Coupled nets
+            - Intrinsic Capacitance
+               1.76433e-16
+            - Coupled capacitance
+
+
+573                   0.0   1.76433e-16             0            0.0  XI5/NET02254
+            - Coupled nets
+            - Intrinsic Capacitance
+               1.76433e-16
+            - Coupled capacitance
+
+
+574                   0.0   1.76433e-16             0            0.0  XI5/NET02306
+            - Coupled nets
+            - Intrinsic Capacitance
+               1.76433e-16
+            - Coupled capacitance
+
+
+575                   0.0   1.76433e-16             0            0.0  XI5/NET04510
+            - Coupled nets
+            - Intrinsic Capacitance
+               1.76433e-16
+            - Coupled capacitance
+
+
+576                   0.0   1.76433e-16             0            0.0  XI5/NET02318
+            - Coupled nets
+            - Intrinsic Capacitance
+               1.76433e-16
+            - Coupled capacitance
+
+
+577                   0.0   1.76433e-16             0            0.0  XI5/NET02346
+            - Coupled nets
+            - Intrinsic Capacitance
+               1.76433e-16
+            - Coupled capacitance
+
+
+578                   0.0   1.76433e-16             0            0.0  XI5/NET02378
+            - Coupled nets
+            - Intrinsic Capacitance
+               1.76433e-16
+            - Coupled capacitance
+
+
+579                   0.0   1.76433e-16             0            0.0  XI5/NET02410
+            - Coupled nets
+            - Intrinsic Capacitance
+               1.76433e-16
+            - Coupled capacitance
+
+
+580                   0.0   1.76433e-16             0            0.0  XI5/NET02442
+            - Coupled nets
+            - Intrinsic Capacitance
+               1.76433e-16
+            - Coupled capacitance
+
+
+581                   0.0   1.76433e-16             0            0.0  XI5/NET04262
+            - Coupled nets
+            - Intrinsic Capacitance
+               1.76433e-16
+            - Coupled capacitance
+
+
+582                   0.0   1.76433e-16             0            0.0  XI5/NET04294
+            - Coupled nets
+            - Intrinsic Capacitance
+               1.76433e-16
+            - Coupled capacitance
+
+
+583                   0.0   1.76433e-16             0            0.0  XI5/NET03442
+            - Coupled nets
+            - Intrinsic Capacitance
+               1.76433e-16
+            - Coupled capacitance
+
+
+584                   0.0   1.76433e-16             0            0.0  XI5/NET05382
+            - Coupled nets
+            - Intrinsic Capacitance
+               1.76433e-16
+            - Coupled capacitance
+
+
+585                   0.0   1.76433e-16             0            0.0  XI5/NET05338
+            - Coupled nets
+            - Intrinsic Capacitance
+               1.76433e-16
+            - Coupled capacitance
+
+
+586                   0.0   1.76433e-16             0            0.0  XI5/NET05294
+            - Coupled nets
+            - Intrinsic Capacitance
+               1.76433e-16
+            - Coupled capacitance
+
+
+587                   0.0   1.76433e-16             0            0.0  XI5/NET05262
+            - Coupled nets
+            - Intrinsic Capacitance
+               1.76433e-16
+            - Coupled capacitance
+
+
+588                   0.0   1.76433e-16             0            0.0  XI5/NET05230
+            - Coupled nets
+            - Intrinsic Capacitance
+               1.76433e-16
+            - Coupled capacitance
+
+
+589                   0.0   1.76433e-16             0            0.0  XI5/NET05198
+            - Coupled nets
+            - Intrinsic Capacitance
+               1.76433e-16
+            - Coupled capacitance
+
+
+590                   0.0   1.76433e-16             0            0.0  XI5/NET05158
+            - Coupled nets
+            - Intrinsic Capacitance
+               1.76433e-16
+            - Coupled capacitance
+
+
+591                   0.0   1.76433e-16             0            0.0  XI5/NET05126
+            - Coupled nets
+            - Intrinsic Capacitance
+               1.76433e-16
+            - Coupled capacitance
+
+
+592                   0.0   1.76433e-16             0            0.0  XI5/NET05090
+            - Coupled nets
+            - Intrinsic Capacitance
+               1.76433e-16
+            - Coupled capacitance
+
+
+593                   0.0   1.76433e-16             0            0.0  XI5/NET05058
+            - Coupled nets
+            - Intrinsic Capacitance
+               1.76433e-16
+            - Coupled capacitance
+
+
+594                   0.0   1.76433e-16             0            0.0  XI5/NET05026
+            - Coupled nets
+            - Intrinsic Capacitance
+               1.76433e-16
+            - Coupled capacitance
+
+
+595                   0.0   1.76433e-16             0            0.0  XI5/NET04994
+            - Coupled nets
+            - Intrinsic Capacitance
+               1.76433e-16
+            - Coupled capacitance
+
+
+596                   0.0   1.76433e-16             0            0.0  XI5/NET04962
+            - Coupled nets
+            - Intrinsic Capacitance
+               1.76433e-16
+            - Coupled capacitance
+
+
+597                   0.0   1.76433e-16             0            0.0  XI5/NET04930
+            - Coupled nets
+            - Intrinsic Capacitance
+               1.76433e-16
+            - Coupled capacitance
+
+
+598                   0.0   1.76433e-16             0            0.0  XI5/NET04890
+            - Coupled nets
+            - Intrinsic Capacitance
+               1.76433e-16
+            - Coupled capacitance
+
+
+599                   0.0   1.76433e-16             0            0.0  XI5/NET04858
+            - Coupled nets
+            - Intrinsic Capacitance
+               1.76433e-16
+            - Coupled capacitance
+
+
+600                   0.0   1.76433e-16             0            0.0  XI5/NET04826
+            - Coupled nets
+            - Intrinsic Capacitance
+               1.76433e-16
+            - Coupled capacitance
+
+
+601                   0.0   1.76433e-16             0            0.0  XI5/NET04794
+            - Coupled nets
+            - Intrinsic Capacitance
+               1.76433e-16
+            - Coupled capacitance
+
+
+602                   0.0   1.76433e-16             0            0.0  XI5/NET04742
+            - Coupled nets
+            - Intrinsic Capacitance
+               1.76433e-16
+            - Coupled capacitance
+
+
+603                   0.0   1.76433e-16             0            0.0  XI5/NET04694
+            - Coupled nets
+            - Intrinsic Capacitance
+               1.76433e-16
+            - Coupled capacitance
+
+
+604                   0.0   1.76433e-16             0            0.0  XI5/NET04626
+            - Coupled nets
+            - Intrinsic Capacitance
+               1.76433e-16
+            - Coupled capacitance
+
+
+605                   0.0   1.76433e-16             0            0.0  XI5/NET04594
+            - Coupled nets
+            - Intrinsic Capacitance
+               1.76433e-16
+            - Coupled capacitance
+
+
+606                   0.0   1.76433e-16             0            0.0  XI5/NET04550
+            - Coupled nets
+            - Intrinsic Capacitance
+               1.76433e-16
+            - Coupled capacitance
+
+
+607                   0.0   1.76433e-16             0            0.0  XI5/NET03002
+            - Coupled nets
+            - Intrinsic Capacitance
+               1.76433e-16
+            - Coupled capacitance
+
+
+608                   0.0   1.31314e-15             0            0.0  XI7/NET45
+            - Coupled nets
+            - Intrinsic Capacitance
+               1.31314e-15
+            - Coupled capacitance
+
+
+609                   0.0   1.80551e-16             0            0.0  XI5/NET01322
+            - Coupled nets
+            - Intrinsic Capacitance
+               1.80551e-16
+            - Coupled capacitance
+
+
+610                   0.0   1.76433e-16             0            0.0  XI5/NET01354
+            - Coupled nets
+            - Intrinsic Capacitance
+               1.76433e-16
+            - Coupled capacitance
+
+
+611                   0.0   1.76433e-16             0            0.0  XI5/NET01386
+            - Coupled nets
+            - Intrinsic Capacitance
+               1.76433e-16
+            - Coupled capacitance
+
+
+612                   0.0   1.76433e-16             0            0.0  XI5/NET01418
+            - Coupled nets
+            - Intrinsic Capacitance
+               1.76433e-16
+            - Coupled capacitance
+
+
+613                   0.0   1.76433e-16             0            0.0  XI5/NET01450
+            - Coupled nets
+            - Intrinsic Capacitance
+               1.76433e-16
+            - Coupled capacitance
+
+
+614                   0.0   1.76433e-16             0            0.0  XI5/NET01482
+            - Coupled nets
+            - Intrinsic Capacitance
+               1.76433e-16
+            - Coupled capacitance
+
+
+615                   0.0   1.76433e-16             0            0.0  XI5/NET01514
+            - Coupled nets
+            - Intrinsic Capacitance
+               1.76433e-16
+            - Coupled capacitance
+
+
+616                   0.0   1.76433e-16             0            0.0  XI5/NET01546
+            - Coupled nets
+            - Intrinsic Capacitance
+               1.76433e-16
+            - Coupled capacitance
+
+
+617                   0.0    1.8066e-16             0            0.0  XI5/NET01578
+            - Coupled nets
+            - Intrinsic Capacitance
+               1.8066e-16
+            - Coupled capacitance
+
+
+618                   0.0   1.76433e-16             0            0.0  XI5/NET01610
+            - Coupled nets
+            - Intrinsic Capacitance
+               1.76433e-16
+            - Coupled capacitance
+
+
+619                   0.0   1.76433e-16             0            0.0  XI5/NET01642
+            - Coupled nets
+            - Intrinsic Capacitance
+               1.76433e-16
+            - Coupled capacitance
+
+
+620                   0.0   1.76433e-16             0            0.0  XI5/NET01674
+            - Coupled nets
+            - Intrinsic Capacitance
+               1.76433e-16
+            - Coupled capacitance
+
+
+621                   0.0   1.76433e-16             0            0.0  XI5/NET01706
+            - Coupled nets
+            - Intrinsic Capacitance
+               1.76433e-16
+            - Coupled capacitance
+
+
+622                   0.0   1.76433e-16             0            0.0  XI5/NET01738
+            - Coupled nets
+            - Intrinsic Capacitance
+               1.76433e-16
+            - Coupled capacitance
+
+
+623                   0.0   1.76433e-16             0            0.0  XI5/NET01770
+            - Coupled nets
+            - Intrinsic Capacitance
+               1.76433e-16
+            - Coupled capacitance
+
+
+624                   0.0   1.76433e-16             0            0.0  XI5/NET01802
+            - Coupled nets
+            - Intrinsic Capacitance
+               1.76433e-16
+            - Coupled capacitance
+
+
+625                   0.0    1.8066e-16             0            0.0  XI5/NET01834
+            - Coupled nets
+            - Intrinsic Capacitance
+               1.8066e-16
+            - Coupled capacitance
+
+
+626                   0.0   1.76433e-16             0            0.0  XI5/NET01866
+            - Coupled nets
+            - Intrinsic Capacitance
+               1.76433e-16
+            - Coupled capacitance
+
+
+627                   0.0   1.76433e-16             0            0.0  XI5/NET01898
+            - Coupled nets
+            - Intrinsic Capacitance
+               1.76433e-16
+            - Coupled capacitance
+
+
+628                   0.0   1.76433e-16             0            0.0  XI5/NET01930
+            - Coupled nets
+            - Intrinsic Capacitance
+               1.76433e-16
+            - Coupled capacitance
+
+
+629                   0.0   1.76433e-16             0            0.0  XI5/NET01962
+            - Coupled nets
+            - Intrinsic Capacitance
+               1.76433e-16
+            - Coupled capacitance
+
+
+630                   0.0   1.76433e-16             0            0.0  XI5/NET01994
+            - Coupled nets
+            - Intrinsic Capacitance
+               1.76433e-16
+            - Coupled capacitance
+
+
+631                   0.0   1.76433e-16             0            0.0  XI5/NET02026
+            - Coupled nets
+            - Intrinsic Capacitance
+               1.76433e-16
+            - Coupled capacitance
+
+
+632                   0.0   1.76433e-16             0            0.0  XI5/NET02058
+            - Coupled nets
+            - Intrinsic Capacitance
+               1.76433e-16
+            - Coupled capacitance
+
+
+633                   0.0    1.8066e-16             0            0.0  XI5/NET02090
+            - Coupled nets
+            - Intrinsic Capacitance
+               1.8066e-16
+            - Coupled capacitance
+
+
+634                   0.0   1.76433e-16             0            0.0  XI5/NET02122
+            - Coupled nets
+            - Intrinsic Capacitance
+               1.76433e-16
+            - Coupled capacitance
+
+
+635                   0.0   1.76433e-16             0            0.0  XI5/NET02154
+            - Coupled nets
+            - Intrinsic Capacitance
+               1.76433e-16
+            - Coupled capacitance
+
+
+636                   0.0   1.76433e-16             0            0.0  XI5/NET02186
+            - Coupled nets
+            - Intrinsic Capacitance
+               1.76433e-16
+            - Coupled capacitance
+
+
+637                   0.0   1.76433e-16             0            0.0  XI5/NET02218
+            - Coupled nets
+            - Intrinsic Capacitance
+               1.76433e-16
+            - Coupled capacitance
+
+
+638                   0.0   1.76433e-16             0            0.0  XI5/NET02250
+            - Coupled nets
+            - Intrinsic Capacitance
+               1.76433e-16
+            - Coupled capacitance
+
+
+639                   0.0   1.76433e-16             0            0.0  XI5/NET02298
+            - Coupled nets
+            - Intrinsic Capacitance
+               1.76433e-16
+            - Coupled capacitance
+
+
+640                   0.0   1.76433e-16             0            0.0  XI5/NET04434
+            - Coupled nets
+            - Intrinsic Capacitance
+               1.76433e-16
+            - Coupled capacitance
+
+
+641                   0.0   1.09724e-15             0            0.0  XI7/NET69
+            - Coupled nets
+            - Intrinsic Capacitance
+               1.09724e-15
+            - Coupled capacitance
+
+
+642                   0.0   1.76433e-16             0            0.0  XI5/NET02334
+            - Coupled nets
+            - Intrinsic Capacitance
+               1.76433e-16
+            - Coupled capacitance
+
+
+643                   0.0   1.76433e-16             0            0.0  XI5/NET02342
+            - Coupled nets
+            - Intrinsic Capacitance
+               1.76433e-16
+            - Coupled capacitance
+
+
+644                   0.0   1.76433e-16             0            0.0  XI5/NET02374
+            - Coupled nets
+            - Intrinsic Capacitance
+               1.76433e-16
+            - Coupled capacitance
+
+
+645                   0.0   1.76433e-16             0            0.0  XI5/NET02406
+            - Coupled nets
+            - Intrinsic Capacitance
+               1.76433e-16
+            - Coupled capacitance
+
+
+646                   0.0   1.76433e-16             0            0.0  XI5/NET02438
+            - Coupled nets
+            - Intrinsic Capacitance
+               1.76433e-16
+            - Coupled capacitance
+
+
+647                   0.0   1.76433e-16             0            0.0  XI5/NET04258
+            - Coupled nets
+            - Intrinsic Capacitance
+               1.76433e-16
+            - Coupled capacitance
+
+
+648                   0.0   1.76433e-16             0            0.0  XI5/NET04290
+            - Coupled nets
+            - Intrinsic Capacitance
+               1.76433e-16
+            - Coupled capacitance
+
+
+649                   0.0   1.76433e-16             0            0.0  XI5/NET03438
+            - Coupled nets
+            - Intrinsic Capacitance
+               1.76433e-16
+            - Coupled capacitance
+
+
+650                   0.0   1.76433e-16             0            0.0  XI5/NET05378
+            - Coupled nets
+            - Intrinsic Capacitance
+               1.76433e-16
+            - Coupled capacitance
+
+
+651                   0.0   1.76433e-16             0            0.0  XI5/NET05334
+            - Coupled nets
+            - Intrinsic Capacitance
+               1.76433e-16
+            - Coupled capacitance
+
+
+652                   0.0   1.76433e-16             0            0.0  XI5/NET05290
+            - Coupled nets
+            - Intrinsic Capacitance
+               1.76433e-16
+            - Coupled capacitance
+
+
+653                   0.0   1.76433e-16             0            0.0  XI5/NET05258
+            - Coupled nets
+            - Intrinsic Capacitance
+               1.76433e-16
+            - Coupled capacitance
+
+
+654                   0.0   1.76433e-16             0            0.0  XI5/NET05226
+            - Coupled nets
+            - Intrinsic Capacitance
+               1.76433e-16
+            - Coupled capacitance
+
+
+655                   0.0   1.76433e-16             0            0.0  XI5/NET05194
+            - Coupled nets
+            - Intrinsic Capacitance
+               1.76433e-16
+            - Coupled capacitance
+
+
+656                   0.0   1.76433e-16             0            0.0  XI5/NET05154
+            - Coupled nets
+            - Intrinsic Capacitance
+               1.76433e-16
+            - Coupled capacitance
+
+
+657                   0.0   1.76433e-16             0            0.0  XI5/NET05122
+            - Coupled nets
+            - Intrinsic Capacitance
+               1.76433e-16
+            - Coupled capacitance
+
+
+658                   0.0   1.76433e-16             0            0.0  XI5/NET05086
+            - Coupled nets
+            - Intrinsic Capacitance
+               1.76433e-16
+            - Coupled capacitance
+
+
+659                   0.0   1.76433e-16             0            0.0  XI5/NET05054
+            - Coupled nets
+            - Intrinsic Capacitance
+               1.76433e-16
+            - Coupled capacitance
+
+
+660                   0.0   1.76433e-16             0            0.0  XI5/NET05022
+            - Coupled nets
+            - Intrinsic Capacitance
+               1.76433e-16
+            - Coupled capacitance
+
+
+661                   0.0   1.76433e-16             0            0.0  XI5/NET04990
+            - Coupled nets
+            - Intrinsic Capacitance
+               1.76433e-16
+            - Coupled capacitance
+
+
+662                   0.0   1.76433e-16             0            0.0  XI5/NET04958
+            - Coupled nets
+            - Intrinsic Capacitance
+               1.76433e-16
+            - Coupled capacitance
+
+
+663                   0.0   1.76433e-16             0            0.0  XI5/NET04926
+            - Coupled nets
+            - Intrinsic Capacitance
+               1.76433e-16
+            - Coupled capacitance
+
+
+664                   0.0   1.76433e-16             0            0.0  XI5/NET04886
+            - Coupled nets
+            - Intrinsic Capacitance
+               1.76433e-16
+            - Coupled capacitance
+
+
+665                   0.0   1.76433e-16             0            0.0  XI5/NET04854
+            - Coupled nets
+            - Intrinsic Capacitance
+               1.76433e-16
+            - Coupled capacitance
+
+
+666                   0.0   1.76433e-16             0            0.0  XI5/NET04822
+            - Coupled nets
+            - Intrinsic Capacitance
+               1.76433e-16
+            - Coupled capacitance
+
+
+667                   0.0   1.76433e-16             0            0.0  XI5/NET04790
+            - Coupled nets
+            - Intrinsic Capacitance
+               1.76433e-16
+            - Coupled capacitance
+
+
+668                   0.0   1.76433e-16             0            0.0  XI5/NET04738
+            - Coupled nets
+            - Intrinsic Capacitance
+               1.76433e-16
+            - Coupled capacitance
+
+
+669                   0.0   1.76433e-16             0            0.0  XI5/NET04666
+            - Coupled nets
+            - Intrinsic Capacitance
+               1.76433e-16
+            - Coupled capacitance
+
+
+670                   0.0   1.76433e-16             0            0.0  XI5/NET04622
+            - Coupled nets
+            - Intrinsic Capacitance
+               1.76433e-16
+            - Coupled capacitance
+
+
+671                   0.0   1.76433e-16             0            0.0  XI5/NET04590
+            - Coupled nets
+            - Intrinsic Capacitance
+               1.76433e-16
+            - Coupled capacitance
+
+
+672                   0.0   1.76433e-16             0            0.0  XI5/NET04546
+            - Coupled nets
+            - Intrinsic Capacitance
+               1.76433e-16
+            - Coupled capacitance
+
+
+673                   0.0   1.76433e-16             0            0.0  XI5/NET02746
+            - Coupled nets
+            - Intrinsic Capacitance
+               1.76433e-16
+            - Coupled capacitance
+
+
+674                   0.0   1.28998e-15             0            0.0  XI7/NET49
+            - Coupled nets
+            - Intrinsic Capacitance
+               1.28998e-15
+            - Coupled capacitance
+
+
+675                   0.0   1.38298e-16             0            0.0  XI5/NET01318
+            - Coupled nets
+            - Intrinsic Capacitance
+               1.38298e-16
+            - Coupled capacitance
+
+
+676                   0.0   1.36314e-16             0            0.0  XI5/NET01350
+            - Coupled nets
+            - Intrinsic Capacitance
+               1.36314e-16
+            - Coupled capacitance
+
+
+677                   0.0   1.36314e-16             0            0.0  XI5/NET01382
+            - Coupled nets
+            - Intrinsic Capacitance
+               1.36314e-16
+            - Coupled capacitance
+
+
+678                   0.0   1.36314e-16             0            0.0  XI5/NET01414
+            - Coupled nets
+            - Intrinsic Capacitance
+               1.36314e-16
+            - Coupled capacitance
+
+
+679                   0.0   1.36314e-16             0            0.0  XI5/NET01446
+            - Coupled nets
+            - Intrinsic Capacitance
+               1.36314e-16
+            - Coupled capacitance
+
+
+680                   0.0   1.36314e-16             0            0.0  XI5/NET01478
+            - Coupled nets
+            - Intrinsic Capacitance
+               1.36314e-16
+            - Coupled capacitance
+
+
+681                   0.0   1.36314e-16             0            0.0  XI5/NET01510
+            - Coupled nets
+            - Intrinsic Capacitance
+               1.36314e-16
+            - Coupled capacitance
+
+
+682                   0.0   1.36314e-16             0            0.0  XI5/NET01542
+            - Coupled nets
+            - Intrinsic Capacitance
+               1.36314e-16
+            - Coupled capacitance
+
+
+683                   0.0   1.38908e-16             0            0.0  XI5/NET01574
+            - Coupled nets
+            - Intrinsic Capacitance
+               1.38908e-16
+            - Coupled capacitance
+
+
+684                   0.0   1.36314e-16             0            0.0  XI5/NET01606
+            - Coupled nets
+            - Intrinsic Capacitance
+               1.36314e-16
+            - Coupled capacitance
+
+
+685                   0.0   1.36314e-16             0            0.0  XI5/NET01638
+            - Coupled nets
+            - Intrinsic Capacitance
+               1.36314e-16
+            - Coupled capacitance
+
+
+686                   0.0   1.36314e-16             0            0.0  XI5/NET01670
+            - Coupled nets
+            - Intrinsic Capacitance
+               1.36314e-16
+            - Coupled capacitance
+
+
+687                   0.0   1.36314e-16             0            0.0  XI5/NET01702
+            - Coupled nets
+            - Intrinsic Capacitance
+               1.36314e-16
+            - Coupled capacitance
+
+
+688                   0.0   1.36314e-16             0            0.0  XI5/NET01734
+            - Coupled nets
+            - Intrinsic Capacitance
+               1.36314e-16
+            - Coupled capacitance
+
+
+689                   0.0   1.36314e-16             0            0.0  XI5/NET01766
+            - Coupled nets
+            - Intrinsic Capacitance
+               1.36314e-16
+            - Coupled capacitance
+
+
+690                   0.0   1.36314e-16             0            0.0  XI5/NET01798
+            - Coupled nets
+            - Intrinsic Capacitance
+               1.36314e-16
+            - Coupled capacitance
+
+
+691                   0.0   1.38908e-16             0            0.0  XI5/NET01830
+            - Coupled nets
+            - Intrinsic Capacitance
+               1.38908e-16
+            - Coupled capacitance
+
+
+692                   0.0   1.36314e-16             0            0.0  XI5/NET01862
+            - Coupled nets
+            - Intrinsic Capacitance
+               1.36314e-16
+            - Coupled capacitance
+
+
+693                   0.0   1.36314e-16             0            0.0  XI5/NET01894
+            - Coupled nets
+            - Intrinsic Capacitance
+               1.36314e-16
+            - Coupled capacitance
+
+
+694                   0.0   1.36314e-16             0            0.0  XI5/NET01926
+            - Coupled nets
+            - Intrinsic Capacitance
+               1.36314e-16
+            - Coupled capacitance
+
+
+695                   0.0   1.36314e-16             0            0.0  XI5/NET01958
+            - Coupled nets
+            - Intrinsic Capacitance
+               1.36314e-16
+            - Coupled capacitance
+
+
+696                   0.0   1.36314e-16             0            0.0  XI5/NET01990
+            - Coupled nets
+            - Intrinsic Capacitance
+               1.36314e-16
+            - Coupled capacitance
+
+
+697                   0.0   1.36314e-16             0            0.0  XI5/NET02022
+            - Coupled nets
+            - Intrinsic Capacitance
+               1.36314e-16
+            - Coupled capacitance
+
+
+698                   0.0   1.36314e-16             0            0.0  XI5/NET02054
+            - Coupled nets
+            - Intrinsic Capacitance
+               1.36314e-16
+            - Coupled capacitance
+
+
+699                   0.0   1.38908e-16             0            0.0  XI5/NET02086
+            - Coupled nets
+            - Intrinsic Capacitance
+               1.38908e-16
+            - Coupled capacitance
+
+
+700                   0.0   1.36314e-16             0            0.0  XI5/NET02118
+            - Coupled nets
+            - Intrinsic Capacitance
+               1.36314e-16
+            - Coupled capacitance
+
+
+701                   0.0   1.36314e-16             0            0.0  XI5/NET02150
+            - Coupled nets
+            - Intrinsic Capacitance
+               1.36314e-16
+            - Coupled capacitance
+
+
+702                   0.0   1.36314e-16             0            0.0  XI5/NET02182
+            - Coupled nets
+            - Intrinsic Capacitance
+               1.36314e-16
+            - Coupled capacitance
+
+
+703                   0.0   1.36314e-16             0            0.0  XI5/NET02214
+            - Coupled nets
+            - Intrinsic Capacitance
+               1.36314e-16
+            - Coupled capacitance
+
+
+704                   0.0   1.36314e-16             0            0.0  XI5/NET02246
+            - Coupled nets
+            - Intrinsic Capacitance
+               1.36314e-16
+            - Coupled capacitance
+
+
+705                   0.0   1.36314e-16             0            0.0  XI5/NET02302
+            - Coupled nets
+            - Intrinsic Capacitance
+               1.36314e-16
+            - Coupled capacitance
+
+
+706                   0.0   1.36314e-16             0            0.0  XI5/NET04394
+            - Coupled nets
+            - Intrinsic Capacitance
+               1.36314e-16
+            - Coupled capacitance
+
+
+707                   0.0   9.79782e-18             0            0.0  XI10/NET28
+            - Coupled nets
+            - Intrinsic Capacitance
+               9.79782e-18
+            - Coupled capacitance
+
+
+710                   0.0   4.15157e-18             0            0.0  XI14/NET28
+            - Coupled nets
+            - Intrinsic Capacitance
+               4.15157e-18
+            - Coupled capacitance
+
+
+711                   0.0   4.15157e-18             0            0.0  XI15/NET28
+            - Coupled nets
+            - Intrinsic Capacitance
+               4.15157e-18
+            - Coupled capacitance
+
+
+712                   0.0   1.57407e-17             0            0.0  XI11/NET28
+            - Coupled nets
+            - Intrinsic Capacitance
+               1.57407e-17
+            - Coupled capacitance
+
+
+716                   0.0    2.6236e-17             0            0.0  XI45/XI58/NET13
+            - Coupled nets
+            - Intrinsic Capacitance
+               2.6236e-17
+            - Coupled capacitance
+
+
+717                   0.0   2.80972e-17             0            0.0  XI45/XI59/NET13
+            - Coupled nets
+            - Intrinsic Capacitance
+               2.80972e-17
+            - Coupled capacitance
+
+
+718                   0.0   2.80972e-17             0            0.0  XI45/XI60/NET13
+            - Coupled nets
+            - Intrinsic Capacitance
+               2.80972e-17
+            - Coupled capacitance
+
+
+719                   0.0   2.80972e-17             0            0.0  XI45/XI61/NET13
+            - Coupled nets
+            - Intrinsic Capacitance
+               2.80972e-17
+            - Coupled capacitance
+
+
+720                   0.0   2.80972e-17             0            0.0  XI45/XI62/NET13
+            - Coupled nets
+            - Intrinsic Capacitance
+               2.80972e-17
+            - Coupled capacitance
+
+
+721                   0.0   2.80972e-17             0            0.0  XI45/XI63/NET13
+            - Coupled nets
+            - Intrinsic Capacitance
+               2.80972e-17
+            - Coupled capacitance
+
+
+722                   0.0   2.80972e-17             0            0.0  XI45/XI64/NET13
+            - Coupled nets
+            - Intrinsic Capacitance
+               2.80972e-17
+            - Coupled capacitance
+
+
+723                   0.0   2.80972e-17             0            0.0  XI45/XI65/NET13
+            - Coupled nets
+            - Intrinsic Capacitance
+               2.80972e-17
+            - Coupled capacitance
+
+
+724                   0.0   2.80972e-17             0            0.0  XI45/XI57/NET13
+            - Coupled nets
+            - Intrinsic Capacitance
+               2.80972e-17
+            - Coupled capacitance
+
+
+725                   0.0   2.80972e-17             0            0.0  XI45/XI56/NET13
+            - Coupled nets
+            - Intrinsic Capacitance
+               2.80972e-17
+            - Coupled capacitance
+
+
+726                   0.0   2.80972e-17             0            0.0  XI45/XI55/NET13
+            - Coupled nets
+            - Intrinsic Capacitance
+               2.80972e-17
+            - Coupled capacitance
+
+
+727                   0.0   2.80972e-17             0            0.0  XI45/XI54/NET13
+            - Coupled nets
+            - Intrinsic Capacitance
+               2.80972e-17
+            - Coupled capacitance
+
+
+728                   0.0   2.80972e-17             0            0.0  XI45/XI53/NET13
+            - Coupled nets
+            - Intrinsic Capacitance
+               2.80972e-17
+            - Coupled capacitance
+
+
+729                   0.0   2.80972e-17             0            0.0  XI45/XI52/NET13
+            - Coupled nets
+            - Intrinsic Capacitance
+               2.80972e-17
+            - Coupled capacitance
+
+
+730                   0.0   2.80972e-17             0            0.0  XI45/XI51/NET13
+            - Coupled nets
+            - Intrinsic Capacitance
+               2.80972e-17
+            - Coupled capacitance
+
+
+731                   0.0   2.80972e-17             0            0.0  XI45/XI50/NET13
+            - Coupled nets
+            - Intrinsic Capacitance
+               2.80972e-17
+            - Coupled capacitance
+
+
+732                   0.0    2.8899e-17             0            0.0  XI45/XI42/NET13
+            - Coupled nets
+            - Intrinsic Capacitance
+               2.8899e-17
+            - Coupled capacitance
+
+
+733                   0.0   2.80972e-17             0            0.0  XI45/XI43/NET13
+            - Coupled nets
+            - Intrinsic Capacitance
+               2.80972e-17
+            - Coupled capacitance
+
+
+734                   0.0   2.80972e-17             0            0.0  XI45/XI44/NET13
+            - Coupled nets
+            - Intrinsic Capacitance
+               2.80972e-17
+            - Coupled capacitance
+
+
+735                   0.0   2.80972e-17             0            0.0  XI45/XI45/NET13
+            - Coupled nets
+            - Intrinsic Capacitance
+               2.80972e-17
+            - Coupled capacitance
+
+
+736                   0.0   2.80972e-17             0            0.0  XI45/XI46/NET13
+            - Coupled nets
+            - Intrinsic Capacitance
+               2.80972e-17
+            - Coupled capacitance
+
+
+737                   0.0   2.80972e-17             0            0.0  XI45/XI47/NET13
+            - Coupled nets
+            - Intrinsic Capacitance
+               2.80972e-17
+            - Coupled capacitance
+
+
+738                   0.0   2.80972e-17             0            0.0  XI45/XI48/NET13
+            - Coupled nets
+            - Intrinsic Capacitance
+               2.80972e-17
+            - Coupled capacitance
+
+
+739                   0.0   2.80972e-17             0            0.0  XI45/XI49/NET13
+            - Coupled nets
+            - Intrinsic Capacitance
+               2.80972e-17
+            - Coupled capacitance
+
+
+740                   0.0   2.80972e-17             0            0.0  XI45/XI41/NET13
+            - Coupled nets
+            - Intrinsic Capacitance
+               2.80972e-17
+            - Coupled capacitance
+
+
+741                   0.0   2.80972e-17             0            0.0  XI45/XI40/NET13
+            - Coupled nets
+            - Intrinsic Capacitance
+               2.80972e-17
+            - Coupled capacitance
+
+
+742                   0.0   2.80972e-17             0            0.0  XI45/XI39/NET13
+            - Coupled nets
+            - Intrinsic Capacitance
+               2.80972e-17
+            - Coupled capacitance
+
+
+743                   0.0   2.80972e-17             0            0.0  XI45/XI38/NET13
+            - Coupled nets
+            - Intrinsic Capacitance
+               2.80972e-17
+            - Coupled capacitance
+
+
+744                   0.0   2.80972e-17             0            0.0  XI45/XI37/NET13
+            - Coupled nets
+            - Intrinsic Capacitance
+               2.80972e-17
+            - Coupled capacitance
+
+
+745                   0.0   2.80972e-17             0            0.0  XI45/XI36/NET13
+            - Coupled nets
+            - Intrinsic Capacitance
+               2.80972e-17
+            - Coupled capacitance
+
+
+746                   0.0   2.80972e-17             0            0.0  XI45/XI35/NET13
+            - Coupled nets
+            - Intrinsic Capacitance
+               2.80972e-17
+            - Coupled capacitance
+
+
+747                   0.0   2.80972e-17             0            0.0  XI45/XI34/NET13
+            - Coupled nets
+            - Intrinsic Capacitance
+               2.80972e-17
+            - Coupled capacitance
+
+
+748                   0.0    2.8899e-17             0            0.0  XI45/XI26/NET13
+            - Coupled nets
+            - Intrinsic Capacitance
+               2.8899e-17
+            - Coupled capacitance
+
+
+749                   0.0   2.80972e-17             0            0.0  XI45/XI27/NET13
+            - Coupled nets
+            - Intrinsic Capacitance
+               2.80972e-17
+            - Coupled capacitance
+
+
+750                   0.0   2.80972e-17             0            0.0  XI45/XI28/NET13
+            - Coupled nets
+            - Intrinsic Capacitance
+               2.80972e-17
+            - Coupled capacitance
+
+
+751                   0.0   2.80972e-17             0            0.0  XI45/XI29/NET13
+            - Coupled nets
+            - Intrinsic Capacitance
+               2.80972e-17
+            - Coupled capacitance
+
+
+752                   0.0   2.80972e-17             0            0.0  XI45/XI30/NET13
+            - Coupled nets
+            - Intrinsic Capacitance
+               2.80972e-17
+            - Coupled capacitance
+
+
+753                   0.0   2.80972e-17             0            0.0  XI45/XI31/NET13
+            - Coupled nets
+            - Intrinsic Capacitance
+               2.80972e-17
+            - Coupled capacitance
+
+
+754                   0.0   2.80972e-17             0            0.0  XI45/XI32/NET13
+            - Coupled nets
+            - Intrinsic Capacitance
+               2.80972e-17
+            - Coupled capacitance
+
+
+755                   0.0   2.80972e-17             0            0.0  XI45/XI33/NET13
+            - Coupled nets
+            - Intrinsic Capacitance
+               2.80972e-17
+            - Coupled capacitance
+
+
+756                   0.0   2.80972e-17             0            0.0  XI45/XI25/NET13
+            - Coupled nets
+            - Intrinsic Capacitance
+               2.80972e-17
+            - Coupled capacitance
+
+
+757                   0.0   2.80972e-17             0            0.0  XI45/XI24/NET13
+            - Coupled nets
+            - Intrinsic Capacitance
+               2.80972e-17
+            - Coupled capacitance
+
+
+758                   0.0   2.80972e-17             0            0.0  XI45/XI23/NET13
+            - Coupled nets
+            - Intrinsic Capacitance
+               2.80972e-17
+            - Coupled capacitance
+
+
+759                   0.0   2.80972e-17             0            0.0  XI45/XI22/NET13
+            - Coupled nets
+            - Intrinsic Capacitance
+               2.80972e-17
+            - Coupled capacitance
+
+
+760                   0.0   2.80972e-17             0            0.0  XI45/XI21/NET13
+            - Coupled nets
+            - Intrinsic Capacitance
+               2.80972e-17
+            - Coupled capacitance
+
+
+761                   0.0   2.80972e-17             0            0.0  XI45/XI20/NET13
+            - Coupled nets
+            - Intrinsic Capacitance
+               2.80972e-17
+            - Coupled capacitance
+
+
+762                   0.0   2.80972e-17             0            0.0  XI45/XI19/NET13
+            - Coupled nets
+            - Intrinsic Capacitance
+               2.80972e-17
+            - Coupled capacitance
+
+
+763                   0.0   2.80972e-17             0            0.0  XI45/XI18/NET13
+            - Coupled nets
+            - Intrinsic Capacitance
+               2.80972e-17
+            - Coupled capacitance
+
+
+764                   0.0    2.8899e-17             0            0.0  XI45/XI10/NET13
+            - Coupled nets
+            - Intrinsic Capacitance
+               2.8899e-17
+            - Coupled capacitance
+
+
+765                   0.0   2.80972e-17             0            0.0  XI45/XI11/NET13
+            - Coupled nets
+            - Intrinsic Capacitance
+               2.80972e-17
+            - Coupled capacitance
+
+
+766                   0.0   2.80972e-17             0            0.0  XI45/XI12/NET13
+            - Coupled nets
+            - Intrinsic Capacitance
+               2.80972e-17
+            - Coupled capacitance
+
+
+767                   0.0   2.80972e-17             0            0.0  XI45/XI13/NET13
+            - Coupled nets
+            - Intrinsic Capacitance
+               2.80972e-17
+            - Coupled capacitance
+
+
+768                   0.0   2.80972e-17             0            0.0  XI45/XI14/NET13
+            - Coupled nets
+            - Intrinsic Capacitance
+               2.80972e-17
+            - Coupled capacitance
+
+
+769                   0.0   2.80972e-17             0            0.0  XI45/XI15/NET13
+            - Coupled nets
+            - Intrinsic Capacitance
+               2.80972e-17
+            - Coupled capacitance
+
+
+770                   0.0   2.80972e-17             0            0.0  XI45/XI16/NET13
+            - Coupled nets
+            - Intrinsic Capacitance
+               2.80972e-17
+            - Coupled capacitance
+
+
+771                   0.0   2.80972e-17             0            0.0  XI45/XI17/NET13
+            - Coupled nets
+            - Intrinsic Capacitance
+               2.80972e-17
+            - Coupled capacitance
+
+
+772                   0.0   2.80972e-17             0            0.0  XI45/XI9/NET13
+            - Coupled nets
+            - Intrinsic Capacitance
+               2.80972e-17
+            - Coupled capacitance
+
+
+773                   0.0   2.80972e-17             0            0.0  XI45/XI8/NET13
+            - Coupled nets
+            - Intrinsic Capacitance
+               2.80972e-17
+            - Coupled capacitance
+
+
+774                   0.0   2.80972e-17             0            0.0  XI45/XI7/NET13
+            - Coupled nets
+            - Intrinsic Capacitance
+               2.80972e-17
+            - Coupled capacitance
+
+
+775                   0.0   2.80972e-17             0            0.0  XI45/XI6/NET13
+            - Coupled nets
+            - Intrinsic Capacitance
+               2.80972e-17
+            - Coupled capacitance
+
+
+776                   0.0   2.80972e-17             0            0.0  XI45/XI5/NET13
+            - Coupled nets
+            - Intrinsic Capacitance
+               2.80972e-17
+            - Coupled capacitance
+
+
+777                   0.0   2.80972e-17             0            0.0  XI45/XI4/NET13
+            - Coupled nets
+            - Intrinsic Capacitance
+               2.80972e-17
+            - Coupled capacitance
+
+
+778                   0.0   2.80972e-17             0            0.0  XI45/XI3/NET13
+            - Coupled nets
+            - Intrinsic Capacitance
+               2.80972e-17
+            - Coupled capacitance
+
+
+779                   0.0   2.80972e-17             0            0.0  XI45/XI2/NET13
+            - Coupled nets
+            - Intrinsic Capacitance
+               2.80972e-17
+            - Coupled capacitance
+
+
+790                   0.0    5.5712e-18             0            0.0  XI45/XI0/XI18/NET16
+            - Coupled nets
+            - Intrinsic Capacitance
+               5.5712e-18
+            - Coupled capacitance
+
+
+791                   0.0    5.5712e-18             0            0.0  XI45/XI0/XI18/NET12
+            - Coupled nets
+            - Intrinsic Capacitance
+               5.5712e-18
+            - Coupled capacitance
+
+
+792                   0.0    5.5712e-18             0            0.0  XI45/XI0/XI18/NET8
+            - Coupled nets
+            - Intrinsic Capacitance
+               5.5712e-18
+            - Coupled capacitance
+
+
+793                   0.0    5.5712e-18             0            0.0  XI45/XI0/XI17/NET16
+            - Coupled nets
+            - Intrinsic Capacitance
+               5.5712e-18
+            - Coupled capacitance
+
+
+794                   0.0    5.5712e-18             0            0.0  XI45/XI0/XI17/NET12
+            - Coupled nets
+            - Intrinsic Capacitance
+               5.5712e-18
+            - Coupled capacitance
+
+
+795                   0.0    5.5712e-18             0            0.0  XI45/XI0/XI17/NET8
+            - Coupled nets
+            - Intrinsic Capacitance
+               5.5712e-18
+            - Coupled capacitance
+
+
+796                   0.0    5.5712e-18             0            0.0  XI45/XI0/XI16/NET16
+            - Coupled nets
+            - Intrinsic Capacitance
+               5.5712e-18
+            - Coupled capacitance
+
+
+797                   0.0    5.5712e-18             0            0.0  XI45/XI0/XI16/NET12
+            - Coupled nets
+            - Intrinsic Capacitance
+               5.5712e-18
+            - Coupled capacitance
+
+
+798                   0.0    5.5712e-18             0            0.0  XI45/XI0/XI16/NET8
+            - Coupled nets
+            - Intrinsic Capacitance
+               5.5712e-18
+            - Coupled capacitance
+
+
+799                   0.0    5.5712e-18             0            0.0  XI45/XI0/XI15/NET16
+            - Coupled nets
+            - Intrinsic Capacitance
+               5.5712e-18
+            - Coupled capacitance
+
+
+800                   0.0    5.5712e-18             0            0.0  XI45/XI0/XI15/NET12
+            - Coupled nets
+            - Intrinsic Capacitance
+               5.5712e-18
+            - Coupled capacitance
+
+
+801                   0.0    5.5712e-18             0            0.0  XI45/XI0/XI15/NET8
+            - Coupled nets
+            - Intrinsic Capacitance
+               5.5712e-18
+            - Coupled capacitance
+
+
+802                   0.0    5.5712e-18             0            0.0  XI45/XI0/XI14/NET16
+            - Coupled nets
+            - Intrinsic Capacitance
+               5.5712e-18
+            - Coupled capacitance
+
+
+803                   0.0    5.5712e-18             0            0.0  XI45/XI0/XI14/NET12
+            - Coupled nets
+            - Intrinsic Capacitance
+               5.5712e-18
+            - Coupled capacitance
+
+
+804                   0.0    5.5712e-18             0            0.0  XI45/XI0/XI14/NET8
+            - Coupled nets
+            - Intrinsic Capacitance
+               5.5712e-18
+            - Coupled capacitance
+
+
+805                   0.0    5.5712e-18             0            0.0  XI45/XI0/XI13/NET16
+            - Coupled nets
+            - Intrinsic Capacitance
+               5.5712e-18
+            - Coupled capacitance
+
+
+806                   0.0    5.5712e-18             0            0.0  XI45/XI0/XI13/NET12
+            - Coupled nets
+            - Intrinsic Capacitance
+               5.5712e-18
+            - Coupled capacitance
+
+
+807                   0.0    5.5712e-18             0            0.0  XI45/XI0/XI13/NET8
+            - Coupled nets
+            - Intrinsic Capacitance
+               5.5712e-18
+            - Coupled capacitance
+
+
+808                   0.0    5.5712e-18             0            0.0  XI45/XI0/XI12/NET16
+            - Coupled nets
+            - Intrinsic Capacitance
+               5.5712e-18
+            - Coupled capacitance
+
+
+809                   0.0    5.5712e-18             0            0.0  XI45/XI0/XI12/NET12
+            - Coupled nets
+            - Intrinsic Capacitance
+               5.5712e-18
+            - Coupled capacitance
+
+
+810                   0.0    5.5712e-18             0            0.0  XI45/XI0/XI12/NET8
+            - Coupled nets
+            - Intrinsic Capacitance
+               5.5712e-18
+            - Coupled capacitance
+
+
+811                   0.0    5.5712e-18             0            0.0  XI45/XI0/XI11/NET16
+            - Coupled nets
+            - Intrinsic Capacitance
+               5.5712e-18
+            - Coupled capacitance
+
+
+812                   0.0    5.5712e-18             0            0.0  XI45/XI0/XI11/NET12
+            - Coupled nets
+            - Intrinsic Capacitance
+               5.5712e-18
+            - Coupled capacitance
+
+
+813                   0.0    5.5712e-18             0            0.0  XI45/XI0/XI11/NET8
+            - Coupled nets
+            - Intrinsic Capacitance
+               5.5712e-18
+            - Coupled capacitance
+
+
+814                   0.0    5.5712e-18             0            0.0  XI45/XI1/XI11/NET8
+            - Coupled nets
+            - Intrinsic Capacitance
+               5.5712e-18
+            - Coupled capacitance
+
+
+815                   0.0    5.5712e-18             0            0.0  XI45/XI1/XI11/NET12
+            - Coupled nets
+            - Intrinsic Capacitance
+               5.5712e-18
+            - Coupled capacitance
+
+
+816                   0.0    5.5712e-18             0            0.0  XI45/XI1/XI11/NET16
+            - Coupled nets
+            - Intrinsic Capacitance
+               5.5712e-18
+            - Coupled capacitance
+
+
+817                   0.0    5.5712e-18             0            0.0  XI45/XI1/XI12/NET8
+            - Coupled nets
+            - Intrinsic Capacitance
+               5.5712e-18
+            - Coupled capacitance
+
+
+818                   0.0    5.5712e-18             0            0.0  XI45/XI1/XI12/NET12
+            - Coupled nets
+            - Intrinsic Capacitance
+               5.5712e-18
+            - Coupled capacitance
+
+
+819                   0.0    5.5712e-18             0            0.0  XI45/XI1/XI12/NET16
+            - Coupled nets
+            - Intrinsic Capacitance
+               5.5712e-18
+            - Coupled capacitance
+
+
+820                   0.0    5.5712e-18             0            0.0  XI45/XI1/XI13/NET8
+            - Coupled nets
+            - Intrinsic Capacitance
+               5.5712e-18
+            - Coupled capacitance
+
+
+821                   0.0    5.5712e-18             0            0.0  XI45/XI1/XI13/NET12
+            - Coupled nets
+            - Intrinsic Capacitance
+               5.5712e-18
+            - Coupled capacitance
+
+
+822                   0.0    5.5712e-18             0            0.0  XI45/XI1/XI13/NET16
+            - Coupled nets
+            - Intrinsic Capacitance
+               5.5712e-18
+            - Coupled capacitance
+
+
+823                   0.0    5.5712e-18             0            0.0  XI45/XI1/XI14/NET8
+            - Coupled nets
+            - Intrinsic Capacitance
+               5.5712e-18
+            - Coupled capacitance
+
+
+824                   0.0    5.5712e-18             0            0.0  XI45/XI1/XI14/NET12
+            - Coupled nets
+            - Intrinsic Capacitance
+               5.5712e-18
+            - Coupled capacitance
+
+
+825                   0.0    5.5712e-18             0            0.0  XI45/XI1/XI14/NET16
+            - Coupled nets
+            - Intrinsic Capacitance
+               5.5712e-18
+            - Coupled capacitance
+
+
+826                   0.0    5.5712e-18             0            0.0  XI45/XI1/XI15/NET8
+            - Coupled nets
+            - Intrinsic Capacitance
+               5.5712e-18
+            - Coupled capacitance
+
+
+827                   0.0    5.5712e-18             0            0.0  XI45/XI1/XI15/NET12
+            - Coupled nets
+            - Intrinsic Capacitance
+               5.5712e-18
+            - Coupled capacitance
+
+
+828                   0.0    5.5712e-18             0            0.0  XI45/XI1/XI15/NET16
+            - Coupled nets
+            - Intrinsic Capacitance
+               5.5712e-18
+            - Coupled capacitance
+
+
+829                   0.0    5.5712e-18             0            0.0  XI45/XI1/XI16/NET8
+            - Coupled nets
+            - Intrinsic Capacitance
+               5.5712e-18
+            - Coupled capacitance
+
+
+830                   0.0    5.5712e-18             0            0.0  XI45/XI1/XI16/NET12
+            - Coupled nets
+            - Intrinsic Capacitance
+               5.5712e-18
+            - Coupled capacitance
+
+
+831                   0.0    5.5712e-18             0            0.0  XI45/XI1/XI16/NET16
+            - Coupled nets
+            - Intrinsic Capacitance
+               5.5712e-18
+            - Coupled capacitance
+
+
+832                   0.0    5.5712e-18             0            0.0  XI45/XI1/XI17/NET8
+            - Coupled nets
+            - Intrinsic Capacitance
+               5.5712e-18
+            - Coupled capacitance
+
+
+833                   0.0    5.5712e-18             0            0.0  XI45/XI1/XI17/NET12
+            - Coupled nets
+            - Intrinsic Capacitance
+               5.5712e-18
+            - Coupled capacitance
+
+
+834                   0.0    5.5712e-18             0            0.0  XI45/XI1/XI17/NET16
+            - Coupled nets
+            - Intrinsic Capacitance
+               5.5712e-18
+            - Coupled capacitance
+
+
+835                   0.0    5.5712e-18             0            0.0  XI45/XI1/XI18/NET8
+            - Coupled nets
+            - Intrinsic Capacitance
+               5.5712e-18
+            - Coupled capacitance
+
+
+836                   0.0    5.5712e-18             0            0.0  XI45/XI1/XI18/NET12
+            - Coupled nets
+            - Intrinsic Capacitance
+               5.5712e-18
+            - Coupled capacitance
+
+
+837                   0.0    5.5712e-18             0            0.0  XI45/XI1/XI18/NET16
+            - Coupled nets
+            - Intrinsic Capacitance
+               5.5712e-18
+            - Coupled capacitance
+
+
+846                   0.0   1.72691e-17             0            0.0  XI19/XI0/NET5
+            - Coupled nets
+            - Intrinsic Capacitance
+               1.72691e-17
+            - Coupled capacitance
+
+
